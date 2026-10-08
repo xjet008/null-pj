@@ -1,0 +1,35 @@
+{
+  "version": "3.0.0",
+  "device": "Quadro T1000",
+  "backend": "CUDA",
+  "frames": 24,
+  "grid": [
+    30,
+    30
+  ],
+  "exports": [
+    "animation.frames.json.gz",
+    "animation.html",
+    "animation.mp4",
+    "animation.webm",
+    "ascii.txt",
+    "cells.npz",
+    "genome.dna.json",
+    "metadata.json",
+    "preview.png"
+  ],
+  "resumed": true,
+  "envelope_version": 3,
+  "protected_browser_genome": true,
+  "encrypted_dna_reconstruction": true,
+  "private_key_exported": false,
+  "mp4_bytes": 114749,
+  "webm_bytes": 385604,
+  "key_source": "Synthetic test-only bytes; existing owner keys were not accessed",
+  "on_demand_cli": true,
+  "encrypted_input_stays_protected": true,
+  "cli_hidden_message_preserved": true,
+  "cli_mp4_bytes": 114749,
+  "cli_webm_bytes": 385604,
+  "wall_seconds": 50.934
+}

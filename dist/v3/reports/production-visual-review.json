@@ -1,0 +1,23 @@
+{
+  "version": "3.0.0",
+  "reviewed_at_utc": "2026-10-08T21:01:17.2278465Z",
+  "reviewer": "Codex visual review",
+  "accepted": true,
+  "sampled_editions": 100,
+  "sheet_count": 5,
+  "all_23_legendary_profiles_reviewed": true,
+  "scope": "Visual review of canonical, quarter-loop and half-loop public frame samples across all five rarity tiers. Complete collection integrity is checked independently.",
+  "findings": [
+    "Grayscale ASCII silhouettes remain readable across the sampled structural forms.",
+    "Common and higher-tier motion change native glyph or luminance cells; some periodic motions return to a matching half-loop pose.",
+    "All Legendary samples show formation or fragmentation transitions.",
+    "No blank, corrupt or visibly clipped sampled output requires a production repair."
+  ],
+  "sheets": [
+    "production-01.jpg",
+    "production-02.jpg",
+    "production-03.jpg",
+    "production-04.jpg",
+    "production-05.jpg"
+  ]
+}

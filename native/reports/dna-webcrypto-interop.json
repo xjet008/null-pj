@@ -1,0 +1,13 @@
+{
+  "version": "3.0.0",
+  "python_to_studio": true,
+  "studio_to_python": true,
+  "fingerprint_preserved": true,
+  "legacy_version_1_preserved": true,
+  "legacy_aad_preserved": true,
+  "synthetic_hidden_message_preserved": true,
+  "studio_hidden_message_preserved": true,
+  "tamper_cases_rejected": 4,
+  "studio_forged_identity_rejected": true,
+  "key_source": "Synthetic test-only bytes; existing owner keys were not accessed"
+}

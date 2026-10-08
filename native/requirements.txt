@@ -1,0 +1,5 @@
+numpy==2.5.3
+pillow==12.3.0
+cryptography==47.0.0
+imageio-ffmpeg==0.6.0
+nvidia-cuda-nvrtc-cu12==12.9.86

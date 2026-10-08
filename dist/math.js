@@ -1,4 +1,16 @@
 export const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+export const isV3=g=>g?.genome_version==='web-3.0.0';
+export const V3_RENDER_DEFAULTS=Object.freeze({blend:.026,ambient:.12,fill:.22,ao:.72,rim:.23,contrast:1.1,contour:.7});
+export function dimensions(value){
+ let grid=value?.grid;
+ if(Array.isArray(value)&&value.length===2)grid=value;
+ if(ArrayBuffer.isView(value)){const n=Math.sqrt(value.length/12);grid=[n,n];}
+ if(grid===undefined)grid=[30,30];
+ if(!Array.isArray(grid)||grid.length!==2||![30,50].includes(grid[0])||grid[0]!==grid[1])throw Error('Native ASCII grid must be 30 by 30 or 50 by 50.');
+ const result={width:grid[0],height:grid[1],count:grid[0]*grid[1],grid:[...grid]};
+ Object.defineProperty(result,Symbol.iterator,{value:function*(){yield this.width;yield this.height;}});
+ return result;
+}
 const add=(a,b)=>a.map((x,i)=>x+b[i]),scale=(a,b)=>a.map(x=>x*b),dot=(a,b)=>a.reduce((s,x,i)=>s+x*b[i],0),length=a=>Math.hypot(...a),norm=a=>scale(a,1/Math.max(.00001,length(a)));
 export function hash(x){x^=x>>>16;x=Math.imul(x,0x7feb352d);x^=x>>>15;x=Math.imul(x,0x846ca68b);return (x^(x>>>16))>>>0}
 export const rnd=x=>(hash(x)&0xffffff)/16777216;
@@ -9,11 +21,104 @@ function primitive(p,r){let q=inverse(p.map((x,i)=>x-r[i+1]),r[7],r[8],r[9]),s=r
 function field(p,sc,top){let a=100,b=100,id=0,bi=0;for(let i=0;i<sc.length;i++){const d=primitive(p,sc[i]);if(sc[i][10]>.5){if(d<b){b=d;bi=i+1}}else if(d<a){a=d;id=i+1}}let d=Math.max(a,-b);if(a<=-b)id=bi;if(top===4){let lattice=Math.min(...p.map(x=>Math.abs(Math.sin(x*19))))*.04-.009;d=Math.max(Math.abs(d)-.018,lattice)}return [d,id]}
 function normal(p,sc,top){return norm([0,1,2].map(i=>{let a=p.slice(),b=p.slice();a[i]+=.003;b[i]-=.003;return field(a,sc,top)[0]-field(b,sc,top)[0]}))}
 function texture(p,k,f){let [x,y,z]=scale(p,f);if(k===0)return .68+.32*Math.abs(Math.sin((x+y)*6)*Math.sin((x-y)*6));if(k===1)return .6+.4*Math.abs(Math.sin(x*9)*Math.sin(y*9)*Math.sin(z*7))**.25;if(k===2)return .72+.28*Math.sin(x*6)*Math.sin(y*6);if(k===3)return .83+.17*Math.sin(x*21+y*17+z*25);if(k===4)return .72+.28*Math.abs(Math.sin(y*15));if(k===5)return .62+.38*Math.abs(Math.sin(x*10)*Math.cos(z*10));if(k===6)return .55+.45*clamp(Math.abs(Math.sin(x*5+Math.sin(y*7)))*4,0,1);if(k===7)return .63+.37*Math.abs(Math.sin(x*14)*Math.sin(y*14));if(k===8)return 1;return .57+.43*Math.abs(Math.sin(x*19+y*3)*Math.sin(z*23+y*17))}
-export function renderCpu(g){const sc=g.scene,c=g.config,ss=g.samples||1,grammar=[...g.grammar].map(x=>x.charCodeAt(0)),cov=g.coverage,out=new Float32Array(10800);for(let cell=0;cell<900;cell++){out[cell*12]=32;let x=cell%30,y=Math.floor(cell/30),lum=0,dep=0,p=[0,0,0],n=[0,0,0],hits=0,id=0;for(let sy=0;sy<ss;sy++)for(let sx=0;sx<ss;sx++){const px=((x+(sx+.5)/ss)/30-.5)*c[0]*c[2],py=(.5-(y+(sy+.5)/ss)/30)*c[0];let o=c[1]>.5?[px,py,4]:[0,0,4],d=c[1]>.5?[0,0,-1]:norm([px,py,-4]);o=rotate(o,c[4],c[3],0);d=rotate(d,c[4],c[3],0);let t=0,hit=false;for(let step=0;step<108;step++){const f=field(add(o,scale(d,t)),sc,c[5]);id=f[1];if(f[0]<.0075){hit=true;break}t+=Math.max(f[0]*.72,.004);if(t>8)break}if(!hit)continue;const pos=add(o,scale(d,t)),nr=normal(pos,sc,c[5]),light=norm(c.slice(7,10)),diff=Math.max(dot(nr,light),0),rim=(1-Math.max(-dot(nr,d),0))**2.7,half=norm(add(light,scale(d,-1))),spec=Math.max(dot(nr,half),0)**c[11]*c[12],ao=clamp(field(add(pos,scale(nr,.09)),sc,c[5])[0]/.09,.18,1);let shadow=1;if(c[6]>=2){let st=.035;for(let j=0;j<8;j++){let value=field(add(pos,scale(light,st)),sc,c[5])[0];shadow=Math.min(shadow,clamp(value*12/st,.15,1));st+=clamp(value,.04,.2)}}let value=(.15+diff*.64*shadow+rim*c[13]+spec)*ao;if(c[18]===4)value=.2+rim*.8;if(c[18]===7&&pos[0]<0)value*=.28;if(c[18]===8)value=value**1.6;value*=texture(pos,c[14],c[15])*c[10];lum+=clamp(value*c[16],.025,1);dep+=t;p=add(p,pos);n=add(n,nr);hits++}if(!hits)continue;lum/=ss*ss;dep/=hits;p=scale(p,1/hits);n=norm(n);if(c[19]===0&&lum<.27)continue;if(c[19]===5&&Math.abs(p[0])<.15&&Math.abs(p[1])<.25)continue;if(c[19]===6)lum*=clamp(.7-p[0]*.25,.3,1);if(c[19]===7)lum*=clamp(.7+p[0]*.25,.3,1);if(c[19]===8)lum*=.65+.35*Math.abs(Math.sin(length(p)*12));if(c[19]===9)lum*=.65+.35*Math.abs(Math.sin(p[0]*9)*Math.sin(p[1]*7));if(c[17]===8)lum*=.42;if(c[17]===7)lum*=.75;let target=clamp(.04+lum*.32,.025,.4),best=100,char=46;for(const code of grammar){let d=Math.abs(cov[code-32]-target)+rnd(c[20]+cell*131+code*17)*.006;if(d<best){best=d;char=code}}let v=rnd(c[20]+cell*983),ent=c[22],cor=c[21];if(cor===1&&v<ent*.45||cor===9&&v<ent*.25)char=32;else if(cor===4&&v<ent)char=grammar[hash(c[20]+cell)%grammar.length];else if(cor===5&&v<ent*.5)char=cell%2?48:49;else if(cor===7&&p[0]<0&&v<ent)lum*=.35;else if(cor===0&&v<ent*.2)char=46;else if(cor===6&&v<ent*.35)char='0123456789ABCDEF'.charCodeAt(hash(cell+c[20])%16);else if(cor===8&&v<ent*.3)char=35;const offset=cell*12;out.set([char,clamp(65+190*Math.sqrt(lum),0,255),...n,...p,dep,1,id,lum],offset)}return out}
+function renderCpuLegacy(g){const sc=g.scene,c=g.config,ss=g.samples||1,grammar=[...g.grammar].map(x=>x.charCodeAt(0)),cov=g.coverage,out=new Float32Array(10800);for(let cell=0;cell<900;cell++){out[cell*12]=32;let x=cell%30,y=Math.floor(cell/30),lum=0,dep=0,p=[0,0,0],n=[0,0,0],hits=0,id=0;for(let sy=0;sy<ss;sy++)for(let sx=0;sx<ss;sx++){const px=((x+(sx+.5)/ss)/30-.5)*c[0]*c[2],py=(.5-(y+(sy+.5)/ss)/30)*c[0];let o=c[1]>.5?[px,py,4]:[0,0,4],d=c[1]>.5?[0,0,-1]:norm([px,py,-4]);o=rotate(o,c[4],c[3],0);d=rotate(d,c[4],c[3],0);let t=0,hit=false;for(let step=0;step<108;step++){const f=field(add(o,scale(d,t)),sc,c[5]);id=f[1];if(f[0]<.0075){hit=true;break}t+=Math.max(f[0]*.72,.004);if(t>8)break}if(!hit)continue;const pos=add(o,scale(d,t)),nr=normal(pos,sc,c[5]),light=norm(c.slice(7,10)),diff=Math.max(dot(nr,light),0),rim=(1-Math.max(-dot(nr,d),0))**2.7,half=norm(add(light,scale(d,-1))),spec=Math.max(dot(nr,half),0)**c[11]*c[12],ao=clamp(field(add(pos,scale(nr,.09)),sc,c[5])[0]/.09,.18,1);let shadow=1;if(c[6]>=2){let st=.035;for(let j=0;j<8;j++){let value=field(add(pos,scale(light,st)),sc,c[5])[0];shadow=Math.min(shadow,clamp(value*12/st,.15,1));st+=clamp(value,.04,.2)}}let value=(.15+diff*.64*shadow+rim*c[13]+spec)*ao;if(c[18]===4)value=.2+rim*.8;if(c[18]===7&&pos[0]<0)value*=.28;if(c[18]===8)value=value**1.6;value*=texture(pos,c[14],c[15])*c[10];lum+=clamp(value*c[16],.025,1);dep+=t;p=add(p,pos);n=add(n,nr);hits++}if(!hits)continue;lum/=ss*ss;dep/=hits;p=scale(p,1/hits);n=norm(n);if(c[19]===0&&lum<.27)continue;if(c[19]===5&&Math.abs(p[0])<.15&&Math.abs(p[1])<.25)continue;if(c[19]===6)lum*=clamp(.7-p[0]*.25,.3,1);if(c[19]===7)lum*=clamp(.7+p[0]*.25,.3,1);if(c[19]===8)lum*=.65+.35*Math.abs(Math.sin(length(p)*12));if(c[19]===9)lum*=.65+.35*Math.abs(Math.sin(p[0]*9)*Math.sin(p[1]*7));if(c[17]===8)lum*=.42;if(c[17]===7)lum*=.75;let target=clamp(.04+lum*.32,.025,.4),best=100,char=46;for(const code of grammar){let d=Math.abs(cov[code-32]-target)+rnd(c[20]+cell*131+code*17)*.006;if(d<best){best=d;char=code}}let v=rnd(c[20]+cell*983),ent=c[22],cor=c[21];if(cor===1&&v<ent*.45||cor===9&&v<ent*.25)char=32;else if(cor===4&&v<ent)char=grammar[hash(c[20]+cell)%grammar.length];else if(cor===5&&v<ent*.5)char=cell%2?48:49;else if(cor===7&&p[0]<0&&v<ent)lum*=.35;else if(cor===0&&v<ent*.2)char=46;else if(cor===6&&v<ent*.35)char='0123456789ABCDEF'.charCodeAt(hash(cell+c[20])%16);else if(cor===8&&v<ent*.3)char=35;const offset=cell*12;out.set([char,clamp(65+190*Math.sqrt(lum),0,255),...n,...p,dep,1,id,lum],offset)}return out}
 const smooth=x=>{x=clamp(x,0,1);return x*x*(3-2*x)};
 export function assembled(t){if(t<.15)return 0;if(t<.32)return smooth((t-.15)/.17);if(t<.46)return 1;if(t<.65)return 1-smooth((t-.46)/.19);if(t<.72)return 0;if(t<.88)return smooth((t-.72)/.16);if(t<.94)return 1;return 1-smooth((t-.94)/.06)}
 export function fragmentPosition(base,i,c,t,profile,assembly,destruction,staticA=-1){let a=staticA>=0?staticA:assembled(t),target=Array.from(base.slice(i*12+5,i*12+8)),r=rnd(i*191+profile*7919),b=rnd(i*73+profile*1709),angle=Math.PI*2*r,turns=2+profile%5*.4,spin=Math.PI*2*t*(1+profile%3),yy=(r-.5)*2.6,dispersed=[Math.cos(angle)*(1.1+.6*b),Math.sin(angle)*(1.5+.7*r),(.5-b)*1.8],helix=[.5*Math.cos(yy*turns+spin+i%2*Math.PI),yy,.5*Math.sin(yy*turns+spin+i%2*Math.PI)],anchor=dispersed.slice(),type=profile%8;if(type===0)anchor=rotate(dispersed,0,spin,.2*Math.sin(spin));if(type===1)anchor=add(helix,scale(dispersed,.22));if(type===2)anchor=[dispersed[0],Math.sin(r*20+t*Math.PI*2)*.8,dispersed[2]];if(type===3)anchor[2]+=Math.sin(t*Math.PI*2)*.7;if(type===4)anchor=[Math.cos(angle+spin)*(1+r),yy,Math.sin(angle+spin)*(1+r)];if(type===5)anchor=scale(dispersed,.6+.5*Math.cos(t*Math.PI*2));if(type===6)anchor=[(i%7-3)*.42,(Math.floor(i/7)%9-4)*.37,(b-.5)*1.3];if(type===7)anchor=rotate(dispersed,Math.sin(t*Math.PI*2)*Math.PI,spin,0);let loose=1-a,m=c[23];if(m===1)anchor=scale(anchor,1+.06*Math.sin(t*Math.PI*2));else if(m===2)anchor=rotate(anchor,0,.25*Math.sin(t*Math.PI*2),0);else if(m===3)anchor[0]+=.14*Math.sin(t*Math.PI*2);else if(m===4)anchor=rotate(anchor,.18*Math.sin(spin),.18*Math.cos(spin),0);else if(m===5)anchor=scale(anchor,1+.12*Math.cos(spin));else if(m===6)anchor[2]+=.04*Math.sin(spin*7);else if(m===7)anchor=rotate(anchor,0,spin,0);else if(m===8)anchor[0]+=.05*Math.sin(spin*13);else if(m===9)anchor=rotate(anchor,0,.4*Math.sin(spin),0);if(assembly===0)anchor=rotate(anchor,0,spin,0);else if(assembly===1)anchor=helix;else if(assembly===2)anchor=add(anchor,[Math.sin(i*.21+spin)*.28,Math.cos(i*.19+spin)*.28,0]);else if(assembly===3)anchor[2]+=1.5*loose*(r-.5);else if(assembly===4)anchor=rotate(anchor,(i%5-2)*loose,.2,0);else if(assembly===5)anchor=rotate(anchor,0,spin*2,spin);else if(assembly===6)anchor=scale(anchor,1.25-a**3*.25);else if(assembly===7)anchor=scale(dispersed,1.3);else if(assembly===8)anchor=[dispersed[0],yy,Math.sin(spin+yy)*.3];else if(assembly===9)anchor=scale(helix,.65+r*.5);if(t>.46&&t<.72){if(destruction===1)anchor[1]-=b*.65;else if(destruction===2)anchor[0]+=yy*.7;else if(destruction===3)anchor[1]-=r*.8;else if(destruction===4)anchor=anchor.map(x=>Math.round(x*3)/3);else if(destruction===5)anchor=scale(anchor,.7+r*.6);else if(destruction===6)anchor[0]+=Math.sin(target[1]*5+spin)*.5;else if(destruction===7)anchor=dispersed;else if(destruction===8)anchor=rotate(anchor,0,0,spin);else if(destruction===9)anchor=scale(anchor,.35)}let helical=smooth((t-.06)/.09)*(1-smooth((t-.2)/.12));anchor=add(scale(anchor,1-helical),scale(helix,helical));return add(scale(anchor,loose),scale(target,a))}
-export function frameCpu(base,g,index,staticA=-1){const total=g.animation.fps*g.animation.seconds,t=(index%total)/total;if(staticA<0&&(t>=.32&&t<.46||t>=.88&&t<.94))return base.slice();let result=new Float32Array(10800),z=new Float64Array(900).fill(Infinity),c=g.config;for(let j=0;j<900;j++)result[j*12]=32;for(let i=0;i<900;i++){if(base[i*12+9]<.5||base[i*12]===32)continue;const p=fragmentPosition(base,i,c,t,g.animation.profile,g.animation.assembly_variant,g.animation.destruction_variant,staticA),v=inverse(p,c[4],c[3],0),dep=4-v[2],s=c[1]>.5?1:4/Math.max(dep,.25),x=Math.floor((v[0]*s/(c[0]*c[2])+.5)*30),y=Math.floor((.5-v[1]*s/c[0])*30);if(x<0||x>=30||y<0||y>=30)continue;let pixel=y*30+x,packed=Math.round(dep*10000)*1024+i;if(packed<z[pixel]){z[pixel]=packed;result.set(base.slice(i*12,i*12+12),pixel*12);result.set(p,pixel*12+5);result[pixel*12+8]=dep}}return result}
-export function toAscii(data){let rows=[];for(let y=0;y<30;y++){let row='';for(let x=0;x<30;x++)row+=String.fromCharCode(clamp(Math.round(data[(y*30+x)*12]),32,126));rows.push(row)}return rows.join('\n')+'\n'}
-export function fromAscii(text,levels){const chars=text.split('\n').slice(0,30).join('');let data=new Float32Array(10800);for(let i=0;i<900;i++){data[i*12]=chars.charCodeAt(i);data[i*12+1]=levels[i];data[i*12+9]=chars[i]!==' '?1:0}return data}
-export function validateCells(data){if(data.length!==10800||!data.every(Number.isFinite))throw Error('Invalid cell buffer');for(let i=0;i<900;i++)if(data[i*12]<32||data[i*12]>126||data[i*12+1]<0||data[i*12+1]>255)throw Error('Invalid ASCII or grayscale cell')}
+function frameCpuLegacy(base,g,index,staticA=-1){const total=g.animation.fps*g.animation.seconds,t=(index%total)/total;if(staticA<0&&(t>=.32&&t<.46||t>=.88&&t<.94))return base.slice();let result=new Float32Array(10800),z=new Float64Array(900).fill(Infinity),c=g.config;for(let j=0;j<900;j++)result[j*12]=32;for(let i=0;i<900;i++){if(base[i*12+9]<.5||base[i*12]===32)continue;const p=fragmentPosition(base,i,c,t,g.animation.profile,g.animation.assembly_variant,g.animation.destruction_variant,staticA),v=inverse(p,c[4],c[3],0),dep=4-v[2],s=c[1]>.5?1:4/Math.max(dep,.25),x=Math.floor((v[0]*s/(c[0]*c[2])+.5)*30),y=Math.floor((.5-v[1]*s/c[0])*30);if(x<0||x>=30||y<0||y>=30)continue;let pixel=y*30+x,packed=Math.round(dep*10000)*1024+i;if(packed<z[pixel]){z[pixel]=packed;result.set(base.slice(i*12,i*12+12),pixel*12);result.set(p,pixel*12+5);result[pixel*12+8]=dep}}return result}
+// Geometry, motion and lighting are version-gated: existing web-1.0.0 DNA retains
+// its exact renderer. V3 poses are primitive transforms, so normals, occlusion
+// and highlights follow actual three-dimensional motion on both GPU and CPU.
+export function animateScene(g,index=0){
+ if(!isV3(g))return g;
+ const total=(g.animation?.fps||12)*(g.animation?.seconds||8),t=((index%total)+total)%total/total;
+ if(t===0)return g;
+ const m=g.motion||{},kind=m.kind??m.type??0,amp=m.amplitude??m.intensity??.15,q=2*Math.PI*(m.speed||1)*t,phase=m.phase||0,s=Math.sin(q+phase)-Math.sin(phase),co=Math.cos(q+phase)-Math.cos(phase),freq=m.frequency||2,scene=g.scene.map((r,i)=>{
+  const o=r.slice(),layer=r[14]||0,joint=r[15]||0;if(layer===4)return o;
+  const x=r[1],y=r[2],z=r[3],a=amp*(layer===1?1.25:layer===2||layer===3?.75:1),j=joint*.71,local=Math.sin(q+phase+y*freq+j)-Math.sin(phase+y*freq+j);
+  if(kind===0){const w=layer>=2?1:clamp((y+.7)/1.6,0,1);o[1]+=s*a*.065*w;o[2]+=co*a*.06*w;o[8]+=s*a*.12*w;}
+  if(kind===1){o[1]+=local*a*.14;o[3]+=co*a*.07*Math.sin(y*freq);o[9]+=local*a*.08;}
+  if(kind===2){const w=layer===1||joint>0?1:.18,p=rotate([x,y,z],0,q,0);o[1]=x+a*w*(p[0]-x);o[3]=z+a*w*(p[2]-z);o[2]+=s*a*.1*w;o[8]+=s*a*.22*w;}
+  if(kind===3){const angle=local*a*.22,oPivot=[0,clamp(y,-.25,.25),0],p=rotate([x-oPivot[0],y-oPivot[1],z],0,0,angle);o[1]=p[0];o[2]=p[1]+oPivot[1];o[9]+=angle;}
+  if(kind===4){o[1]+=local*a*.08;o[2]+=s*a*.06*clamp(Math.abs(x),.2,1);o[7]+=local*a*.09;}
+  if(kind===5){const w=layer===2||layer===3?1:.35;o[3]+=local*a*.1*w;o[8]+=s*a*.13*w;o[9]+=co*a*.09*w;}
+  if(kind===6){const p=rotate([x,y,z],s*a*.13,co*a*.14,s*a*.05);o[1]=p[0];o[2]=p[1]+co*a*.045;o[3]=p[2];o[7]+=s*a*.13;o[8]+=co*a*.14;o[9]+=s*a*.05;}
+  if(kind===7){const angle=s*a*.24*(.8+y*.3),p=rotate([x,y,z],0,angle,0);o[1]=p[0];o[3]=p[2];o[8]+=angle;}
+  if(kind===8){o[1]+=local*a*.065;o[3]+=co*a*.075;o[12]+=s*a*.015;if(r[0]===11)o[12]=r[12]+s*a*.8;}
+  if(kind===9){const breath=1+s*a*.05;for(let k=4;k<7;k++)o[k]*=breath;o[1]*=1+s*a*.025;o[2]+=co*a*.03;o[3]*=1+s*a*.04;}
+  return o;
+ });
+ return {...g,scene};
+}
+export function fieldV3(p,g){
+ const sc=g.scene,settings=g.rendering||V3_RENDER_DEFAULTS;let a=100,b=100,id=0,bi=0;
+ for(let i=0;i<sc.length;i++){
+  const r=sc[i],d=primitive(p,r);
+  if(r[10]>.5){if(d<b){b=d;bi=i+1;}continue;}
+  const blend=Math.min(settings.blend??V3_RENDER_DEFAULTS.blend,Math.min(...r.slice(4,7))*.35);
+  if(d<a){id=i+1;}
+  if(blend>0&&a<99&&r[14]!==4){const h=clamp(.5+.5*(d-a)/blend,0,1);a=d*(1-h)+a*h-blend*h*(1-h);}else a=Math.min(a,d);
+ }
+ let d=Math.max(a,-b);if(a<=-b)id=bi;
+ if(g.config[5]===4){const lattice=Math.min(...p.map(x=>Math.abs(Math.sin(x*19))))*.04-.009;d=Math.max(Math.abs(d)-.018,lattice);}
+ return [d,id];
+}
+function normalV3(p,g){const e=.0025;return norm([0,1,2].map(i=>{let a=p.slice(),b=p.slice();a[i]+=e;b[i]-=e;return fieldV3(a,g)[0]-fieldV3(b,g)[0];}));}
+function shadeV3(pos,n,d,g,id){
+ const c=g.config,r={...V3_RENDER_DEFAULTS,...g.rendering},light=norm(c.slice(7,10)),fill=norm([-.7,-.15,.6]),diff=Math.max(dot(n,light),0),front=Math.max(-dot(n,d),0),rim=(1-front)**2.7,half=norm(add(light,scale(d,-1))),metal=[.04,.95,.65,.23,.8,.9,.7,.12,0,.3][clamp(Math.round(c[14]),0,9)],spec=Math.max(dot(n,half),0)**Math.max(2,c[11])*(c[12]+metal*.13);
+ let occ=0,weight=1;for(const h of [.045,.11,.23]){occ+=(h-fieldV3(add(pos,scale(n,h)),g)[0])*weight;weight*=.55;}const ao=clamp(1-occ*3.5*r.ao,.22,1);
+ let shadow=1,st=.018;for(let j=0;j<10;j++){const v=fieldV3(add(pos,scale(light,st)),g)[0];shadow=Math.min(shadow,clamp(v*10/st,.2,1));st+=clamp(v,.025,.16);if(st>.85)break;}
+ let value=(r.ambient+diff*.68*shadow+r.fill*Math.max(dot(n,fill),0)+rim*r.rim+spec*shadow)*ao;
+ if(c[18]===4)value=.16+rim*.84;if(c[18]===7&&pos[0]<0)value*=.32;if(c[18]===8)value=value**1.45;
+ value*=texture(pos,c[14],c[15])*c[10];value=clamp(value*c[16],.025,1)**(1/r.contrast);return value;
+}
+function glyphV3(grammar,cov,lum,n,g,object,point){
+ const r={...V3_RENDER_DEFAULTS,...g.rendering},goal=clamp(.025+lum*.36,.02,.42),view=inverse(n,g.config[4],g.config[3],0),edge=1-Math.abs(view[2]),seed=g.config[20],cellSeed=hash((Math.floor(point[0]*71)+512)*997+(Math.floor(point[1]*71)+512)*313+object*911),horizontal=Math.abs(view[1])>Math.abs(view[0]);let best=100,char=46;
+ for(const code of grammar){let directional=0;if(edge>.45){const tangent=horizontal?'_-=':'|!:';const diag=view[0]*view[1]>0?'/':'\\';directional=(tangent.includes(String.fromCharCode(code))||diag.charCodeAt(0)===code)?-.026*edge*r.contour:.008*edge*r.contour;}
+  const score=Math.abs(cov[code-32]-goal)+directional+rnd(seed+cellSeed+code*17)*.002;if(score<best){best=score;char=code;}}
+ return char;
+}
+export function renderCpu(g){
+ if(!isV3(g))return renderCpuLegacy(g);
+ const {width,height,count}=dimensions(g),sc=g.scene,c=g.config,ss=g.samples||1,grammar=[...g.grammar].map(x=>x.charCodeAt(0)),out=new Float32Array(count*12);const epsilon=.0035*30/width;
+ for(let cell=0;cell<count;cell++){
+  out[cell*12]=32;const x=cell%width,y=Math.floor(cell/width);let lum=0,dep=0,p=[0,0,0],n=[0,0,0],hits=0,id=0;
+  for(let sy=0;sy<ss;sy++)for(let sx=0;sx<ss;sx++){
+   const px=((x+(sx+.5)/ss)/width-.5)*c[0]*c[2],py=(.5-(y+(sy+.5)/ss)/height)*c[0];let o=c[1]>.5?[px,py,4]:[0,0,4],d=c[1]>.5?[0,0,-1]:norm([px,py,-4]);o=rotate(o,c[4],c[3],0);d=rotate(d,c[4],c[3],0);let t=0,hit=false;
+   for(let step=0;step<160;step++){const f=fieldV3(add(o,scale(d,t)),g);id=f[1];if(f[0]<epsilon){hit=true;break;}t+=Math.max(f[0]*.68,.0015);if(t>8)break;}
+   if(!hit)continue;const pos=add(o,scale(d,t)),nr=normalV3(pos,g);lum+=shadeV3(pos,nr,d,g,id);dep+=t;p=add(p,pos);n=add(n,nr);hits++;
+  }
+  if(!hits)continue;lum/=ss*ss;dep/=hits;p=scale(p,1/hits);n=norm(n);
+  if(c[19]===0&&lum<.22)continue;if(c[19]===5&&Math.abs(p[0])<.15&&Math.abs(p[1])<.25)continue;
+  if(c[19]===6)lum*=clamp(.7-p[0]*.25,.3,1);if(c[19]===7)lum*=clamp(.7+p[0]*.25,.3,1);if(c[19]===8)lum*=.65+.35*Math.abs(Math.sin(length(p)*12));if(c[19]===9)lum*=.65+.35*Math.abs(Math.sin(p[0]*9)*Math.sin(p[1]*7));if(c[17]===8)lum*=.42;if(c[17]===7)lum*=.75;
+  let char=glyphV3(grammar,g.coverage,lum,n,g,id,p),v=rnd(c[20]+cell*983),ent=c[22],cor=c[21];
+  if(cor===1&&v<ent*.45||cor===9&&v<ent*.25)char=32;else if(cor===4&&v<ent)char=grammar[hash(c[20]+cell)%grammar.length];else if(cor===5&&v<ent*.5)char=cell%2?48:49;else if(cor===7&&p[0]<0&&v<ent)lum*=.35;else if(cor===0&&v<ent*.2)char=46;else if(cor===6&&v<ent*.35)char='0123456789ABCDEF'.charCodeAt(hash(cell+c[20])%16);else if(cor===8&&v<ent*.3)char=35;
+  out.set([char,clamp(45+210*Math.sqrt(lum),0,255),...n,...p,dep,1,id,lum],cell*12);
+ }
+ return out;
+}
+export function frameCpu(base,g,index,staticA=-1){
+ if(!isV3(g))return frameCpuLegacy(base,g,index,staticA);
+ const total=g.animation.fps*g.animation.seconds,t=((index%total)+total)%total/total;
+ if(t===0&&staticA<0)return base.slice();
+ const pose=renderCpu(animateScene(g,index));
+ if(staticA<0&&!g.animation.legendary&&g.rarity!=='LEGENDARY')return pose;
+ const fragmentTime=(t+.32)%1;
+ if(staticA<0&&(fragmentTime>=.32&&fragmentTime<.46||fragmentTime>=.88&&fragmentTime<.94))return pose;
+ return projectCpu(pose,g,fragmentTime,staticA);
+}
+function projectCpu(base,g,t,staticA){
+ const {width,height,count}=dimensions(g),bits=width===50?4096:1024,out=new Float32Array(count*12),z=new Float64Array(count).fill(Infinity),c=g.config;
+ for(let j=0;j<count;j++)out[j*12]=32;
+ for(let i=0;i<count;i++){
+  if(base[i*12+9]<.5||base[i*12]===32)continue;
+  const p=fragmentPosition(base,i,c,t,g.animation.profile,g.animation.assembly_variant,g.animation.destruction_variant,staticA),v=inverse(p,c[4],c[3],0),dep=4-v[2],s=c[1]>.5?1:4/Math.max(dep,.25),x=Math.floor((v[0]*s/(c[0]*c[2])+.5)*width),y=Math.floor((.5-v[1]*s/c[0])*height);if(x<0||x>=width||y<0||y>=height||dep<=0)continue;const target=y*width+x,packed=Math.round(dep*10000)*bits+i;
+  if(packed<z[target]){z[target]=packed;out.set(base.slice(i*12,i*12+12),target*12);out.set(p,target*12+5);out[target*12+8]=Math.round(dep*10000)/10000;}
+ }
+ return out;
+}
+export function toAscii(data,grid){const {width,height,count}=dimensions(grid||data);validateCells(data,[width,height]);const rows=[];for(let y=0;y<height;y++){let row='';for(let x=0;x<width;x++)row+=String.fromCharCode(clamp(Math.round(data[(y*width+x)*12]),32,126));rows.push(row);}return rows.join('\n')+'\n';}
+export function fromAscii(text,levels,grid){
+ if(typeof text!=='string')throw Error('Invalid ASCII text.');let rows=text.split('\n');if(rows.at(-1)==='')rows.pop();const {width,height,count}=dimensions(grid||[rows.length,rows.length]);if(rows.length!==height||rows.some(r=>r.length!==width||!/^[\x20-\x7e]+$/.test(r))||!levels||levels.length!==count||levels.some(v=>!Number.isFinite(v)||v<0||v>255))throw Error('Invalid native ASCII rows or grayscale levels.');const chars=rows.join(''),data=new Float32Array(count*12);for(let i=0;i<count;i++){data[i*12]=chars.charCodeAt(i);data[i*12+1]=levels[i];data[i*12+9]=chars[i]!==' '?1:0;}return data;
+}
+export function validateCells(data,grid){const {count}=dimensions(grid||data);if(data.length!==count*12||!data.every(Number.isFinite))throw Error('Invalid cell buffer');for(let i=0;i<count;i++)if(!Number.isInteger(data[i*12])||data[i*12]<32||data[i*12]>126||data[i*12+1]<0||data[i*12+1]>255)throw Error('Invalid ASCII or grayscale cell');return data;}

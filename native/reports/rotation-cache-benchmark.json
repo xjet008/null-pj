@@ -1,0 +1,101 @@
+{
+  "version": "3.0.0",
+  "device": "Quadro T1000",
+  "compute_capability": "compute_75",
+  "cuda_verified": true,
+  "cold_start_ms": 9649.917,
+  "nvrtc_compile_ms": 4431.577,
+  "input": "collection experimental DNA",
+  "legacy_baseline": {
+    "grid": [
+      30,
+      30
+    ],
+    "simpler_lighting": true,
+    "render_wall": {
+      "samples": 5,
+      "mean_ms": 156.265,
+      "min_ms": 113.507,
+      "max_ms": 314.344
+    },
+    "render_gpu": {
+      "samples": 5,
+      "mean_ms": 155.699,
+      "min_ms": 113.101,
+      "max_ms": 313.169
+    }
+  },
+  "v3": [
+    {
+      "grid": [
+        30,
+        30
+      ],
+      "scene_primitives": 96,
+      "samples": 2,
+      "render_wall": {
+        "samples": 5,
+        "mean_ms": 82.73,
+        "min_ms": 81.268,
+        "max_ms": 84.97
+      },
+      "render_gpu": {
+        "samples": 5,
+        "mean_ms": 82.177,
+        "min_ms": 80.775,
+        "max_ms": 84.511
+      },
+      "raster_png_ms": 17.609,
+      "png_bytes": 30165,
+      "animation_frames": 48,
+      "sequence_wall_ms": 1620.505,
+      "sequence_fps": 29.62,
+      "individual_wall_ms": 3931.027,
+      "sequence_speedup": 2.426,
+      "sequence_exact_match": true,
+      "pool_bytes_before": 1080535,
+      "pool_bytes_after": 1588323
+    },
+    {
+      "grid": [
+        50,
+        50
+      ],
+      "scene_primitives": 96,
+      "samples": 2,
+      "render_wall": {
+        "samples": 5,
+        "mean_ms": 111.746,
+        "min_ms": 110.795,
+        "max_ms": 112.668
+      },
+      "render_gpu": {
+        "samples": 5,
+        "mean_ms": 111.219,
+        "min_ms": 110.324,
+        "max_ms": 112.017
+      },
+      "raster_png_ms": 16.683,
+      "png_bytes": 83665,
+      "animation_frames": 48,
+      "sequence_wall_ms": 2501.165,
+      "sequence_fps": 19.19,
+      "individual_wall_ms": 5383.197,
+      "sequence_speedup": 2.152,
+      "sequence_exact_match": true,
+      "pool_bytes_before": 3304823,
+      "pool_bytes_after": 4060023
+    }
+  ],
+  "telemetry": "Quadro T1000, 4096, 767, 74, 610.60",
+  "peak_pool_bytes": 4170423,
+  "total_vram_mb": 4095.8,
+  "free_vram_mb": 3289.3,
+  "wall_seconds": 33.778,
+  "notes": [
+    "Timing includes actual checked CUDA Driver API execution.",
+    "Animation sequence and individual rendering are byte-identical on this backend.",
+    "Legacy and V3 lighting differ intentionally; visual release requires separate inspection.",
+    "GPU utilization is a post-run point sample, not a sustained utilization benchmark."
+  ]
+}

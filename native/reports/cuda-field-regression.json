@@ -1,0 +1,1694 @@
+{
+  "version": "3.0.0",
+  "device": "Quadro T1000",
+  "input_sha256": "84c7b80d5053b141b2cfcdf2147fad5f7c97b35d7a033c9d0a99448df8a8dbd8",
+  "scenes": 120,
+  "probes": 491520,
+  "field_and_owner_identical": true,
+  "pose_indices": [
+    "canonical",
+    "one-third loop"
+  ],
+  "results": [
+    {
+      "item": 0,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 0,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 1,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 1,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 2,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 2,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 3,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 3,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 4,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 4,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 5,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 5,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 6,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 6,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 7,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 7,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 8,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 8,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 9,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 9,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 10,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 10,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 11,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 11,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 12,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 12,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 13,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 13,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 14,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 14,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 15,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 15,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 16,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 16,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 17,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 17,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 18,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 18,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 19,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 19,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 20,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 20,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 21,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 21,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 22,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 22,
+      "frame": 48,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 23,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 23,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 24,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 24,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 25,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 25,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 26,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 26,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 27,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 27,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 28,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 28,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 29,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 29,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 30,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 30,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 31,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 31,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 32,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 32,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 33,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 33,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 34,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 34,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 35,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 35,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 36,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 36,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 37,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 37,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 38,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 38,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 39,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 39,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 40,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 40,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 41,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 41,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 42,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 42,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 43,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 43,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 44,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 44,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 45,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 45,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 46,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 46,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 47,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 47,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 48,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 48,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 49,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 49,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 50,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 50,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 51,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 51,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 52,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 52,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 53,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 53,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 54,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 54,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 55,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 55,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 56,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 56,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 57,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 57,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 58,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 58,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 59,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 59,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 60,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 60,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 61,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 61,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 62,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 62,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 63,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 63,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 64,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 64,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 65,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 65,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 66,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 66,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 67,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 67,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 68,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 68,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 69,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 69,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 70,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 70,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 71,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 71,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 72,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 72,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 73,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 73,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 74,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 74,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 75,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 75,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 76,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 76,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 77,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 77,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 78,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 78,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 79,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 79,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 80,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 80,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 81,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 81,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 82,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 82,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 83,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 83,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 84,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 84,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 85,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 85,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 86,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 86,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 87,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 87,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 88,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 88,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 89,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 89,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 90,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 90,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 91,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 91,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 92,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 92,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 93,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 93,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 94,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 94,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 95,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 95,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 96,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 96,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 97,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 97,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 98,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 98,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 99,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 99,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 100,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 100,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 101,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 101,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 102,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 102,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 103,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 103,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 104,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 104,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 105,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 105,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 106,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 106,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 107,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 107,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 108,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 108,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 109,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 109,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 110,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 110,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 111,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 111,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 112,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 112,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 113,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 113,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 114,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 114,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 115,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 115,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 116,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 116,
+      "frame": 12,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 117,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 117,
+      "frame": 16,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 118,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 118,
+      "frame": 24,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 119,
+      "frame": 0,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    },
+    {
+      "item": 119,
+      "frame": 32,
+      "samples": 2048,
+      "exact": true,
+      "maximum_field_error": 0.0
+    }
+  ]
+}

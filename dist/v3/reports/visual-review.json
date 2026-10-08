@@ -1,0 +1,14 @@
+{
+  "version": "3.0.0",
+  "reviewed_candidates": 120,
+  "reviewed_contact_sheets": 6,
+  "matched_native_grids": [[30, 30], [50, 50]],
+  "selected_canonical_grid": [50, 50],
+  "approved_for_separate_v3_generation": true,
+  "legacy_collection_preserved": true,
+  "review": "Inspected every matched comparison sheet after the final category compatibility correction. Both grids retain grayscale coding textures and varied skull, character, organic and fragmented silhouettes. The 50-cell grid resolves additional small geometry and contours while retaining source structure. Median visible primitive counts are 60.5 at 50 versus 51 at 30. All 120 complete native animation timelines passed GPU identity and loop checks before production generation.",
+  "quality_50_mean": 81.77433333333333,
+  "quality_30_mean": 81.3535,
+  "experimental_report": "/v3/reports/experiments.json",
+  "approval_scope": "Separate V3 output only; original artwork, metadata, DNA and media are retained."
+}
