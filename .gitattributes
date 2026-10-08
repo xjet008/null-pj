@@ -1,0 +1,6 @@
+* text=auto
+*.gz binary
+*.zip binary
+*.png binary
+*.mp4 binary
+*.webm binary

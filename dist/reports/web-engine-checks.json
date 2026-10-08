@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "runtime": "Node.js with native DecompressionStream and Web Crypto",
+  "scope": "CPU native30x30 and 96 motion frames; all three family foundations; compressed public records/animation; DNA integrity; AES with newly generated synthetic key; ZIP binary, UTF-8 and independently known CRC values",
+  "owner_secret_accessed": false,
+  "checks": {
+    "CPU render is deterministic and exactly 30 by 30": true,
+    "96 motion frames preserve canonical holds and loop identity": true,
+    "Web DNA rejects altered fingerprints and unsafe render parameters": true,
+    "Repository reads real gzip blocks and verifies canonical artwork": true,
+    "Compressed native legendary animation remains 96 valid frames": true,
+    "SKULLS generation and DNA regeneration are deterministic": true,
+    "CHARACTERS generation and DNA regeneration are deterministic": true,
+    "ANIMALS generation and DNA regeneration are deterministic": true,
+    "Original plain DNA rejects edits and locked DNA rejects copied identity": true,
+    "Synthetic AES unlock succeeds and rejects forged envelope, bad AAD and wrong key": true,
+    "ZIP export has valid offsets, Unicode names, binary bytes and known CRC values": true
+  }
+}

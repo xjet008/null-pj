@@ -1,0 +1,310 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "curated registry and exact deterministic allocations",
+      "passed": true,
+      "seconds": 0.538,
+      "details": {
+        "registry": 420,
+        "supply": 3333
+      }
+    },
+    {
+      "name": "CUDA regeneration from saved DNA",
+      "passed": true,
+      "seconds": 1.405,
+      "details": "Eight saved genomes regenerate byte-identical ASCII and float cell buffers on this GPU."
+    },
+    {
+      "name": "authenticated encryption and decoder",
+      "passed": true,
+      "seconds": 0.014,
+      "details": "AES-256-GCM round-trip, wrong-key, ciphertext tamper and authenticated edition tests passed."
+    },
+    {
+      "name": "all 300 styles compile to geometry and valid GPU cells",
+      "passed": true,
+      "seconds": 25.743,
+      "details": {
+        "source_concepts_rendered": 300,
+        "distinct_structural_signatures": 300
+      }
+    },
+    {
+      "name": "all 120 engineering values",
+      "passed": true,
+      "seconds": 19.439,
+      "details": "120 additional values exercised; reconstruction modifiers remain latent for static editions."
+    },
+    {
+      "name": "20 reusable 3D primitive operators on CUDA",
+      "passed": true,
+      "seconds": 0.627,
+      "details": {
+        "operators": [
+          "sphere",
+          "ellipsoid",
+          "capsule",
+          "cylinder",
+          "cone",
+          "torus",
+          "cube",
+          "rounded_cube",
+          "plane",
+          "curved_ribbon",
+          "tube",
+          "bezier",
+          "spline_skeleton",
+          "helix",
+          "fractal_branch",
+          "extruded_contour",
+          "organic_blob",
+          "cellular",
+          "jointed_limb",
+          "fragmented_shell"
+        ]
+      }
+    },
+    {
+      "name": "23 animations: structural identity, reformation and loop continuity",
+      "passed": true,
+      "seconds": 13.011,
+      "details": {
+        "legendary_profiles": 23,
+        "maximum_seam_displacement": 0.4859
+      }
+    },
+    {
+      "name": "working deterministic CPU fallback",
+      "passed": true,
+      "seconds": 3.35,
+      "details": {
+        "single_ms": 1567.05,
+        "cross_backend_guarantee": "same-backend deterministic; floating-point edge decisions differ across devices"
+      }
+    },
+    {
+      "name": "complete collection, ASCII, grayscale previews and exported animations",
+      "passed": true,
+      "seconds": 185.031,
+      "details": {
+        "passed": true,
+        "errors": [],
+        "supply": 3333,
+        "families": {
+          "SKULLS": 1111,
+          "ANIMALS": 1111,
+          "CHARACTERS": 1111
+        },
+        "rarities": {
+          "RARE": 400,
+          "COMMON": 1900,
+          "LEGENDARY": 23,
+          "UNCOMMON": 900,
+          "EPIC": 110
+        },
+        "unique_ascii": 3333,
+        "unique_genomes": 3333,
+        "unique_geometry": 3333,
+        "legendary_profiles": 23,
+        "animation_frames_checked": 2208,
+        "registry_values": 420,
+        "ascii_grid": [
+          30,
+          30
+        ],
+        "color_space": "strict grayscale",
+        "png_grayscale_checked": 3333,
+        "video_files": 46
+      }
+    },
+    {
+      "name": "bounded CUDA buffer lifetime",
+      "passed": true,
+      "seconds": 2.328,
+      "details": {
+        "retained_delta_mb": 5.7
+      }
+    }
+  ],
+  "total_seconds": 305.964,
+  "hardware": {
+    "backend": "CUDA",
+    "device": "Quadro T1000",
+    "cuda": true,
+    "device_index": 0,
+    "devices": [
+      {
+        "index": 0,
+        "name": "Quadro T1000"
+      }
+    ],
+    "compute_capability": "compute_75",
+    "free_vram_mb": 376.3,
+    "total_vram_mb": 4095.8,
+    "last_wall_ms": 79.757,
+    "last_gpu_ms": 68.48249816894531,
+    "render_count": 475,
+    "fallback_reason": null,
+    "font": {
+      "font": "Consolas",
+      "font_sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+      "atlas": [
+        26,
+        48
+      ],
+      "cell_aspect": 0.5416666666666666,
+      "coverage": [
+        0.0,
+        0.08918740600347519,
+        0.04049773886799812,
+        0.23980329930782318,
+        0.23996983468532562,
+        0.22143979370594025,
+        0.27099043130874634,
+        0.021128708496689796,
+        0.13225238025188446,
+        0.1315799355506897,
+        0.09788838773965836,
+        0.12767723202705383,
+        0.07031171768903732,
+        0.039338234812021255,
+        0.037424586713314056,
+        0.10292232036590576,
+        0.257912278175354,
+        0.1701231747865677,
+        0.16327300667762756,
+        0.15083900094032288,
+        0.2076074630022049,
+        0.15943627059459686,
+        0.20788712799549103,
+        0.11227689683437347,
+        0.24063913524150848,
+        0.19802351295948029,
+        0.06438851356506348,
+        0.1024824008345604,
+        0.10515020042657852,
+        0.1131410226225853,
+        0.10483597218990326,
+        0.10436148196458817,
+        0.3395613431930542,
+        0.22636689245700836,
+        0.24539655447006226,
+        0.1514517366886139,
+        0.22230705618858337,
+        0.17184199392795563,
+        0.13555178046226501,
+        0.21017785370349884,
+        0.22347913682460785,
+        0.14002639055252075,
+        0.1283528208732605,
+        0.20242270827293396,
+        0.13267973065376282,
+        0.2575163245201111,
+        0.2573906481266022,
+        0.21918676793575287,
+        0.17957517504692078,
+        0.2702237367630005,
+        0.2163461595773697,
+        0.16788586974143982,
+        0.10205505043268204,
+        0.20914089679718018,
+        0.18980957567691803,
+        0.2656736969947815,
+        0.2060520350933075,
+        0.1544714719057083,
+        0.17161576449871063,
+        0.138631209731102,
+        0.10290975123643875,
+        0.1398629993200302,
+        0.07158748060464859,
+        0.07295751571655273,
+        0.0,
+        0.2103883922100067,
+        0.223190039396286,
+        0.14387568831443787,
+        0.22373993694782257,
+        0.2070230096578598,
+        0.14328807592391968,
+        0.3108440041542053,
+        0.19903217256069183,
+        0.14275704324245453,
+        0.17615322768688202,
+        0.19260933995246887,
+        0.13404349982738495,
+        0.24587418138980865,
+        0.18430744111537933,
+        0.2024824172258377,
+        0.24074912071228027,
+        0.24408307671546936,
+        0.13774509727954865,
+        0.17033056914806366,
+        0.16637128591537476,
+        0.18457138538360596,
+        0.15868213772773743,
+        0.22454752027988434,
+        0.17859163880348206,
+        0.21487870812416077,
+        0.16769734025001526,
+        0.14216628670692444,
+        0.11713800579309464,
+        0.14204373955726624,
+        0.09138385951519012
+      ]
+    },
+    "grid": [
+      30,
+      30
+    ]
+  },
+  "benchmark": {
+    "deterministic_renders": [
+      {
+        "edition": 1,
+        "gpu_ms": 66.454,
+        "wall_ms": 132.404
+      },
+      {
+        "edition": 9,
+        "gpu_ms": 50.734,
+        "wall_ms": 84.2
+      },
+      {
+        "edition": 19,
+        "gpu_ms": 54.76,
+        "wall_ms": 69.109
+      },
+      {
+        "edition": 48,
+        "gpu_ms": 7.077,
+        "wall_ms": 15.272
+      },
+      {
+        "edition": 200,
+        "gpu_ms": 54.85,
+        "wall_ms": 64.17
+      },
+      {
+        "edition": 702,
+        "gpu_ms": 49.795,
+        "wall_ms": 69.603
+      },
+      {
+        "edition": 1830,
+        "gpu_ms": 34.822,
+        "wall_ms": 38.156
+      },
+      {
+        "edition": 3000,
+        "gpu_ms": 16.208,
+        "wall_ms": 104.918
+      }
+    ],
+    "cpu_two_renders_seconds": 3.237,
+    "cpu_single_ms": 1567.05,
+    "cpu_grid": "                              \n                              \n                              \n                              \n                              \n                              \n                              \n                              \n                              \n                     X        \n     G              Sr        \n      ;             G5rr      \n  H   ;            BH5r,ir,   \n   hs     hX9s,rr;s&9r        \n    ; r3; #Gsss2ir39r,        \n        ;S.s99 s3;:9          \n    s    h;:rrr;;,;G,         \n     5   h3       Ah;         \n      S  #;       MG;         \n      r  h;      #Ah          \n        9;        G,          \n                              \n                              \n                              \n                              \n                              \n                              \n                              \n                              \n                              \n",
+    "vram_before_mb": 382.0,
+    "vram_after_mb": 376.3
+  }
+}

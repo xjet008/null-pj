@@ -1,0 +1,12 @@
+node_modules/
+.vercel/
+.openai/
+.env
+.env.*
+*.key
+private/
+.runtime/
+work/
+*.log
+.DS_Store
+Thumbs.db

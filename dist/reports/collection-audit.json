@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "errors": [],
+  "supply": 3333,
+  "families": {
+    "SKULLS": 1111,
+    "ANIMALS": 1111,
+    "CHARACTERS": 1111
+  },
+  "rarities": {
+    "RARE": 400,
+    "COMMON": 1900,
+    "LEGENDARY": 23,
+    "UNCOMMON": 900,
+    "EPIC": 110
+  },
+  "unique_ascii": 3333,
+  "unique_genomes": 3333,
+  "unique_geometry": 3333,
+  "legendary_profiles": 23,
+  "animation_frames_checked": 2208,
+  "registry_values": 420,
+  "ascii_grid": [
+    30,
+    30
+  ],
+  "color_space": "strict grayscale"
+}

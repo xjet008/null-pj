@@ -1,0 +1,2 @@
+import {renderCpu,frameCpu} from './math.js';
+onmessage=e=>{const {id,op,g,base,index,staticA}=e.data;try{const result=op==='render'?renderCpu(g):frameCpu(base,g,index,staticA);postMessage({id,result},[result.buffer])}catch(error){postMessage({id,error:error.message})}};

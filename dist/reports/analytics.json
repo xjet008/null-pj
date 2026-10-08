@@ -1,0 +1,3570 @@
+{
+  "accepted": 3333,
+  "rarity": {
+    "RARE": 400,
+    "COMMON": 1900,
+    "LEGENDARY": 23,
+    "UNCOMMON": 900,
+    "EPIC": 110
+  },
+  "family": {
+    "SKULLS": 1111,
+    "ANIMALS": 1111,
+    "CHARACTERS": 1111
+  },
+  "traits": [
+    {
+      "id": "S001",
+      "label": "Gothic Skull",
+      "category": "Dark and Horror",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S002",
+      "label": "Demonic Skull",
+      "category": "Dark and Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S003",
+      "label": "Hellfire Skull",
+      "category": "Dark and Horror",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S004",
+      "label": "Cursed Skull",
+      "category": "Dark and Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S005",
+      "label": "Necromancer Skull",
+      "category": "Dark and Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S006",
+      "label": "Vampire Skull",
+      "category": "Dark and Horror",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S007",
+      "label": "Zombie Skull",
+      "category": "Dark and Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S008",
+      "label": "Haunted Skull",
+      "category": "Dark and Horror",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S009",
+      "label": "Blood Moon Skull",
+      "category": "Dark and Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S010",
+      "label": "Abyssal Skull",
+      "category": "Dark and Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S011",
+      "label": "Cyberpunk Skull",
+      "category": "Cybernetic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S012",
+      "label": "Robotic Skull",
+      "category": "Cybernetic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S013",
+      "label": "AI Skull",
+      "category": "Cybernetic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S014",
+      "label": "Holographic Skull",
+      "category": "Cybernetic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S015",
+      "label": "Glitch Skull",
+      "category": "Cybernetic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S016",
+      "label": "Synthwave Skull",
+      "category": "Cybernetic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S017",
+      "label": "Chrome Skull",
+      "category": "Cybernetic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S018",
+      "label": "Biomechanical Skull",
+      "category": "Cybernetic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S019",
+      "label": "Circuit Board Skull",
+      "category": "Cybernetic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S020",
+      "label": "Quantum Skull",
+      "category": "Cybernetic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S021",
+      "label": "Dragon Skull",
+      "category": "Fantasy and Mythology",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S022",
+      "label": "Viking Skull",
+      "category": "Fantasy and Mythology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S023",
+      "label": "Samurai Skull",
+      "category": "Fantasy and Mythology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S024",
+      "label": "Oni Skull",
+      "category": "Fantasy and Mythology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S025",
+      "label": "Pharaoh Skull",
+      "category": "Fantasy and Mythology",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S026",
+      "label": "Aztec Skull",
+      "category": "Fantasy and Mythology",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S027",
+      "label": "Pirate Skull",
+      "category": "Fantasy and Mythology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S028",
+      "label": "Wizard Skull",
+      "category": "Fantasy and Mythology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S029",
+      "label": "Kraken Skull",
+      "category": "Fantasy and Mythology",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S030",
+      "label": "Celestial Skull",
+      "category": "Fantasy and Mythology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S031",
+      "label": "Realistic Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S032",
+      "label": "Hyperrealistic Skull",
+      "category": "Fine Art",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S033",
+      "label": "Surrealist Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S034",
+      "label": "Abstract Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S035",
+      "label": "Cubist Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S036",
+      "label": "Watercolor Skull",
+      "category": "Fine Art",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S037",
+      "label": "Oil Painting Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S038",
+      "label": "Ink Wash Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S039",
+      "label": "Charcoal Skull",
+      "category": "Fine Art",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S040",
+      "label": "Pencil Sketch Skull",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S041",
+      "label": "Minimalist Skull",
+      "category": "Graphic Design",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S042",
+      "label": "Line Art Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S043",
+      "label": "One-Line Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S044",
+      "label": "Geometric Skull",
+      "category": "Graphic Design",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S045",
+      "label": "Low-Poly Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S046",
+      "label": "Negative Space Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S047",
+      "label": "Silhouette Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S048",
+      "label": "Stencil Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S049",
+      "label": "Dotwork Skull",
+      "category": "Graphic Design",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S050",
+      "label": "Typographic Skull",
+      "category": "Graphic Design",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S051",
+      "label": "Floral Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S052",
+      "label": "Rose Skull",
+      "category": "Organic and Nature",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S053",
+      "label": "Forest Skull",
+      "category": "Organic and Nature",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S054",
+      "label": "Crystal Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S055",
+      "label": "Mushroom Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S056",
+      "label": "Butterfly Skull",
+      "category": "Organic and Nature",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S057",
+      "label": "Snake Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S058",
+      "label": "Ocean Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S059",
+      "label": "Lava Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S060",
+      "label": "Frozen Skull",
+      "category": "Organic and Nature",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S061",
+      "label": "Graffiti Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S062",
+      "label": "Punk Skull",
+      "category": "Alternative Styles",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "S063",
+      "label": "Grunge Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S064",
+      "label": "Trash Polka Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S065",
+      "label": "Pop Art Skull",
+      "category": "Alternative Styles",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S066",
+      "label": "Comic Book Skull",
+      "category": "Alternative Styles",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S067",
+      "label": "Sticker Bomb Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S068",
+      "label": "Skater Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S069",
+      "label": "Heavy Metal Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S070",
+      "label": "Psychedelic Skull",
+      "category": "Alternative Styles",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S071",
+      "label": "Sugar Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S072",
+      "label": "Baroque Skull",
+      "category": "Decorative and Historical",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S073",
+      "label": "Rococo Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S074",
+      "label": "Art Nouveau Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S075",
+      "label": "Art Deco Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S076",
+      "label": "Victorian Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S077",
+      "label": "Steampunk Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S078",
+      "label": "Tribal-Inspired Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S079",
+      "label": "Mandala Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S080",
+      "label": "Mosaic Skull",
+      "category": "Decorative and Historical",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S081",
+      "label": "3D Sculpted Skull",
+      "category": "Sculptural and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S082",
+      "label": "Wireframe Skull",
+      "category": "Sculptural and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S083",
+      "label": "Voxel Skull",
+      "category": "Sculptural and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S084",
+      "label": "Pixel Art Skull",
+      "category": "Sculptural and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S085",
+      "label": "Origami Skull",
+      "category": "Sculptural and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S086",
+      "label": "Papercut Skull",
+      "category": "Sculptural and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S087",
+      "label": "Liquid Metal Skull",
+      "category": "Sculptural and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S088",
+      "label": "Glass Skull",
+      "category": "Sculptural and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S089",
+      "label": "Porcelain Skull",
+      "category": "Sculptural and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S090",
+      "label": "Inflatable Skull",
+      "category": "Sculptural and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S091",
+      "label": "Galaxy Skull",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S092",
+      "label": "Black Hole Skull",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S093",
+      "label": "Duality Skull",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S094",
+      "label": "Half Human Half Skull",
+      "category": "Conceptual",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S095",
+      "label": "Clockwork Skull",
+      "category": "Conceptual",
+      "count": 14,
+      "percentage": 0.42
+    },
+    {
+      "id": "S096",
+      "label": "Crown Skull",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S097",
+      "label": "Melting Skull",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S098",
+      "label": "Fragmented Skull",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "S099",
+      "label": "Smoke Skull",
+      "category": "Conceptual",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "S100",
+      "label": "Ethereal Skull",
+      "category": "Conceptual",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C001",
+      "label": "Classic Anime Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C002",
+      "label": "Shonen Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C003",
+      "label": "Seinen Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C004",
+      "label": "Shojo Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C005",
+      "label": "Chibi Character",
+      "category": "Anime",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C006",
+      "label": "Kawaii Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C007",
+      "label": "Dark Anime Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C008",
+      "label": "Cyberpunk Anime Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C009",
+      "label": "Retro Anime Character",
+      "category": "Anime",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C010",
+      "label": "Cel-Shaded Anime Character",
+      "category": "Anime",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C011",
+      "label": "Dark Fantasy Warrior",
+      "category": "Fantasy",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C012",
+      "label": "Elven Character",
+      "category": "Fantasy",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C013",
+      "label": "Demon Character",
+      "category": "Fantasy",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C014",
+      "label": "Angel Character",
+      "category": "Fantasy",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C015",
+      "label": "Dragonborn Character",
+      "category": "Fantasy",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C016",
+      "label": "Necromancer Character",
+      "category": "Fantasy",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C017",
+      "label": "Vampire Character",
+      "category": "Fantasy",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C018",
+      "label": "Werewolf Character",
+      "category": "Fantasy",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C019",
+      "label": "Fairy Character",
+      "category": "Fantasy",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C020",
+      "label": "Celestial Guardian",
+      "category": "Fantasy",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C021",
+      "label": "Cyberpunk Mercenary",
+      "category": "Futuristic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C022",
+      "label": "Android Character",
+      "category": "Futuristic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C023",
+      "label": "Cyborg Soldier",
+      "category": "Futuristic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C024",
+      "label": "Space Explorer",
+      "category": "Futuristic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C025",
+      "label": "Alien Character",
+      "category": "Futuristic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C026",
+      "label": "Mecha Pilot",
+      "category": "Futuristic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C027",
+      "label": "Holographic Character",
+      "category": "Futuristic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C028",
+      "label": "Posthuman Character",
+      "category": "Futuristic",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C029",
+      "label": "AI Humanoid Character",
+      "category": "Futuristic",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C030",
+      "label": "Quantum Entity",
+      "category": "Futuristic",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C031",
+      "label": "Gothic Vampire Lord",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C032",
+      "label": "Haunted Doll Character",
+      "category": "Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C033",
+      "label": "Faceless Character",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C034",
+      "label": "Plague Doctor Character",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C035",
+      "label": "Shadow Entity",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C036",
+      "label": "Ghost Character",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C037",
+      "label": "Undead Knight",
+      "category": "Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C038",
+      "label": "Possessed Character",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C039",
+      "label": "Cursed Puppet",
+      "category": "Horror",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C040",
+      "label": "Eldritch Creature",
+      "category": "Horror",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C041",
+      "label": "Samurai Character",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C042",
+      "label": "Ninja Character",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C043",
+      "label": "Viking Character",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C044",
+      "label": "Medieval Knight",
+      "category": "Historical Warriors",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C045",
+      "label": "Spartan Warrior",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C046",
+      "label": "Roman Gladiator",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C047",
+      "label": "Egyptian Pharaoh",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C048",
+      "label": "Mughal Royal Character",
+      "category": "Historical Warriors",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C049",
+      "label": "Pirate Captain",
+      "category": "Historical Warriors",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C050",
+      "label": "Wild West Gunslinger",
+      "category": "Historical Warriors",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C051",
+      "label": "Streetwear Character",
+      "category": "Modern",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C052",
+      "label": "Hip-Hop Character",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C053",
+      "label": "Skater Character",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C054",
+      "label": "Goth Character",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C055",
+      "label": "Punk Rock Character",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C056",
+      "label": "Techwear Character",
+      "category": "Modern",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C057",
+      "label": "Luxury Fashion Character",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C058",
+      "label": "Biker Character",
+      "category": "Modern",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C059",
+      "label": "Detective Character",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C060",
+      "label": "Masked Vigilante",
+      "category": "Modern",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C061",
+      "label": "Western Cartoon Character",
+      "category": "Stylized",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C062",
+      "label": "Rubber Hose Character",
+      "category": "Stylized",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C063",
+      "label": "Comic Book Superhero",
+      "category": "Stylized",
+      "count": 14,
+      "percentage": 0.42
+    },
+    {
+      "id": "C064",
+      "label": "Graphic Novel Character",
+      "category": "Stylized",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C065",
+      "label": "Pop Art Character",
+      "category": "Stylized",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C066",
+      "label": "Minimalist Character",
+      "category": "Stylized",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C067",
+      "label": "Geometric Character",
+      "category": "Stylized",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C068",
+      "label": "Low-Poly Character",
+      "category": "Stylized",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C069",
+      "label": "Claymation Character",
+      "category": "Stylized",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C070",
+      "label": "Stop-Motion Puppet",
+      "category": "Stylized",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C071",
+      "label": "RPG Warrior",
+      "category": "RPG and Gaming",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C072",
+      "label": "RPG Mage",
+      "category": "RPG and Gaming",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C073",
+      "label": "RPG Assassin",
+      "category": "RPG and Gaming",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C074",
+      "label": "RPG Healer",
+      "category": "RPG and Gaming",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C075",
+      "label": "Battle Royale Character",
+      "category": "RPG and Gaming",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C076",
+      "label": "MOBA Hero Character",
+      "category": "RPG and Gaming",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C077",
+      "label": "Soulslike Boss Character",
+      "category": "RPG and Gaming",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C078",
+      "label": "Post-Apocalyptic Survivor",
+      "category": "RPG and Gaming",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C079",
+      "label": "Steampunk Adventurer",
+      "category": "RPG and Gaming",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C080",
+      "label": "Dieselpunk Soldier",
+      "category": "RPG and Gaming",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "C081",
+      "label": "Hyperrealistic Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C082",
+      "label": "Painterly Character",
+      "category": "Fine Art",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C083",
+      "label": "Watercolor Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C084",
+      "label": "Oil Painting Portrait",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C085",
+      "label": "Charcoal Character",
+      "category": "Fine Art",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C086",
+      "label": "Ink Illustration Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C087",
+      "label": "Surrealist Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C088",
+      "label": "Cubist Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C089",
+      "label": "Abstract Expressionist Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C090",
+      "label": "Mixed-Media Character",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C091",
+      "label": "Elemental Fire Character",
+      "category": "Conceptual",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C092",
+      "label": "Elemental Ice Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C093",
+      "label": "Nature Spirit Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C094",
+      "label": "Galaxy Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C095",
+      "label": "Living Statue Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C096",
+      "label": "Liquid Metal Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C097",
+      "label": "Glitch Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C098",
+      "label": "Duality Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "C099",
+      "label": "Dreamcore Character",
+      "category": "Conceptual",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "C100",
+      "label": "Voidwalker Character",
+      "category": "Conceptual",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A001",
+      "label": "Photorealistic Animal",
+      "category": "Realistic Wildlife",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A002",
+      "label": "Hyperrealistic Wildlife",
+      "category": "Realistic Wildlife",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A003",
+      "label": "Wildlife Portrait",
+      "category": "Realistic Wildlife",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A004",
+      "label": "Documentary Wildlife",
+      "category": "Realistic Wildlife",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A005",
+      "label": "Animal Anatomy Illustration",
+      "category": "Realistic Wildlife",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A006",
+      "label": "Scientific Zoological Illustration",
+      "category": "Realistic Wildlife",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A007",
+      "label": "Natural History Animal",
+      "category": "Realistic Wildlife",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A008",
+      "label": "Animal Macro",
+      "category": "Realistic Wildlife",
+      "count": 15,
+      "percentage": 0.45
+    },
+    {
+      "id": "A009",
+      "label": "Cinematic Wildlife",
+      "category": "Realistic Wildlife",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A010",
+      "label": "Black-and-White Wildlife",
+      "category": "Realistic Wildlife",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A011",
+      "label": "Demonic Animal",
+      "category": "Dark Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A012",
+      "label": "Undead Animal",
+      "category": "Dark Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A013",
+      "label": "Gothic Animal",
+      "category": "Dark Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A014",
+      "label": "Shadow Beast",
+      "category": "Dark Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A015",
+      "label": "Cursed Animal",
+      "category": "Dark Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A016",
+      "label": "Hellfire Animal",
+      "category": "Dark Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A017",
+      "label": "Ghost Animal",
+      "category": "Dark Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A018",
+      "label": "Nightmare Creature",
+      "category": "Dark Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A019",
+      "label": "Vampiric Animal",
+      "category": "Dark Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A020",
+      "label": "Abyssal Beast",
+      "category": "Dark Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A021",
+      "label": "Dragon",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A022",
+      "label": "Phoenix",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A023",
+      "label": "Griffin",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A024",
+      "label": "Unicorn",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A025",
+      "label": "Pegasus",
+      "category": "Legendary Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A026",
+      "label": "Cerberus",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A027",
+      "label": "Kitsune",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A028",
+      "label": "Fenrir",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A029",
+      "label": "Chimera",
+      "category": "Legendary Creatures",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A030",
+      "label": "Thunderbird",
+      "category": "Legendary Creatures",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A031",
+      "label": "Cyberpunk Animal",
+      "category": "Technology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A032",
+      "label": "Robotic Animal",
+      "category": "Technology",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A033",
+      "label": "Cyborg Animal",
+      "category": "Technology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A034",
+      "label": "Holographic Animal",
+      "category": "Technology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A035",
+      "label": "Mecha Animal",
+      "category": "Technology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A036",
+      "label": "Biomechanical Animal",
+      "category": "Technology",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A037",
+      "label": "Neon Animal",
+      "category": "Technology",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A038",
+      "label": "Glitch Animal",
+      "category": "Technology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A039",
+      "label": "Circuit Animal",
+      "category": "Technology",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A040",
+      "label": "Chrome Animal",
+      "category": "Technology",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A041",
+      "label": "Anime Animal",
+      "category": "Stylized Animals",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A042",
+      "label": "Chibi Animal",
+      "category": "Stylized Animals",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A043",
+      "label": "Kawaii Animal",
+      "category": "Stylized Animals",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A044",
+      "label": "Anthropomorphic Animal",
+      "category": "Stylized Animals",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A045",
+      "label": "Furry Character",
+      "category": "Stylized Animals",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A046",
+      "label": "Western Cartoon Animal",
+      "category": "Stylized Animals",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A047",
+      "label": "Rubber Hose Animal",
+      "category": "Stylized Animals",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A048",
+      "label": "Comic Book Animal",
+      "category": "Stylized Animals",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A049",
+      "label": "Storybook Animal",
+      "category": "Stylized Animals",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A050",
+      "label": "Mascot Animal",
+      "category": "Stylized Animals",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A051",
+      "label": "Watercolor Animal",
+      "category": "Fine Art",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A052",
+      "label": "Oil Painting Animal",
+      "category": "Fine Art",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A053",
+      "label": "Pencil Sketch Animal",
+      "category": "Fine Art",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A054",
+      "label": "Charcoal Animal",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A055",
+      "label": "Ink Wash Animal",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A056",
+      "label": "Line Art Animal",
+      "category": "Fine Art",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A057",
+      "label": "Dotwork Animal",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A058",
+      "label": "Woodcut Animal",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A059",
+      "label": "Etching Animal",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A060",
+      "label": "Pastel Animal",
+      "category": "Fine Art",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A061",
+      "label": "Geometric Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A062",
+      "label": "Low-Poly Animal",
+      "category": "Abstract and Geometric",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A063",
+      "label": "Minimalist Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A064",
+      "label": "One-Line Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A065",
+      "label": "Abstract Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A066",
+      "label": "Cubist Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A067",
+      "label": "Origami Animal",
+      "category": "Abstract and Geometric",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A068",
+      "label": "Negative Space Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A069",
+      "label": "Polygon Wireframe Animal",
+      "category": "Abstract and Geometric",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A070",
+      "label": "Typographic Animal",
+      "category": "Abstract and Geometric",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A071",
+      "label": "Floral Animal",
+      "category": "Nature and Elements",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A072",
+      "label": "Forest Spirit Animal",
+      "category": "Nature and Elements",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A073",
+      "label": "Crystal Animal",
+      "category": "Nature and Elements",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A074",
+      "label": "Fire Elemental Animal",
+      "category": "Nature and Elements",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A075",
+      "label": "Ice Elemental Animal",
+      "category": "Nature and Elements",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A076",
+      "label": "Water Elemental Animal",
+      "category": "Nature and Elements",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A077",
+      "label": "Earth Elemental Animal",
+      "category": "Nature and Elements",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A078",
+      "label": "Lightning Animal",
+      "category": "Nature and Elements",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A079",
+      "label": "Bioluminescent Animal",
+      "category": "Nature and Elements",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A080",
+      "label": "Celestial Animal",
+      "category": "Nature and Elements",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A081",
+      "label": "Tribal-Inspired Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A082",
+      "label": "Celtic Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A083",
+      "label": "Japanese Sumi-e Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A084",
+      "label": "Chinese Brush Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A085",
+      "label": "Aztec-Inspired Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A086",
+      "label": "Egyptian Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A087",
+      "label": "Mughal Miniature Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A088",
+      "label": "Mandala Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A089",
+      "label": "Art Nouveau Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A090",
+      "label": "Art Deco Animal",
+      "category": "Cultural Decoration",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A091",
+      "label": "3D Sculpted Animal",
+      "category": "3D and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A092",
+      "label": "Claymation Animal",
+      "category": "3D and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A093",
+      "label": "Voxel Animal",
+      "category": "3D and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A094",
+      "label": "Pixel Animal",
+      "category": "3D and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A095",
+      "label": "Glass Animal",
+      "category": "3D and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A096",
+      "label": "Liquid Metal Animal",
+      "category": "3D and Experimental",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "A097",
+      "label": "Smoke Animal",
+      "category": "3D and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A098",
+      "label": "Galaxy Animal",
+      "category": "3D and Experimental",
+      "count": 12,
+      "percentage": 0.36
+    },
+    {
+      "id": "A099",
+      "label": "Surreal Hybrid Animal",
+      "category": "3D and Experimental",
+      "count": 11,
+      "percentage": 0.33
+    },
+    {
+      "id": "A100",
+      "label": "Dreamcore Animal",
+      "category": "3D and Experimental",
+      "count": 13,
+      "percentage": 0.39
+    },
+    {
+      "id": "T01.01",
+      "label": "Frontal",
+      "category": "Camera and Composition",
+      "count": 577,
+      "percentage": 17.3117
+    },
+    {
+      "id": "T01.02",
+      "label": "Three-Quarter Left",
+      "category": "Camera and Composition",
+      "count": 580,
+      "percentage": 17.4017
+    },
+    {
+      "id": "T01.03",
+      "label": "Three-Quarter Right",
+      "category": "Camera and Composition",
+      "count": 627,
+      "percentage": 18.8119
+    },
+    {
+      "id": "T01.04",
+      "label": "Side Profile",
+      "category": "Camera and Composition",
+      "count": 285,
+      "percentage": 8.5509
+    },
+    {
+      "id": "T01.05",
+      "label": "Low Angle",
+      "category": "Camera and Composition",
+      "count": 298,
+      "percentage": 8.9409
+    },
+    {
+      "id": "T01.06",
+      "label": "High Angle",
+      "category": "Camera and Composition",
+      "count": 287,
+      "percentage": 8.6109
+    },
+    {
+      "id": "T01.07",
+      "label": "Orthographic",
+      "category": "Camera and Composition",
+      "count": 277,
+      "percentage": 8.3108
+    },
+    {
+      "id": "T01.08",
+      "label": "Deep Perspective",
+      "category": "Camera and Composition",
+      "count": 135,
+      "percentage": 4.0504
+    },
+    {
+      "id": "T01.09",
+      "label": "Extreme Close-Up",
+      "category": "Camera and Composition",
+      "count": 132,
+      "percentage": 3.9604
+    },
+    {
+      "id": "T01.10",
+      "label": "Full Body",
+      "category": "Camera and Composition",
+      "count": 135,
+      "percentage": 4.0504
+    },
+    {
+      "id": "T02.01",
+      "label": "Solid Core",
+      "category": "Structural Topology",
+      "count": 595,
+      "percentage": 17.8518
+    },
+    {
+      "id": "T02.02",
+      "label": "Hollow Shell",
+      "category": "Structural Topology",
+      "count": 551,
+      "percentage": 16.5317
+    },
+    {
+      "id": "T02.03",
+      "label": "Exposed Skeleton",
+      "category": "Structural Topology",
+      "count": 548,
+      "percentage": 16.4416
+    },
+    {
+      "id": "T02.04",
+      "label": "Ribbed Structure",
+      "category": "Structural Topology",
+      "count": 298,
+      "percentage": 8.9409
+    },
+    {
+      "id": "T02.05",
+      "label": "Wireframe Cage",
+      "category": "Structural Topology",
+      "count": 283,
+      "percentage": 8.4908
+    },
+    {
+      "id": "T02.06",
+      "label": "Floating Anatomy",
+      "category": "Structural Topology",
+      "count": 267,
+      "percentage": 8.0108
+    },
+    {
+      "id": "T02.07",
+      "label": "Nested Geometry",
+      "category": "Structural Topology",
+      "count": 297,
+      "percentage": 8.9109
+    },
+    {
+      "id": "T02.08",
+      "label": "Interlocked Rings",
+      "category": "Structural Topology",
+      "count": 173,
+      "percentage": 5.1905
+    },
+    {
+      "id": "T02.09",
+      "label": "Fragmented Core",
+      "category": "Structural Topology",
+      "count": 138,
+      "percentage": 4.1404
+    },
+    {
+      "id": "T02.10",
+      "label": "Layered Contours",
+      "category": "Structural Topology",
+      "count": 183,
+      "percentage": 5.4905
+    },
+    {
+      "id": "T03.01",
+      "label": "Hard Top Light",
+      "category": "Lighting",
+      "count": 572,
+      "percentage": 17.1617
+    },
+    {
+      "id": "T03.02",
+      "label": "Side Key Light",
+      "category": "Lighting",
+      "count": 616,
+      "percentage": 18.4818
+    },
+    {
+      "id": "T03.03",
+      "label": "Underlighting",
+      "category": "Lighting",
+      "count": 626,
+      "percentage": 18.7819
+    },
+    {
+      "id": "T03.04",
+      "label": "Rim Illumination",
+      "category": "Lighting",
+      "count": 249,
+      "percentage": 7.4707
+    },
+    {
+      "id": "T03.05",
+      "label": "Backlit Silhouette",
+      "category": "Lighting",
+      "count": 250,
+      "percentage": 7.5008
+    },
+    {
+      "id": "T03.06",
+      "label": "Specular Streaks",
+      "category": "Lighting",
+      "count": 293,
+      "percentage": 8.7909
+    },
+    {
+      "id": "T03.07",
+      "label": "Soft Diffusion",
+      "category": "Lighting",
+      "count": 299,
+      "percentage": 8.9709
+    },
+    {
+      "id": "T03.08",
+      "label": "Split Lighting",
+      "category": "Lighting",
+      "count": 150,
+      "percentage": 4.5005
+    },
+    {
+      "id": "T03.09",
+      "label": "Deep Chiaroscuro",
+      "category": "Lighting",
+      "count": 115,
+      "percentage": 3.4503
+    },
+    {
+      "id": "T03.10",
+      "label": "Volumetric Haze",
+      "category": "Lighting",
+      "count": 163,
+      "percentage": 4.8905
+    },
+    {
+      "id": "T04.01",
+      "label": "Crosshatching",
+      "category": "Surface Texture",
+      "count": 584,
+      "percentage": 17.5218
+    },
+    {
+      "id": "T04.02",
+      "label": "Stippling",
+      "category": "Surface Texture",
+      "count": 831,
+      "percentage": 24.9325
+    },
+    {
+      "id": "T04.03",
+      "label": "Halftone",
+      "category": "Surface Texture",
+      "count": 362,
+      "percentage": 10.8611
+    },
+    {
+      "id": "T04.04",
+      "label": "Fine Grain",
+      "category": "Surface Texture",
+      "count": 299,
+      "percentage": 8.9709
+    },
+    {
+      "id": "T04.05",
+      "label": "Scanline Engraving",
+      "category": "Surface Texture",
+      "count": 326,
+      "percentage": 9.781
+    },
+    {
+      "id": "T04.06",
+      "label": "Etched Metal",
+      "category": "Surface Texture",
+      "count": 213,
+      "percentage": 6.3906
+    },
+    {
+      "id": "T04.07",
+      "label": "Cracked Stone",
+      "category": "Surface Texture",
+      "count": 260,
+      "percentage": 7.8008
+    },
+    {
+      "id": "T04.08",
+      "label": "Porous Bone",
+      "category": "Surface Texture",
+      "count": 132,
+      "percentage": 3.9604
+    },
+    {
+      "id": "T04.09",
+      "label": "Mirror Finish",
+      "category": "Surface Texture",
+      "count": 171,
+      "percentage": 5.1305
+    },
+    {
+      "id": "T04.10",
+      "label": "Rough Charcoal",
+      "category": "Surface Texture",
+      "count": 155,
+      "percentage": 4.6505
+    },
+    {
+      "id": "T05.01",
+      "label": "Binary Code",
+      "category": "ASCII Glyph Grammar",
+      "count": 302,
+      "percentage": 9.0609
+    },
+    {
+      "id": "T05.02",
+      "label": "Hexadecimal Code",
+      "category": "ASCII Glyph Grammar",
+      "count": 311,
+      "percentage": 9.3309
+    },
+    {
+      "id": "T05.03",
+      "label": "Decimal Matrix",
+      "category": "ASCII Glyph Grammar",
+      "count": 312,
+      "percentage": 9.3609
+    },
+    {
+      "id": "T05.04",
+      "label": "Bracket Structures",
+      "category": "ASCII Glyph Grammar",
+      "count": 312,
+      "percentage": 9.3609
+    },
+    {
+      "id": "T05.05",
+      "label": "Operator Chains",
+      "category": "ASCII Glyph Grammar",
+      "count": 299,
+      "percentage": 8.9709
+    },
+    {
+      "id": "T05.06",
+      "label": "Slash Geometry",
+      "category": "ASCII Glyph Grammar",
+      "count": 303,
+      "percentage": 9.0909
+    },
+    {
+      "id": "T05.07",
+      "label": "Alphanumeric Noise",
+      "category": "ASCII Glyph Grammar",
+      "count": 298,
+      "percentage": 8.9409
+    },
+    {
+      "id": "T05.08",
+      "label": "Ciphertext Blocks",
+      "category": "ASCII Glyph Grammar",
+      "count": 580,
+      "percentage": 17.4017
+    },
+    {
+      "id": "T05.09",
+      "label": "Symbolic Equations",
+      "category": "ASCII Glyph Grammar",
+      "count": 315,
+      "percentage": 9.4509
+    },
+    {
+      "id": "T05.10",
+      "label": "Density-Ramp Glyphs",
+      "category": "ASCII Glyph Grammar",
+      "count": 301,
+      "percentage": 9.0309
+    },
+    {
+      "id": "T06.01",
+      "label": "Bit Rot",
+      "category": "Corruption and Distortion",
+      "count": 605,
+      "percentage": 18.1518
+    },
+    {
+      "id": "T06.02",
+      "label": "Character Dropout",
+      "category": "Corruption and Distortion",
+      "count": 600,
+      "percentage": 18.0018
+    },
+    {
+      "id": "T06.03",
+      "label": "Horizontal Shear",
+      "category": "Corruption and Distortion",
+      "count": 602,
+      "percentage": 18.0618
+    },
+    {
+      "id": "T06.04",
+      "label": "Vertical Shift",
+      "category": "Corruption and Distortion",
+      "count": 265,
+      "percentage": 7.9508
+    },
+    {
+      "id": "T06.05",
+      "label": "Glyph Mutation",
+      "category": "Corruption and Distortion",
+      "count": 271,
+      "percentage": 8.1308
+    },
+    {
+      "id": "T06.06",
+      "label": "Parity Noise",
+      "category": "Corruption and Distortion",
+      "count": 283,
+      "percentage": 8.4908
+    },
+    {
+      "id": "T06.07",
+      "label": "Checksum Trails",
+      "category": "Corruption and Distortion",
+      "count": 279,
+      "percentage": 8.3708
+    },
+    {
+      "id": "T06.08",
+      "label": "Broken Symmetry",
+      "category": "Corruption and Distortion",
+      "count": 142,
+      "percentage": 4.2604
+    },
+    {
+      "id": "T06.09",
+      "label": "Compressed Data Blocks",
+      "category": "Corruption and Distortion",
+      "count": 141,
+      "percentage": 4.2304
+    },
+    {
+      "id": "T06.10",
+      "label": "Packet Loss",
+      "category": "Corruption and Distortion",
+      "count": 145,
+      "percentage": 4.3504
+    },
+    {
+      "id": "T07.01",
+      "label": "Orbital Collapse",
+      "category": "Assembly Behavior",
+      "count": 613,
+      "percentage": 18.3918
+    },
+    {
+      "id": "T07.02",
+      "label": "Helix Reconstruction",
+      "category": "Assembly Behavior",
+      "count": 566,
+      "percentage": 16.9817
+    },
+    {
+      "id": "T07.03",
+      "label": "Swarm Assembly",
+      "category": "Assembly Behavior",
+      "count": 618,
+      "percentage": 18.5419
+    },
+    {
+      "id": "T07.04",
+      "label": "Front-to-Back Formation",
+      "category": "Assembly Behavior",
+      "count": 286,
+      "percentage": 8.5809
+    },
+    {
+      "id": "T07.05",
+      "label": "Unfolding Layers",
+      "category": "Assembly Behavior",
+      "count": 289,
+      "percentage": 8.6709
+    },
+    {
+      "id": "T07.06",
+      "label": "Inward Spiral",
+      "category": "Assembly Behavior",
+      "count": 269,
+      "percentage": 8.0708
+    },
+    {
+      "id": "T07.07",
+      "label": "Gravitational Snap",
+      "category": "Assembly Behavior",
+      "count": 277,
+      "percentage": 8.3108
+    },
+    {
+      "id": "T07.08",
+      "label": "Reverse Explosion",
+      "category": "Assembly Behavior",
+      "count": 144,
+      "percentage": 4.3204
+    },
+    {
+      "id": "T07.09",
+      "label": "Data Stream Materialization",
+      "category": "Assembly Behavior",
+      "count": 112,
+      "percentage": 3.3603
+    },
+    {
+      "id": "T07.10",
+      "label": "Recursive Growth",
+      "category": "Assembly Behavior",
+      "count": 159,
+      "percentage": 4.7705
+    },
+    {
+      "id": "T08.01",
+      "label": "Radial Shattering",
+      "category": "Destruction Behavior",
+      "count": 585,
+      "percentage": 17.5518
+    },
+    {
+      "id": "T08.02",
+      "label": "Cellular Crumbling",
+      "category": "Destruction Behavior",
+      "count": 590,
+      "percentage": 17.7018
+    },
+    {
+      "id": "T08.03",
+      "label": "Horizontal Streaming",
+      "category": "Destruction Behavior",
+      "count": 630,
+      "percentage": 18.9019
+    },
+    {
+      "id": "T08.04",
+      "label": "Vertical Fragment Fall",
+      "category": "Destruction Behavior",
+      "count": 281,
+      "percentage": 8.4308
+    },
+    {
+      "id": "T08.05",
+      "label": "Cubic Fracture",
+      "category": "Destruction Behavior",
+      "count": 261,
+      "percentage": 7.8308
+    },
+    {
+      "id": "T08.06",
+      "label": "Entropy Dissolution",
+      "category": "Destruction Behavior",
+      "count": 268,
+      "percentage": 8.0408
+    },
+    {
+      "id": "T08.07",
+      "label": "Wave Shearing",
+      "category": "Destruction Behavior",
+      "count": 276,
+      "percentage": 8.2808
+    },
+    {
+      "id": "T08.08",
+      "label": "Static Dispersal",
+      "category": "Destruction Behavior",
+      "count": 151,
+      "percentage": 4.5305
+    },
+    {
+      "id": "T08.09",
+      "label": "Spiral Disintegration",
+      "category": "Destruction Behavior",
+      "count": 146,
+      "percentage": 4.3804
+    },
+    {
+      "id": "T08.10",
+      "label": "Singularity Implosion",
+      "category": "Destruction Behavior",
+      "count": 145,
+      "percentage": 4.3504
+    },
+    {
+      "id": "T09.01",
+      "label": "Static State",
+      "category": "Motion Profile",
+      "count": 3313,
+      "percentage": 99.3999
+    },
+    {
+      "id": "T09.02",
+      "label": "Subtle Breathing",
+      "category": "Motion Profile",
+      "count": 5,
+      "percentage": 0.15
+    },
+    {
+      "id": "T09.03",
+      "label": "Slow Yaw",
+      "category": "Motion Profile",
+      "count": 0,
+      "percentage": 0.0
+    },
+    {
+      "id": "T09.04",
+      "label": "Parallax Sway",
+      "category": "Motion Profile",
+      "count": 1,
+      "percentage": 0.03
+    },
+    {
+      "id": "T09.05",
+      "label": "Dual-Axis Rotation",
+      "category": "Motion Profile",
+      "count": 4,
+      "percentage": 0.12
+    },
+    {
+      "id": "T09.06",
+      "label": "Harmonic Pulse",
+      "category": "Motion Profile",
+      "count": 1,
+      "percentage": 0.03
+    },
+    {
+      "id": "T09.07",
+      "label": "Intermittent Flicker",
+      "category": "Motion Profile",
+      "count": 3,
+      "percentage": 0.09
+    },
+    {
+      "id": "T09.08",
+      "label": "Locked Rotation",
+      "category": "Motion Profile",
+      "count": 2,
+      "percentage": 0.06
+    },
+    {
+      "id": "T09.09",
+      "label": "Temporal Jitter",
+      "category": "Motion Profile",
+      "count": 2,
+      "percentage": 0.06
+    },
+    {
+      "id": "T09.10",
+      "label": "Reversible Motion",
+      "category": "Motion Profile",
+      "count": 2,
+      "percentage": 0.06
+    },
+    {
+      "id": "T10.01",
+      "label": "Ultra Sparse",
+      "category": "Density Distribution",
+      "count": 385,
+      "percentage": 11.5512
+    },
+    {
+      "id": "T10.02",
+      "label": "Sparse Center",
+      "category": "Density Distribution",
+      "count": 647,
+      "percentage": 19.4119
+    },
+    {
+      "id": "T10.03",
+      "label": "Dense Center",
+      "category": "Density Distribution",
+      "count": 643,
+      "percentage": 19.2919
+    },
+    {
+      "id": "T10.04",
+      "label": "Edge Weighted",
+      "category": "Density Distribution",
+      "count": 276,
+      "percentage": 8.2808
+    },
+    {
+      "id": "T10.05",
+      "label": "Uniform Density",
+      "category": "Density Distribution",
+      "count": 313,
+      "percentage": 9.3909
+    },
+    {
+      "id": "T10.06",
+      "label": "Hollow Center",
+      "category": "Density Distribution",
+      "count": 298,
+      "percentage": 8.9409
+    },
+    {
+      "id": "T10.07",
+      "label": "Left Asymmetric",
+      "category": "Density Distribution",
+      "count": 292,
+      "percentage": 8.7609
+    },
+    {
+      "id": "T10.08",
+      "label": "Right Asymmetric",
+      "category": "Density Distribution",
+      "count": 151,
+      "percentage": 4.5305
+    },
+    {
+      "id": "T10.09",
+      "label": "Radial Clusters",
+      "category": "Density Distribution",
+      "count": 150,
+      "percentage": 4.5005
+    },
+    {
+      "id": "T10.10",
+      "label": "Multi-Island Distribution",
+      "category": "Density Distribution",
+      "count": 178,
+      "percentage": 5.3405
+    },
+    {
+      "id": "T11.01",
+      "label": "DNA Helix",
+      "category": "Mathematical Geometry",
+      "count": 625,
+      "percentage": 18.7519
+    },
+    {
+      "id": "T11.02",
+      "label": "Double Helix",
+      "category": "Mathematical Geometry",
+      "count": 601,
+      "percentage": 18.0318
+    },
+    {
+      "id": "T11.03",
+      "label": "Torus Field",
+      "category": "Mathematical Geometry",
+      "count": 571,
+      "percentage": 17.1317
+    },
+    {
+      "id": "T11.04",
+      "label": "Hypercube Projection",
+      "category": "Mathematical Geometry",
+      "count": 279,
+      "percentage": 8.3708
+    },
+    {
+      "id": "T11.05",
+      "label": "Nested Spheres",
+      "category": "Mathematical Geometry",
+      "count": 244,
+      "percentage": 7.3207
+    },
+    {
+      "id": "T11.06",
+      "label": "Isometric Lattice",
+      "category": "Mathematical Geometry",
+      "count": 278,
+      "percentage": 8.3408
+    },
+    {
+      "id": "T11.07",
+      "label": "Fibonacci Spiral",
+      "category": "Mathematical Geometry",
+      "count": 300,
+      "percentage": 9.0009
+    },
+    {
+      "id": "T11.08",
+      "label": "Triangular Network",
+      "category": "Mathematical Geometry",
+      "count": 145,
+      "percentage": 4.3504
+    },
+    {
+      "id": "T11.09",
+      "label": "Branching Fractal",
+      "category": "Mathematical Geometry",
+      "count": 133,
+      "percentage": 3.9904
+    },
+    {
+      "id": "T11.10",
+      "label": "Floating Strata",
+      "category": "Mathematical Geometry",
+      "count": 157,
+      "percentage": 4.7105
+    },
+    {
+      "id": "T12.01",
+      "label": "Dormant",
+      "category": "Entity State",
+      "count": 575,
+      "percentage": 17.2517
+    },
+    {
+      "id": "T12.02",
+      "label": "Growing",
+      "category": "Entity State",
+      "count": 573,
+      "percentage": 17.1917
+    },
+    {
+      "id": "T12.03",
+      "label": "Awakening",
+      "category": "Entity State",
+      "count": 626,
+      "percentage": 18.7819
+    },
+    {
+      "id": "T12.04",
+      "label": "Contained",
+      "category": "Entity State",
+      "count": 292,
+      "percentage": 8.7609
+    },
+    {
+      "id": "T12.05",
+      "label": "Possessed",
+      "category": "Entity State",
+      "count": 299,
+      "percentage": 8.9709
+    },
+    {
+      "id": "T12.06",
+      "label": "Encrypted",
+      "category": "Entity State",
+      "count": 267,
+      "percentage": 8.0108
+    },
+    {
+      "id": "T12.07",
+      "label": "Corrupted",
+      "category": "Entity State",
+      "count": 280,
+      "percentage": 8.4008
+    },
+    {
+      "id": "T12.08",
+      "label": "Decoded",
+      "category": "Entity State",
+      "count": 147,
+      "percentage": 4.4104
+    },
+    {
+      "id": "T12.09",
+      "label": "Reborn",
+      "category": "Entity State",
+      "count": 132,
+      "percentage": 3.9604
+    },
+    {
+      "id": "T12.10",
+      "label": "Collapsing",
+      "category": "Entity State",
+      "count": 142,
+      "percentage": 4.2604
+    }
+  ],
+  "unused_traits": [
+    "T09.03"
+  ],
+  "cooccurrence": [
+    {
+      "a": "T04.02",
+      "b": "T09.01",
+      "count": 825
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.02",
+      "count": 645
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.03",
+      "count": 641
+    },
+    {
+      "a": "T08.03",
+      "b": "T09.01",
+      "count": 630
+    },
+    {
+      "a": "T01.03",
+      "b": "T09.01",
+      "count": 624
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.01",
+      "count": 623
+    },
+    {
+      "a": "T03.03",
+      "b": "T09.01",
+      "count": 623
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.03",
+      "count": 623
+    },
+    {
+      "a": "T07.03",
+      "b": "T09.01",
+      "count": 615
+    },
+    {
+      "a": "T03.02",
+      "b": "T09.01",
+      "count": 613
+    },
+    {
+      "a": "T07.01",
+      "b": "T09.01",
+      "count": 611
+    },
+    {
+      "a": "T06.01",
+      "b": "T09.01",
+      "count": 603
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.02",
+      "count": 599
+    },
+    {
+      "a": "T06.03",
+      "b": "T09.01",
+      "count": 598
+    },
+    {
+      "a": "T06.02",
+      "b": "T09.01",
+      "count": 598
+    },
+    {
+      "a": "T02.01",
+      "b": "T09.01",
+      "count": 591
+    },
+    {
+      "a": "T08.02",
+      "b": "T09.01",
+      "count": 588
+    },
+    {
+      "a": "T08.01",
+      "b": "T09.01",
+      "count": 583
+    },
+    {
+      "a": "T04.01",
+      "b": "T09.01",
+      "count": 582
+    },
+    {
+      "a": "T01.02",
+      "b": "T09.01",
+      "count": 578
+    },
+    {
+      "a": "T01.01",
+      "b": "T09.01",
+      "count": 576
+    },
+    {
+      "a": "T05.08",
+      "b": "T09.01",
+      "count": 575
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.02",
+      "count": 572
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.01",
+      "count": 571
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.03",
+      "count": 568
+    },
+    {
+      "a": "T03.01",
+      "b": "T09.01",
+      "count": 568
+    },
+    {
+      "a": "T07.02",
+      "b": "T09.01",
+      "count": 565
+    },
+    {
+      "a": "T02.02",
+      "b": "T09.01",
+      "count": 549
+    },
+    {
+      "a": "T02.03",
+      "b": "T09.01",
+      "count": 548
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.01",
+      "count": 381
+    },
+    {
+      "a": "T04.03",
+      "b": "T09.01",
+      "count": 362
+    },
+    {
+      "a": "T04.05",
+      "b": "T09.01",
+      "count": 323
+    },
+    {
+      "a": "T05.09",
+      "b": "T09.01",
+      "count": 315
+    },
+    {
+      "a": "T05.02",
+      "b": "T09.01",
+      "count": 311
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.05",
+      "count": 310
+    },
+    {
+      "a": "T05.03",
+      "b": "T09.01",
+      "count": 309
+    },
+    {
+      "a": "T05.04",
+      "b": "T09.01",
+      "count": 308
+    },
+    {
+      "a": "T05.06",
+      "b": "T09.01",
+      "count": 302
+    },
+    {
+      "a": "T05.01",
+      "b": "T09.01",
+      "count": 301
+    },
+    {
+      "a": "T04.04",
+      "b": "T09.01",
+      "count": 299
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.05",
+      "count": 298
+    },
+    {
+      "a": "T05.05",
+      "b": "T09.01",
+      "count": 298
+    },
+    {
+      "a": "T03.07",
+      "b": "T09.01",
+      "count": 298
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.07",
+      "count": 297
+    },
+    {
+      "a": "T05.07",
+      "b": "T09.01",
+      "count": 297
+    },
+    {
+      "a": "T05.10",
+      "b": "T09.01",
+      "count": 297
+    },
+    {
+      "a": "T02.07",
+      "b": "T09.01",
+      "count": 297
+    },
+    {
+      "a": "T02.04",
+      "b": "T09.01",
+      "count": 296
+    },
+    {
+      "a": "T01.05",
+      "b": "T09.01",
+      "count": 296
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.06",
+      "count": 296
+    },
+    {
+      "a": "T04.02",
+      "b": "T10.02",
+      "count": 295
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.07",
+      "count": 291
+    },
+    {
+      "a": "T03.06",
+      "b": "T09.01",
+      "count": 291
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.04",
+      "count": 290
+    },
+    {
+      "a": "T07.05",
+      "b": "T09.01",
+      "count": 289
+    },
+    {
+      "a": "T01.06",
+      "b": "T09.01",
+      "count": 284
+    },
+    {
+      "a": "T01.04",
+      "b": "T09.01",
+      "count": 282
+    },
+    {
+      "a": "T06.06",
+      "b": "T09.01",
+      "count": 282
+    },
+    {
+      "a": "T07.04",
+      "b": "T09.01",
+      "count": 281
+    },
+    {
+      "a": "T02.05",
+      "b": "T09.01",
+      "count": 279
+    },
+    {
+      "a": "T08.04",
+      "b": "T09.01",
+      "count": 279
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.07",
+      "count": 278
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.04",
+      "count": 277
+    },
+    {
+      "a": "T06.07",
+      "b": "T09.01",
+      "count": 277
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.06",
+      "count": 276
+    },
+    {
+      "a": "T01.07",
+      "b": "T09.01",
+      "count": 275
+    },
+    {
+      "a": "T07.07",
+      "b": "T09.01",
+      "count": 275
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.04",
+      "count": 274
+    },
+    {
+      "a": "T08.07",
+      "b": "T09.01",
+      "count": 273
+    },
+    {
+      "a": "T06.05",
+      "b": "T09.01",
+      "count": 268
+    },
+    {
+      "a": "T05.08",
+      "b": "T12.06",
+      "count": 267
+    },
+    {
+      "a": "T07.06",
+      "b": "T09.01",
+      "count": 266
+    },
+    {
+      "a": "T08.06",
+      "b": "T09.01",
+      "count": 265
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.06",
+      "count": 264
+    },
+    {
+      "a": "T02.06",
+      "b": "T09.01",
+      "count": 264
+    },
+    {
+      "a": "T06.04",
+      "b": "T09.01",
+      "count": 263
+    },
+    {
+      "a": "T04.07",
+      "b": "T09.01",
+      "count": 259
+    },
+    {
+      "a": "T08.05",
+      "b": "T09.01",
+      "count": 257
+    },
+    {
+      "a": "T03.04",
+      "b": "T09.01",
+      "count": 248
+    },
+    {
+      "a": "T03.05",
+      "b": "T09.01",
+      "count": 247
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.05",
+      "count": 240
+    },
+    {
+      "a": "T04.06",
+      "b": "T09.01",
+      "count": 211
+    },
+    {
+      "a": "T02.10",
+      "b": "T09.01",
+      "count": 183
+    },
+    {
+      "a": "T04.02",
+      "b": "T11.01",
+      "count": 182
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.10",
+      "count": 176
+    },
+    {
+      "a": "T01.03",
+      "b": "T04.02",
+      "count": 174
+    },
+    {
+      "a": "T04.09",
+      "b": "T09.01",
+      "count": 170
+    },
+    {
+      "a": "T02.08",
+      "b": "T09.01",
+      "count": 170
+    },
+    {
+      "a": "T04.02",
+      "b": "T08.01",
+      "count": 166
+    },
+    {
+      "a": "T04.02",
+      "b": "T08.03",
+      "count": 165
+    },
+    {
+      "a": "T04.02",
+      "b": "T12.03",
+      "count": 165
+    },
+    {
+      "a": "T04.02",
+      "b": "T07.03",
+      "count": 165
+    },
+    {
+      "a": "T02.01",
+      "b": "T04.02",
+      "count": 161
+    },
+    {
+      "a": "T03.10",
+      "b": "T09.01",
+      "count": 161
+    },
+    {
+      "a": "T03.03",
+      "b": "T04.02",
+      "count": 159
+    },
+    {
+      "a": "T07.10",
+      "b": "T09.01",
+      "count": 159
+    },
+    {
+      "a": "T03.01",
+      "b": "T04.02",
+      "count": 158
+    },
+    {
+      "a": "T04.02",
+      "b": "T11.02",
+      "count": 156
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.10",
+      "count": 155
+    },
+    {
+      "a": "T04.10",
+      "b": "T09.01",
+      "count": 153
+    },
+    {
+      "a": "T04.02",
+      "b": "T12.01",
+      "count": 152
+    },
+    {
+      "a": "T08.08",
+      "b": "T09.01",
+      "count": 151
+    },
+    {
+      "a": "T04.02",
+      "b": "T10.01",
+      "count": 151
+    },
+    {
+      "a": "T03.08",
+      "b": "T09.01",
+      "count": 150
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.08",
+      "count": 150
+    },
+    {
+      "a": "T04.02",
+      "b": "T11.03",
+      "count": 149
+    },
+    {
+      "a": "T04.02",
+      "b": "T05.08",
+      "count": 149
+    },
+    {
+      "a": "T09.01",
+      "b": "T10.09",
+      "count": 149
+    },
+    {
+      "a": "T04.02",
+      "b": "T12.02",
+      "count": 148
+    },
+    {
+      "a": "T04.02",
+      "b": "T06.01",
+      "count": 148
+    },
+    {
+      "a": "T03.02",
+      "b": "T04.02",
+      "count": 147
+    },
+    {
+      "a": "T09.01",
+      "b": "T12.08",
+      "count": 147
+    },
+    {
+      "a": "T09.01",
+      "b": "T11.08",
+      "count": 145
+    },
+    {
+      "a": "T04.02",
+      "b": "T06.02",
+      "count": 145
+    },
+    {
+      "a": "T06.10",
+      "b": "T09.01",
+      "count": 144
+    },
+    {
+      "a": "T08.09",
+      "b": "T09.01",
+      "count": 144
+    },
+    {
+      "a": "T01.01",
+      "b": "T04.02",
+      "count": 144
+    },
+    {
+      "a": "T01.02",
+      "b": "T04.02",
+      "count": 144
+    },
+    {
+      "a": "T08.10",
+      "b": "T09.01",
+      "count": 143
+    },
+    {
+      "a": "T02.01",
+      "b": "T11.01",
+      "count": 143
+    }
+  ],
+  "unique_combinations": 3333,
+  "exclusions": [
+    "one camera, topology, lighting and glyph grammar per genome",
+    "static Common/Uncommon/Rare/Epic motion",
+    "sparse texture compatibility repairs"
+  ],
+  "quality_mean": 76.34471647164716,
+  "ranking_method": "sum of inverse observed trait frequencies; ranks are separate from fixed rarity tiers"
+}
