@@ -1,0 +1,279 @@
+{
+  "passed": true,
+  "edition": 615,
+  "nearest_edition": 15,
+  "initial": {
+    "unique": false,
+    "reason": "perceptual silhouette/tone duplicate",
+    "nearest_edition": 15,
+    "silhouette_distance": 0.002188,
+    "tonal_mse": 4.2e-05,
+    "silhouette_iou": 0.99343,
+    "ssim": 0.993794,
+    "perceptual_hamming": 2,
+    "glyph_histogram_distance": 0.005312
+  },
+  "final": {
+    "unique": true,
+    "nearest_edition": 15,
+    "silhouette_distance": 0.061563,
+    "tonal_mse": 0.009425,
+    "silhouette_iou": 0.761047,
+    "ssim": 0.756142,
+    "perceptual_hamming": 8,
+    "glyph_histogram_distance": 0.028125
+  },
+  "attempts": 1,
+  "quality_score": 93.75,
+  "occupancy": 0.7875,
+  "deterministic_repair_log": [
+    {
+      "attempt": 1,
+      "reason": [
+        "perceptual duplicate"
+      ],
+      "path": [
+        "reinforce cavity and material contrast",
+        "separate overlapping anatomy by cumulative projection"
+      ],
+      "previous_fingerprint": "db5c450a6ddcefb8bb0215e992968660195d41460f4002f206a069e46608c519",
+      "updated_fingerprint": "09f4be2b25c6f7d578087fca9ccf251acb5397579a549de5831423bd444dc808",
+      "pre": {
+        "quality_score": 93.89,
+        "density": 0.3319,
+        "occupied_cells": 2124,
+        "components": 1,
+        "coherence": 1.0,
+        "center": [
+          0.4819,
+          0.5365
+        ],
+        "balance": 0.9185,
+        "clipping": 0.0,
+        "tonal_contrast": 0.1173,
+        "depth_span": 2.4788,
+        "normal_spread": 0.17,
+        "edge_separation": 0.806,
+        "distinct_glyphs": 21,
+        "visible_objects": 39,
+        "grid": [
+          80,
+          80
+        ],
+        "accepted": true,
+        "reasons": [],
+        "visual_review_required": true,
+        "version": "4.5.0",
+        "subject_bbox": [
+          8,
+          14,
+          71,
+          66
+        ],
+        "subject_span": [
+          0.7875,
+          0.65
+        ],
+        "dimension_occupancy": 0.7875,
+        "isolated_detail_fraction": 0.0,
+        "checks": {
+          "frame_occupancy": 0.9583,
+          "shape_clarity": 1.0,
+          "noise_control": 1.0,
+          "subject_confidence": 0.9185,
+          "composition_balance": 0.9185,
+          "presentation_readability": 0.8211,
+          "motion_readability": null,
+          "trait_expression": {
+            "registered": true,
+            "geometry_coverage": 39
+          },
+          "fusion_coherence": 1.0,
+          "nft_appeal": 0.9389
+        },
+        "interpretation": "engineering proxies, not trained semantic recognition or market valuation"
+      },
+      "post": {
+        "quality_score": 93.75,
+        "density": 0.3406,
+        "occupied_cells": 2180,
+        "components": 1,
+        "coherence": 1.0,
+        "center": [
+          0.4757,
+          0.546
+        ],
+        "balance": 0.896,
+        "clipping": 0.0,
+        "tonal_contrast": 0.1199,
+        "depth_span": 2.3987,
+        "normal_spread": 0.1863,
+        "edge_separation": 0.7864,
+        "distinct_glyphs": 21,
+        "visible_objects": 40,
+        "grid": [
+          80,
+          80
+        ],
+        "accepted": true,
+        "reasons": [],
+        "visual_review_required": true,
+        "version": "4.5.0",
+        "subject_bbox": [
+          9,
+          14,
+          72,
+          66
+        ],
+        "subject_span": [
+          0.7875,
+          0.65
+        ],
+        "dimension_occupancy": 0.7875,
+        "isolated_detail_fraction": 0.0,
+        "checks": {
+          "frame_occupancy": 0.9583,
+          "shape_clarity": 1.0,
+          "noise_control": 1.0,
+          "subject_confidence": 0.896,
+          "composition_balance": 0.896,
+          "presentation_readability": 0.8393,
+          "motion_readability": null,
+          "trait_expression": {
+            "registered": true,
+            "geometry_coverage": 40
+          },
+          "fusion_coherence": 1.0,
+          "nft_appeal": 0.9375
+        },
+        "interpretation": "engineering proxies, not trained semantic recognition or market valuation"
+      },
+      "outcome": "requires uniqueness revalidation"
+    },
+    {
+      "attempt": 1,
+      "reason": [
+        "safe-margin subject centering"
+      ],
+      "path": [
+        "subject-only effective bounds",
+        "camera-plane recenter",
+        "camera refit"
+      ],
+      "previous_fingerprint": "0faeb04cd08ec3b07bc29aa25231100e844c30fac22e1caf3127c23729c00567",
+      "updated_fingerprint": "09f4be2b25c6f7d578087fca9ccf251acb5397579a549de5831423bd444dc808",
+      "pre": {
+        "quality_score": 95.33,
+        "density": 0.3402,
+        "occupied_cells": 2177,
+        "components": 1,
+        "coherence": 1.0,
+        "center": [
+          0.4967,
+          0.5328
+        ],
+        "balance": 0.9341,
+        "clipping": 0.0,
+        "tonal_contrast": 0.1195,
+        "depth_span": 2.4077,
+        "normal_spread": 0.1925,
+        "edge_separation": 0.7905,
+        "distinct_glyphs": 19,
+        "visible_objects": 40,
+        "grid": [
+          80,
+          80
+        ],
+        "accepted": true,
+        "reasons": [],
+        "visual_review_required": true,
+        "version": "4.5.0",
+        "subject_bbox": [
+          10,
+          13,
+          74,
+          65
+        ],
+        "subject_span": [
+          0.8,
+          0.65
+        ],
+        "dimension_occupancy": 0.8,
+        "isolated_detail_fraction": 0.0,
+        "checks": {
+          "frame_occupancy": 1.0,
+          "shape_clarity": 1.0,
+          "noise_control": 1.0,
+          "subject_confidence": 0.9341,
+          "composition_balance": 0.9341,
+          "presentation_readability": 0.8365,
+          "motion_readability": null,
+          "trait_expression": {
+            "registered": true,
+            "geometry_coverage": 40
+          },
+          "fusion_coherence": 1.0,
+          "nft_appeal": 0.9533
+        },
+        "interpretation": "engineering proxies, not trained semantic recognition or market valuation"
+      },
+      "post": {
+        "quality_score": 93.75,
+        "density": 0.3406,
+        "occupied_cells": 2180,
+        "components": 1,
+        "coherence": 1.0,
+        "center": [
+          0.4757,
+          0.546
+        ],
+        "balance": 0.896,
+        "clipping": 0.0,
+        "tonal_contrast": 0.1199,
+        "depth_span": 2.3987,
+        "normal_spread": 0.1863,
+        "edge_separation": 0.7864,
+        "distinct_glyphs": 21,
+        "visible_objects": 40,
+        "grid": [
+          80,
+          80
+        ],
+        "accepted": true,
+        "reasons": [],
+        "visual_review_required": true,
+        "version": "4.5.0",
+        "subject_bbox": [
+          9,
+          14,
+          72,
+          66
+        ],
+        "subject_span": [
+          0.7875,
+          0.65
+        ],
+        "dimension_occupancy": 0.7875,
+        "isolated_detail_fraction": 0.0,
+        "checks": {
+          "frame_occupancy": 0.9583,
+          "shape_clarity": 1.0,
+          "noise_control": 1.0,
+          "subject_confidence": 0.896,
+          "composition_balance": 0.896,
+          "presentation_readability": 0.8393,
+          "motion_readability": null,
+          "trait_expression": {
+            "registered": true,
+            "geometry_coverage": 40
+          },
+          "fusion_coherence": 1.0,
+          "nft_appeal": 0.9375
+        },
+        "interpretation": "engineering proxies, not trained semantic recognition or market valuation"
+      },
+      "outcome": "accepted"
+    }
+  ],
+  "thresholds_unchanged": true
+}

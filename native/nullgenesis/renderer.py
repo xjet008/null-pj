@@ -40,7 +40,7 @@ class Renderer:
         if backend not in ('auto','cuda','cpu'):raise ValueError('Backend must be auto, cuda or cpu')
         started=time.perf_counter();self.lock=threading.RLock();self.atlas,self.coverage,self.font=calibration();self.driver=None;self.fallback_reason=None;self.pool={};self.allocations=0;self.render_count=0;self.last_ms=0;self.last_gpu_ms=0;self.prepared=None
         if backend!='cpu':
-            try:self.driver=Driver((ROOT/'render.cu').read_text(encoding='utf-8')+'\n'+(ROOT/'motion.cu').read_text(encoding='utf-8'),device=device)
+            try:self.driver=Driver((ROOT/'render.cu').read_text(encoding='utf-8')+'\n'+(ROOT/'motion.cu').read_text(encoding='utf-8')+'\n'+(ROOT/'encoder.cu').read_text(encoding='utf-8'),device=device)
             except Exception as error:
                 if backend=='cuda':raise
                 self.fallback_reason=str(error)
@@ -58,9 +58,11 @@ class Renderer:
         with self.lock:
             free,total=0,0
             if self.driver:self.driver.activate();free,total=self.driver.memory()
-            return dict(version='3.0.0',backend=self.backend,cuda=bool(self.driver),device=self.driver.name if self.driver else 'NumPy CPU reference',device_index=self.driver.device if self.driver else None,compute_capability=self.driver.arch if self.driver else None,devices=self.driver.devices if self.driver else [],fontName=self.font['font'],font=self.font,coverage=self.coverage.tolist(),last_gpu_ms=self.last_gpu_ms,last_wall_ms=self.last_ms,startup_ms=round(self.startup_ms,3),compile_ms=round(self.driver.compile_ms,3) if self.driver else 0,free_vram_mb=round(free/1048576,1),total_vram_mb=round(total/1048576,1),pool_bytes=sum(b.size for b in self.pool.values()),allocations=self.allocations,render_count=self.render_count,supported_grids=[[30,30],[50,50]],fallback_reason=self.fallback_reason)
+            return dict(version='4.5.0',backend=self.backend,cuda=bool(self.driver),device=self.driver.name if self.driver else 'NumPy CPU reference',device_index=self.driver.device if self.driver else None,compute_capability=self.driver.arch if self.driver else None,devices=self.driver.devices if self.driver else [],fontName=self.font['font'],font=self.font,coverage=self.coverage.tolist(),last_gpu_ms=self.last_gpu_ms,last_wall_ms=self.last_ms,startup_ms=round(self.startup_ms,3),compile_ms=round(self.driver.compile_ms,3) if self.driver else 0,compile_cache_hit=bool(self.driver and self.driver.cache_hit),free_vram_mb=round(free/1048576,1),total_vram_mb=round(total/1048576,1),pool_bytes=sum(b.size for b in self.pool.values()),allocations=self.allocations,render_count=self.render_count,supported_grids=[[n,n] for n in (30,50,64,80,96,120)],presentation_sizes=[300,600,1200],encoder='CUDA depth/normal/coverage contour with row error diffusion',fallback_reason=self.fallback_reason)
     def _prepare(self,g):
         scene=np.ascontiguousarray(g['scene'],np.float32);cfg=configuration(g);grammar=np.frombuffer(g['grammar'].encode('ascii'),np.uint8).copy();coverage=np.array(g['coverage'],np.float32)
+        self.grammar_bytes=grammar
+        self.encoder_parameters=g.get('encoder',dict(temporal_lock=.82,depth_weight=.32,noise_budget=.035))
         if self.driver:
             self.driver.activate()
             signature=g['fingerprint']
@@ -68,6 +70,7 @@ class Renderer:
                 self._buffer('scene',160*16*4).upload(scene);self._buffer('config',40*4).upload(cfg);self._buffer('grammar',95).upload(grammar);self._buffer('coverage',95*4).upload(coverage);self._buffer('motion_params',5*4).upload(motion_parameters(g));self.prepared=signature
         return scene,cfg,grammar,coverage
     def render(self,g,index=0,staticA=-1,legacy_reconstruction=False):
+        if g.get('genome_version')=='web-4.5.0' and not self.driver:raise RuntimeError('V4.5 canonical generation requires NVIDIA CUDA; browser and V3 CPU rendering remain separate preview/reference backends')
         validate_genome(g);started=time.perf_counter();grid=list(map(int,g.get('grid',[30,30])));count=grid[0]*grid[1];total=int(g['animation']['fps']*g['animation']['seconds']);index=int(index)%total;v3=g['genome_version']!='web-1.0.0';legendary=g.get('rarity')=='LEGENDARY' or g['animation'].get('legendary',False)
         with self.lock:
             scene,cfg,grammar,coverage=self._prepare(g)
@@ -87,6 +90,8 @@ class Renderer:
                     with d.measure():
                         d.enqueue('animate_scene',len(scene),self.pool['scene'],posed,len(scene),self.pool['motion_params'],0,total)
                         d.enqueue('render_cells',count,posed,len(scene),self.pool['config'],self.pool['coverage'],self.pool['grammar'],len(grammar),glyph,cells,int(g.get('samples',1)))
+                if g['genome_version']=='web-4.5.0':
+                    with d.measure():glyph,cells=self._encode(glyph,cells,grid,1,'encoded')
                 if fragments:
                     depth=self._buffer('depth',count*8);paths=self._buffer('paths',count*12);out=self._buffer('frame_glyph',count);values=self._buffer('frame_cells',count*48)
                     # Existing fragment modes are retained. Explicit staticA is an
@@ -114,6 +119,10 @@ class Renderer:
     def _result(self,g,glyph,cells,cfg,index,wall,gpu):
         grid=list(map(int,g.get('grid',[30,30])));text=ascii_text(glyph,grid)
         return dict(glyph=glyph,cells=cells,packet=packet(glyph,cells),ascii=text,grid=list(grid),frame=index,backend=self.backend,wall_ms=round(wall,3),gpu_ms=round(gpu,3),canonical_hash=hashlib.sha256(text.encode('ascii')).hexdigest(),cfg=cfg,genome_fingerprint=g['fingerprint'])
+    def _encode(self,glyph,cells,grid,batch,prefix):
+        count=grid[0]*grid[1]*batch;out=self._buffer(prefix+'_glyph',count);values=self._buffer(prefix+'_cells',count*48)
+        e=self.encoder_parameters;self.driver.enqueue('encode_rows',grid[1]*batch,glyph,cells,self.pool['scene'],self.pool['config'],self.pool['coverage'],self.pool['grammar'],len(self.grammar_bytes),out,values,float(e['temporal_lock']),float(e['depth_weight']),float(e['noise_budget']),batch)
+        return out,values
     def frame(self,base,g,index,staticA=-1):
         # V3 rerenders the posed geometry; it never projects a stale silhouette.
         return self.render(g,index,staticA,legacy_reconstruction=g['genome_version']=='web-1.0.0')
@@ -142,6 +151,8 @@ class Renderer:
                 with d.measure():
                     d.enqueue('animate_scene_batch',n*len(scene),self.pool['scene'],posed,len(scene),self.pool['motion_params'],self.pool['seq_indices'],total,n)
                     d.enqueue('render_batch',n*count,posed,self.pool['seq_count'],self.pool['seq_config'],self.pool['coverage'],self.pool['seq_grammar'],self.pool['seq_lengths'],glyph,cells,int(g.get('samples',1)),n)
+                    if g['genome_version']=='web-4.5.0':
+                        glyph,cells=self._encode(glyph,cells,grid,n,'seq_encoded');final_glyph=glyph;final_cells=cells
                     if legendary:
                         final_glyph=self._buffer('seq_out_glyph',n*count);final_cells=self._buffer('seq_out_cells',n*count*48);depth=self._buffer('seq_depth',n*count*8);paths=self._buffer('seq_paths',n*count*12)
                         d.enqueue('copy_render',n*count,glyph,cells,final_glyph,final_cells,n*count)
@@ -167,7 +178,7 @@ class Renderer:
     def render_batch(self,genomes,index=0):
         if not genomes:return []
         for g in genomes:validate_genome(g)
-        if not self.driver or index or len(genomes)==1:return [self.render(g,index) for g in genomes]
+        if not self.driver or index or len(genomes)==1 or any(g['genome_version']=='web-4.5.0' for g in genomes):return [self.render(g,index) for g in genomes]
         if len({tuple(g.get('grid',[30,30])) for g in genomes})!=1:return [self.render(g,index) for g in genomes]
         if len(genomes)>self.adaptive_batch_size(genomes):
             size=self.adaptive_batch_size(genomes);return [r for offset in range(0,len(genomes),size) for r in self.render_batch(genomes[offset:offset+size],index)]
@@ -203,6 +214,16 @@ class Renderer:
             return output
     def png(self,result,scale=1):
         stream=io.BytesIO();self.image(result,13*scale,24*scale).save(stream,format='PNG');return stream.getvalue()
+    def square_image(self,result,size=600):
+        if size not in (300,600,1200):raise ValueError('Square presentation must be 300, 600 or 1200 pixels')
+        if not self.driver:raise RuntimeError('V4.5 square canonical raster requires NVIDIA CUDA')
+        with self.lock:
+            d=self.driver;d.activate();gx,gy=result['grid'];count=gx*gy
+            gb=self._buffer('square_glyph',count).upload(result['glyph']);cb=self._buffer('square_cells',count*48).upload(result['cells']);pixels=self._buffer('square_pixels',size*size*3)
+            with d.measure():d.enqueue('raster_square',size*size,gb,cb,self.pool['atlas'],self.atlas.shape[2],self.atlas.shape[1],pixels,size,gx,gy)
+            return Image.fromarray(pixels.download(np.uint8,(size,size,3)))
+    def square_png(self,result,size=600):
+        stream=io.BytesIO();self.square_image(result,size).save(stream,format='PNG');return stream.getvalue()
     def close(self):
         with self.lock:
             if self.driver:

@@ -127,8 +127,9 @@ export class Studio {
 }
 export function decodeAnimation(a){
  if(a.frames)return a;
- if(a.encoding!=='interleaved-u8'||!Array.isArray(a.grid)||![30,50].includes(a.grid[0])||a.grid[0]!==a.grid[1]||!Number.isInteger(a.frame_count)||a.frame_count<24||a.frame_count>180)throw Error('Invalid cached animation format.');
+ if(!['interleaved-u8','interleaved-xor-u8'].includes(a.encoding)||!Array.isArray(a.grid)||![30,50,64,80,96,120].includes(a.grid[0])||a.grid[0]!==a.grid[1]||!Number.isInteger(a.frame_count)||a.frame_count<24||a.frame_count>180)throw Error('Invalid cached animation format.');
  const [w,h]=a.grid,n=w*h,bytes=Uint8Array.from(atob(a.cells),c=>c.charCodeAt(0));if(bytes.length!==a.frame_count*n*2)throw Error('Animation cell stream is truncated.');
+ if(a.encoding==='interleaved-xor-u8')for(let f=1;f<a.frame_count;f++)for(let i=0;i<n*2;i++)bytes[f*n*2+i]^=bytes[(f-1)*n*2+i];
  const frames=[],luminance=[];for(let f=0;f<a.frame_count;f++){let ascii='',gray=[];for(let i=0;i<n;i++){const c=bytes[(f*n+i)*2],v=bytes[(f*n+i)*2+1];if(c<32||c>126)throw Error('Animation contains a non-ASCII symbol.');ascii+=String.fromCharCode(c);if((i+1)%w===0)ascii+='\n';gray.push(v);}frames.push(ascii);luminance.push(gray);}
  const {cells,...metadata}=a;return {...metadata,frames,luminance};
 }

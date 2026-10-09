@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "canonical_hashes": 3333,
+  "genomes": 3333,
+  "motion_trajectories": 3333,
+  "scope": "all candidate comparisons: exact ASCII/genome/geometry, silhouette and tonal signatures, perceptual hash, glyph histograms and sampled motion trajectory"
+}

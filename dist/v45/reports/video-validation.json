@@ -1,0 +1,613 @@
+{
+  "passed": true,
+  "version": "4.5.0",
+  "legendary_editions": 23,
+  "decoded_videos": 46,
+  "decoded_frames": 6624,
+  "presentation": [
+    600,
+    600
+  ],
+  "scope": "CPU decoding of every CUDA-rendered video; complete decoded frame count and first-frame PNG comparison",
+  "seconds": 33.35,
+  "items": [
+    {
+      "edition": 6,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.1166
+    },
+    {
+      "edition": 6,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.2031
+    },
+    {
+      "edition": 495,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.09089
+    },
+    {
+      "edition": 495,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.1576
+    },
+    {
+      "edition": 767,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.10524
+    },
+    {
+      "edition": 767,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.14118
+    },
+    {
+      "edition": 1046,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.10936
+    },
+    {
+      "edition": 1046,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.21131
+    },
+    {
+      "edition": 1345,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.17581
+    },
+    {
+      "edition": 1345,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.28533
+    },
+    {
+      "edition": 1437,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.09587
+    },
+    {
+      "edition": 1437,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.17417
+    },
+    {
+      "edition": 1452,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.11183
+    },
+    {
+      "edition": 1452,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.1954
+    },
+    {
+      "edition": 1547,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.12987
+    },
+    {
+      "edition": 1547,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.18996
+    },
+    {
+      "edition": 1615,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.12193
+    },
+    {
+      "edition": 1615,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.22374
+    },
+    {
+      "edition": 2293,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.20809
+    },
+    {
+      "edition": 2293,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.14464
+    },
+    {
+      "edition": 2451,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.12411
+    },
+    {
+      "edition": 2451,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.20743
+    },
+    {
+      "edition": 2453,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.17154
+    },
+    {
+      "edition": 2453,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.13986
+    },
+    {
+      "edition": 2614,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.15742
+    },
+    {
+      "edition": 2614,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.20078
+    },
+    {
+      "edition": 2668,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.09105
+    },
+    {
+      "edition": 2668,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.14853
+    },
+    {
+      "edition": 2683,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.15023
+    },
+    {
+      "edition": 2683,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.13997
+    },
+    {
+      "edition": 2785,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.18079
+    },
+    {
+      "edition": 2785,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.31372
+    },
+    {
+      "edition": 2853,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.21179
+    },
+    {
+      "edition": 2853,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.15342
+    },
+    {
+      "edition": 2938,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.14943
+    },
+    {
+      "edition": 2938,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.16104
+    },
+    {
+      "edition": 2978,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.13058
+    },
+    {
+      "edition": 2978,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.22384
+    },
+    {
+      "edition": 3043,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.15154
+    },
+    {
+      "edition": 3043,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.13393
+    },
+    {
+      "edition": 3180,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.09731
+    },
+    {
+      "edition": 3180,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.16055
+    },
+    {
+      "edition": 3275,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.11652
+    },
+    {
+      "edition": 3275,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.19244
+    },
+    {
+      "edition": 3291,
+      "format": "mp4",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "h264",
+      "first_frame_mean_absolute_error": 1.12118
+    },
+    {
+      "edition": 3291,
+      "format": "webm",
+      "frames": 144,
+      "fps": 12.0,
+      "size": [
+        600,
+        600
+      ],
+      "duration": 12.0,
+      "codec": "vp9",
+      "first_frame_mean_absolute_error": 0.18218
+    }
+  ]
+}

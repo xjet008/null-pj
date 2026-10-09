@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import sys
 import time
+import hashlib,json
 from contextlib import contextmanager
 import numpy as np
 
@@ -93,7 +94,7 @@ class Driver:
         """Submit without a host barrier. The renderer measures the entire pipeline."""
         if name not in self.functions:
             fn=C.c_void_p();self.check(self.dll.cuModuleGetFunction(C.byref(fn),self.module,name.encode()),'find kernel '+name);self.functions[name]=fn
-        values=[C.c_uint64(a.ptr.value) if isinstance(a,DeviceBuffer) else C.c_uint(a) if isinstance(a,np.uint32) else C.c_int(a) for a in args]
+        values=[C.c_uint64(a.ptr.value) if isinstance(a,DeviceBuffer) else C.c_uint(a) if isinstance(a,np.uint32) else C.c_float(float(a)) if isinstance(a,(float,np.floating)) else C.c_int(a) for a in args]
         params=(C.c_void_p*len(values))(*(C.cast(C.byref(a),C.c_void_p) for a in values))
         self.check(self.dll.cuLaunchKernel(self.functions[name],(count+255)//256,1,1,256,1,1,0,None,params,None),'launch '+name)
     @contextmanager
@@ -127,6 +128,15 @@ class Driver:
         candidates=[p for p in candidates if 'builtins' not in p.name and '.alt' not in p.name]
         if not candidates: raise CUDAError('NVRTC is missing. Install native/requirements.txt or set CUDA_PATH to the official CUDA Toolkit.')
         selected=candidates[0];self.dll_directory=os.add_dll_directory(str(selected.parent))
+        # Source, target architecture and compiler binary identity form the cache
+        # key. A digest check rejects partial or modified compiled artifacts.
+        identity=hashlib.sha256((source+self.arch+str(selected.resolve())+str(selected.stat().st_size)+str(selected.stat().st_mtime_ns)).encode()).hexdigest();cache=Path(__file__).resolve().parents[1]/'work/nvrtc-cache';cache.mkdir(parents=True,exist_ok=True);binary=cache/(identity+'.ptx');manifest=cache/(identity+'.json');self.cache_hit=False
+        if binary.is_file() and manifest.is_file():
+            try:
+                data=binary.read_bytes()
+                if hashlib.sha256(data).hexdigest()==json.loads(manifest.read_text())['sha256']:
+                    self.cache_hit=True;return data
+            except (OSError,ValueError,KeyError,TypeError):pass
         self.builtins=[C.WinDLL(str(p)) for p in selected.parent.glob('nvrtc-builtins64*.dll')]
         os.environ['PATH']=str(selected.parent)+os.pathsep+os.environ.get('PATH','')
         nv=C.CDLL(str(selected))
@@ -144,5 +154,6 @@ class Driver:
                 size=C.c_size_t();nv.nvrtcGetProgramLogSize(program,C.byref(size));log=C.create_string_buffer(size.value);nv.nvrtcGetProgramLog(program,log)
                 raise CUDAError('CUDA kernel compilation failed:\n'+log.value.decode())
             size=C.c_size_t();nv.nvrtcGetPTXSize(program,C.byref(size));ptx=C.create_string_buffer(size.value);nv.nvrtcGetPTX(program,ptx)
-            return ptx.raw
+            data=ptx.raw;token=str(os.getpid())+'-'+str(time.time_ns());temporary=binary.with_suffix('.'+token+'.tmp');temporary.write_bytes(data);os.replace(temporary,binary)
+            temporary=manifest.with_suffix('.'+token+'.tmp');temporary.write_text(json.dumps(dict(sha256=hashlib.sha256(data).hexdigest())));os.replace(temporary,manifest);return data
         finally: nv.nvrtcDestroyProgram(C.byref(program))

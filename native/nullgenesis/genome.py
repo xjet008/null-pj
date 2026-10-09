@@ -7,7 +7,7 @@ from decimal import Decimal
 import numpy as np
 
 CATEGORIES=('Back','Body','Eyewear','Features','Form','Headwear','Mask','Method','Motion','Palette','Stage')
-VERSIONS=('web-1.0.0','web-3.0.0','native-3.0.0')
+VERSIONS=('web-1.0.0','web-3.0.0','native-3.0.0','web-4.5.0')
 DEFAULT_RENDERING=dict(blend=.026,ambient=.12,fill=.22,ao=.72,rim=.23,contrast=1.1,contour=.7)
 
 def _number(value):return isinstance(value,(int,float)) and not isinstance(value,bool) and math.isfinite(value)
@@ -52,7 +52,8 @@ def validate_genome(g,verify=True):
     if not isinstance(g,dict) or g.get('genome_version') not in VERSIONS:raise ValueError('Unsupported native/browser genome version')
     v3=g['genome_version']!='web-1.0.0'
     grid=g.get('grid',[30,30])
-    if grid not in ([30,30],[50,50]):raise ValueError('Native grid must be 30x30 or 50x50')
+    allowed=([30,30],[50,50],[64,64],[80,80],[96,96],[120,120]) if g['genome_version']=='web-4.5.0' else ([30,30],[50,50])
+    if grid not in allowed:raise ValueError('Unsupported versioned native grid')
     if g['genome_version']=='web-1.0.0' and grid!=[30,30]:raise ValueError('Legacy DNA cannot be silently resized')
     rows=g.get('scene')
     if not isinstance(rows,list) or not 1<=len(rows)<=160 or any(not isinstance(r,list) or len(r)!=16 or any(not _number(x) or abs(x)>(160 if v3 and i in (11,13,15) else 100) for i,x in enumerate(r)) for r in rows):raise ValueError('Invalid scene rows')
@@ -91,6 +92,16 @@ def validate_genome(g,verify=True):
         for r in rows:
             if not _integer(r[13]) or r[13]<0 or not _integer(r[14]) or not 0<=r[14]<=4 or not _integer(r[15]) or r[15]<0:raise ValueError('Invalid geometry ownership')
         if np.all(cfg[7:10]==0) or cfg[0]>8 or cfg[2]>3 or not 0<=cfg[22]<=1:raise ValueError('Invalid V3 render bounds')
+    if g['genome_version']=='web-4.5.0':
+        e=g.get('encoder',{});c=g.get('composition',{});p=g.get('presentation',{})
+        budget=g.get('density_budget',{})
+        if not isinstance(budget,dict) or set(budget)!=set(('primary','secondary','tertiary','stage','ambient_code','motion')) or any(not _number(v) or not 0<v<=1 for v in budget.values()):raise ValueError('Invalid V4.5 layer density budget')
+        if e.get('version')!='4.5.0' or not _integer(e.get('method_variant')) or not 0<=e['method_variant']<20:raise ValueError('Invalid V4.5 encoder method')
+        for key in ('noise_budget','temporal_lock','depth_weight','edge_weight'):
+            if not _number(e.get(key)) or not 0<=e[key]<=1:raise ValueError('Invalid encoder parameter')
+        if not .65<=c.get('target_dimension',0)<=.88 or not 0<=c.get('safe_margin',-1)<=.15:raise ValueError('Invalid composition target')
+        if c.get('mode') not in ('Tight Portrait','Head-and-Torso','Half-Body','Full-Body','Wide Creature','Vertical Relic','Mask/Icon','Distributed Abstract'):raise ValueError('Invalid framing mode')
+        if p.get('width')!=p.get('height') or p.get('width') not in (300,600,1200):raise ValueError('Invalid square presentation')
     if verify:
         if not isinstance(g.get('fingerprint'),str) or g['fingerprint']!=fingerprint(g):raise ValueError('DNA fingerprint mismatch')
     return g
@@ -103,6 +114,8 @@ def configuration(g):
     else:cfg[27:34]=[0,.15,0,1,g['config'][13],1,0]
     cfg[34]=.32 if v3 else 0
     cfg[35]=-1
+    if g['genome_version']=='web-4.5.0':
+        cfg[36]=4.5;cfg[37]=g['encoder']['method_variant'];cfg[38]=g['encoder']['noise_budget'];cfg[39]=g['encoder']['edge_weight']
     return cfg
 
 def motion_parameters(g):

@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "animated": 3333,
+  "frames": 154272,
+  "tiers": {
+    "COMMON": {
+      "editions": 1900,
+      "frames": 68400,
+      "mean_pose_change": 0.12233942105263157,
+      "max_wrap_change": 0.26922,
+      "motion_values": 40
+    },
+    "UNCOMMON": {
+      "editions": 900,
+      "frames": 43200,
+      "mean_pose_change": 0.1379632,
+      "max_wrap_change": 0.25969,
+      "motion_values": 40
+    },
+    "RARE": {
+      "editions": 400,
+      "frames": 28800,
+      "mean_pose_change": 0.158656475,
+      "max_wrap_change": 0.21125,
+      "motion_values": 40
+    },
+    "EPIC": {
+      "editions": 110,
+      "frames": 10560,
+      "mean_pose_change": 0.1668960909090909,
+      "max_wrap_change": 0.20703,
+      "motion_values": 37
+    },
+    "LEGENDARY": {
+      "editions": 23,
+      "frames": 3312,
+      "mean_pose_change": 0.3043204347826087,
+      "max_wrap_change": 0.13484,
+      "motion_values": 15
+    }
+  },
+  "scope": "full stored timelines, CUDA geometry poses, repeated endpoints and preceding wrap frames"
+}

@@ -4,7 +4,7 @@ function sort(o){if(Array.isArray(o))return o.map(sort);if(o&&typeof o==='object
 export async function sha(text){const bytes=typeof text==='string'?new TextEncoder().encode(text):text;return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('')}
 export async function seal(g){delete g.fingerprint;g.fingerprint=await sha(canonical(g));return g}
 export async function checkGenome(g){
- if(!g||!['web-1.0.0','web-3.0.0'].includes(g.genome_version))throw Error('This laboratory genome version is not supported.');
+ if(!g||!['web-1.0.0','web-3.0.0','web-4.5.0'].includes(g.genome_version))throw Error('This laboratory genome version is not supported.');
  const copy=structuredClone(g);delete copy.fingerprint;if(await sha(canonical(copy))!==g.fingerprint)throw Error('DNA fingerprint mismatch.');
  if(!Array.isArray(g.scene)||!g.scene.length||g.scene.length>160||g.scene.some(r=>r.length!==16||r.some((x,i)=>!Number.isFinite(x)||Math.abs(x)>(isV3(g)&&[11,13,15].includes(i)?160:100))))throw Error('Invalid geometry.');
  for(const r of g.scene){if(!Number.isInteger(r[0])||r[0]<0||r[0]>11||r.slice(4,7).some(x=>x<.001)||r[0]===10&&r[12]<3)throw Error('Invalid primitive.');}
@@ -12,6 +12,14 @@ export async function checkGenome(g){
  if(!Array.isArray(g.coverage)||g.coverage.length!==95||g.coverage.some(x=>!Number.isFinite(x)||x<0||x>1)||typeof g.grammar!=='string'||g.grammar.length<1||g.grammar.length>95||!/^[\x20-\x7e]+$/.test(g.grammar)||![1,2,4].includes(g.samples))throw Error('Invalid glyph grammar.');
  const a=g.animation;if(!a||a.fps!==12||(!isV3(g)?a.seconds!==8:!Number.isInteger(a.seconds)||a.seconds<2||a.seconds>15)||!Number.isInteger(a.profile)||a.profile<0||a.profile>22||![a.assembly_variant,a.destruction_variant].every(x=>Number.isInteger(x)&&x>=0&&x<10))throw Error('Invalid motion definition.');
  if(!isV3(g)&&g.grid!==undefined&&dimensions(g).width!==30)throw Error('Legacy DNA requires its original 30 by 30 grid.');
+ if(g.genome_version==='web-3.0.0'&&!['30,30','50,50'].includes(String(g.grid)))throw Error('V3 DNA requires its frozen native grid.');
+ if(g.genome_version==='web-4.5.0'){
+  const budget=g.density_budget;if(!budget||Object.keys(budget).length!==6||['primary','secondary','tertiary','stage','ambient_code','motion'].some(k=>!Number.isFinite(budget[k])||budget[k]<=0||budget[k]>1))throw Error('Invalid V4.5 layer density budget.');
+  if(!g.encoder||g.encoder.version!=='4.5.0'||!Number.isInteger(g.encoder.method_variant)||g.encoder.method_variant<0||g.encoder.method_variant>=20)throw Error('Invalid V4.5 encoder.');
+  for(const key of ['noise_budget','temporal_lock','depth_weight','edge_weight'])if(!Number.isFinite(g.encoder[key])||g.encoder[key]<0||g.encoder[key]>1)throw Error('Invalid encoder parameter.');
+  const c=g.composition;if(!c||!['Tight Portrait','Head-and-Torso','Half-Body','Full-Body','Wide Creature','Vertical Relic','Mask/Icon','Distributed Abstract'].includes(c.mode)||!Number.isFinite(c.target_dimension)||c.target_dimension<.65||c.target_dimension>.88||!Number.isFinite(c.safe_margin)||c.safe_margin<0||c.safe_margin>.15)throw Error('Invalid V4.5 composition.');
+  if(!g.presentation||g.presentation.width!==g.presentation.height||![300,600,1200].includes(g.presentation.width))throw Error('Invalid presentation.');
+ }
  if(isV3(g)){
   dimensions(g);if(!Array.isArray(g.grid))throw Error('V3 DNA requires a native ASCII grid.');
   const m=g.motion;if(!m||typeof m!=='object'||!Number.isInteger(m.kind??m.type)||(m.kind??m.type)<0||(m.kind??m.type)>9||!Number.isFinite(m.amplitude??m.intensity)||(m.amplitude??m.intensity)<0||(m.amplitude??m.intensity)>1||!Number.isInteger(m.speed)||m.speed<1||m.speed>4||!Number.isFinite(m.phase)||Math.abs(m.phase)>Math.PI*2||a.enabled!==true)throw Error('Invalid V3 motion definition.');
@@ -62,7 +70,7 @@ export class Engine {
   const existing=this.pools.get(key);if(existing&&existing.size>=size)return existing;
   if(existing){existing.buffers.forEach(b=>b.destroy());existing.back.destroy();this.metrics.gpuBytes-=existing.bytes;}
   const limits=this.device.limits;if(size>limits.maxStorageBufferBindingSize||size>limits.maxBufferSize)throw Error('This raster size exceeds the GPU allocation limit.');
-  const sizes=[160*16*4,64*4,key==='pixels'?this.atlas.byteLength:95*4,95*4,size,2500*12*4,2500*4,2500*3*4],buffers=sizes.map((bytes,i)=>this.device.createBuffer({size:Math.max(32,bytes),usage:GPUBufferUsage.STORAGE|GPUBufferUsage.COPY_DST|(i===4?GPUBufferUsage.COPY_SRC:0)})),back=this.device.createBuffer({size,usage:GPUBufferUsage.COPY_DST|GPUBufferUsage.MAP_READ}),bytes=sizes.reduce((a,b)=>a+b,0)+size;
+  const capacity=14400,sizes=[160*16*4,64*4,key==='pixels'?this.atlas.byteLength:95*4,95*4,size,capacity*12*4,capacity*4,capacity*3*4],buffers=sizes.map((bytes,i)=>this.device.createBuffer({size:Math.max(32,bytes),usage:GPUBufferUsage.STORAGE|GPUBufferUsage.COPY_DST|(i===4?GPUBufferUsage.COPY_SRC:0)})),back=this.device.createBuffer({size,usage:GPUBufferUsage.COPY_DST|GPUBufferUsage.MAP_READ}),bytes=sizes.reduce((a,b)=>a+b,0)+size;
   const pool={buffers,back,size,bytes,group:this.device.createBindGroup({layout:this.layout,entries:buffers.map((buffer,binding)=>({binding,resource:{buffer}}))})};this.pools.set(key,pool);this.metrics.allocations+=9;this.metrics.gpuBytes+=bytes;if(key==='pixels')this.device.queue.writeBuffer(buffers[2],0,this.atlas);return pool;
  }
  async compute(g,base,entries,pixels=false,index=0,staticA=-1,scale=1){

@@ -1,12 +1,12 @@
 export const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
-export const isV3=g=>g?.genome_version==='web-3.0.0';
+export const isV3=g=>['web-3.0.0','web-4.5.0'].includes(g?.genome_version);
 export const V3_RENDER_DEFAULTS=Object.freeze({blend:.026,ambient:.12,fill:.22,ao:.72,rim:.23,contrast:1.1,contour:.7});
 export function dimensions(value){
  let grid=value?.grid;
  if(Array.isArray(value)&&value.length===2)grid=value;
  if(ArrayBuffer.isView(value)){const n=Math.sqrt(value.length/12);grid=[n,n];}
  if(grid===undefined)grid=[30,30];
- if(!Array.isArray(grid)||grid.length!==2||![30,50].includes(grid[0])||grid[0]!==grid[1])throw Error('Native ASCII grid must be 30 by 30 or 50 by 50.');
+ if(!Array.isArray(grid)||grid.length!==2||![30,50,64,80,96,120].includes(grid[0])||grid[0]!==grid[1])throw Error('Unsupported native ASCII grid.');
  const result={width:grid[0],height:grid[1],count:grid[0]*grid[1],grid:[...grid]};
  Object.defineProperty(result,Symbol.iterator,{value:function*(){yield this.width;yield this.height;}});
  return result;

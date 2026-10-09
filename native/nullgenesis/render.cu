@@ -5,6 +5,7 @@ __device__ V add(V a,V b){return v(a.x+b.x,a.y+b.y,a.z+b.z);}
 __device__ V sub(V a,V b){return v(a.x-b.x,a.y-b.y,a.z-b.z);}
 __device__ V mul(V a,float b){return v(a.x*b,a.y*b,a.z*b);}
 __device__ float dot(V a,V b){return a.x*b.x+a.y*b.y+a.z*b.z;}
+__device__ V cross(V a,V b){return v(a.y*b.z-a.z*b.y,a.z*b.x-a.x*b.z,a.x*b.y-a.y*b.x);}
 __device__ float len(V a){return sqrtf(dot(a,a));}
 __device__ V norm(V a){return mul(a,1.f/fmaxf(len(a),.00001f));}
 __device__ float clamp(float a,float b,float c){return fminf(c,fmaxf(b,a));}
@@ -142,7 +143,18 @@ __device__ __noinline__ void render_one(const float* scene,int count,const float
    value=(cfg[28]+diff*.68f*shadow+fillAmount+rim*cfg[31]+spec*shadow)*ao;
   }
   int lighting=(int)cfg[18];if(lighting==4)value=cfg[26]>.5f?.16f+rim*.84f:.2f+rim*.8f;if(lighting==7&&p.x<0)value*=cfg[26]>.5f?.32f:.28f;if(lighting==8)value=powf(value,cfg[26]>.5f?1.45f:1.6f);
-  value*=texture(p,(int)cfg[14],cfg[15])*cfg[10];
+  if(cfg[36]>4){
+   // Dual depth and curvature probes separate cavities and thin surfaces before
+   // glyph quantization. Small probes follow the actual implicit surface.
+   float d1=field(add(p,mul(dir,.025f)),scene,count,&dummy,top,cfg[27]);
+   float d2=field(add(p,mul(dir,.09f)),scene,count,&dummy,top,cfg[27]);
+   float thickness=clamp(-d2/.09f,0,1);
+   V tangent=norm(cross(n,v(.3f,.8f,.4f)));
+   float curvature=fabsf(field(add(p,mul(tangent,.045f)),scene,count,&dummy,top,cfg[27]))/.045f;
+   float cavity=clamp(1+fminf(d1,0)*2.3f,.72f,1);
+   value=value*cavity*(.9f+.1f*thickness)+clamp(curvature,0,1)*rim*.11f;
+   value*=.86f+.14f*texture(p,(int)cfg[14],cfg[15]);value*=cfg[10];
+  }else value*=texture(p,(int)cfg[14],cfg[15])*cfg[10];
   lum+=cfg[26]>.5f?powf(clamp(value*cfg[16],.025f,1),1/cfg[32]):clamp(value*cfg[16],.025f,1);depth+=t;pos=add(pos,p);nr=add(nr,n);hits++;object=id;
  }
  float* o=cells+cell*12;
@@ -177,7 +189,7 @@ __device__ __noinline__ void render_one(const float* scene,int count,const float
  if(corrupt==2)pos.x+=sinf(pos.y*13)*entropy*.06f;
  if(corrupt==3)pos.y+=sinf(pos.x*17)*entropy*.06f;
  glyph[cell]=g;o[0]=clamp((cfg[26]>.5f?45:65)+(cfg[26]>.5f?210:190)*sqrtf(lum),0,255);o[1]=depth;o[2]=nr.x;o[3]=nr.y;o[4]=nr.z;
- o[5]=pos.x;o[6]=pos.y;o[7]=pos.z;o[8]=object;o[9]=1;o[10]=entropy;o[11]=lum;
+ o[5]=pos.x;o[6]=pos.y;o[7]=pos.z;o[8]=object;o[9]=1;o[10]=cfg[36]>4?hits/(float)(ss*ss):entropy;o[11]=lum;
 }
 __device__ float smooth(float a){a=clamp(a,0,1);return a*a*(3-2*a);}
 __device__ float assembled(float t){

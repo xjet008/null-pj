@@ -1,0 +1,71 @@
+{
+  "version": "4.5.0",
+  "scope": "visible subject bounding dimension excluding stage",
+  "count": 3333,
+  "mean": 0.7944569456945695,
+  "minimum": 0.75,
+  "maximum": 0.8375,
+  "within_70_85": 3333,
+  "framing": {
+    "Tight Portrait": 417,
+    "Head-and-Torso": 417,
+    "Half-Body": 417,
+    "Full-Body": 417,
+    "Wide Creature": 417,
+    "Vertical Relic": 416,
+    "Mask/Icon": 416,
+    "Distributed Abstract": 416
+  },
+  "bins": [
+    {
+      "lower": 0.65,
+      "upper": 0.675,
+      "count": 0
+    },
+    {
+      "lower": 0.675,
+      "upper": 0.7000000000000001,
+      "count": 0
+    },
+    {
+      "lower": 0.7000000000000001,
+      "upper": 0.7250000000000001,
+      "count": 0
+    },
+    {
+      "lower": 0.7250000000000001,
+      "upper": 0.7500000000000001,
+      "count": 115
+    },
+    {
+      "lower": 0.7500000000000001,
+      "upper": 0.7750000000000001,
+      "count": 421
+    },
+    {
+      "lower": 0.7750000000000001,
+      "upper": 0.8000000000000002,
+      "count": 2257
+    },
+    {
+      "lower": 0.8000000000000002,
+      "upper": 0.8250000000000002,
+      "count": 505
+    },
+    {
+      "lower": 0.8250000000000002,
+      "upper": 0.8500000000000002,
+      "count": 35
+    },
+    {
+      "lower": 0.8500000000000002,
+      "upper": 0.8750000000000002,
+      "count": 0
+    },
+    {
+      "lower": 0.8750000000000002,
+      "upper": 0.9000000000000002,
+      "count": 0
+    }
+  ]
+}

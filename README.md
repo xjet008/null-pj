@@ -1,28 +1,28 @@
-# NULL GENESIS V3
+# NULL GENESIS V4.5
 
-A Windows NVIDIA CUDA art engine and browser ASCII studio. V3 synthesizes grayscale organisms from 300 source concepts, 120 original modifiers and 110 new values across eleven NFT categories: **530 curated values and 1,200 executable fusion recipes**. Recipes are counted separately.
+A Windows NVIDIA CUDA art engine and browser ASCII studio. V4.5 synthesizes grayscale organisms from 300 source concepts, 120 original modifiers and 322 NFT values across eleven categories: **742 curated values and 2,400 executable fusion recipes**. Recipes are counted separately. The complete original and V3 vocabularies remain intact.
 
-The V3 release contains **3,333 animated editions**: 1,900 Common, 900 Uncommon, 400 Rare, 110 Epic and 23 Legendary. Its canonical **50 × 50** grid was selected after 120 matched 30 × 30 / 50 × 50 NVIDIA experiments. Both native grids remain in the laboratory. Concepts influence geometry without fixed output-family quotas.
+The V4.5 release contains **3,333 animated editions**: 1,900 Common, 900 Uncommon, 400 Rare, 110 Epic and 23 Legendary. Its canonical **80 × 80** grid was selected after 200 NVIDIA experiments across six native resolutions. Standard previews are **600 × 600** pixels; exports support 300, 600 and 1200 square pixels. Concepts influence geometry without fixed output-family quotas.
 
-The original 30 × 30 collection, its 420 definitions, DNA, 23 Legendary identities, animation and exports remain available through **Collection release**. V3 uses a separate directory and versioned DNA.
+The original 30 × 30 and V3 50 × 50 releases, their DNA, Legendary identities, animations and exports remain available through **Collection release**. V4.5 writes to a separate directory and uses versioned DNA. See [V4.5 architecture and regeneration](docs/V45.md) for the composition, encoder, quality and validation pipeline.
 
 ## Windows NVIDIA studio
 
 From the repository root:
 
 ```powershell
-.\native\launch.ps1 -Backend cuda
+.\native\launch.ps1 -Backend cuda -Port 4178
 ```
 
-The launcher uses Python 3.12+ x64, installs pinned dependencies into ignored native/.runtime/deps if needed, initializes CUDA and opens **http://127.0.0.1:4177/**. An NVIDIA driver is required; NVRTC comes with the dependencies. Keep the launcher open. Options include -Python, -Dependencies, -Port and -Device. Explicit CUDA failures are reported; -Backend auto permits the measured CPU fallback.
+The launcher uses Python 3.12+ x64, installs pinned dependencies into ignored native/.runtime/deps if needed, initializes CUDA and opens **http://127.0.0.1:4178/** with this command. An NVIDIA driver is required; NVRTC comes with the dependencies. Keep the launcher open. Options include -Python, -Dependencies, -Port and -Device. V4.5 canonical generation requires CUDA; the preserved reference backend supports older DNA.
 
-CUDA computes SDF geometry, smooth CSG, anatomical motion, grayscale lighting, ambient occlusion, shadows, contour-aware glyphs, fragment depth resolution and glyph rasterization. CPU code handles JSON, encryption, PNG compression and video encoding. Video encoding is not presented as CUDA or NVENC.
+CUDA computes SDF geometry, smooth CSG, anatomical motion, grayscale lighting, ambient occlusion, shadows, depth and curvature probes, calibrated multi-factor glyph encoding, fragment depth resolution and square glyph rasterization. CPU code handles JSON, encryption, PNG compression and video encoding. MP4/WebM use FFmpeg software codecs.
 
 The renderer reuses bounded buffers on a 4 GB Quadro T1000. Cached rotations and conservative SDF bounds were accepted after exact output comparisons and 491,520 CUDA field probes. Measured reports are in native/reports/. See [native instructions](native/README.md) for APIs, exports and tests.
 
 ## GitHub and Vercel preview
 
-Import **xjet008/null-pj** into Vercel. Leave the root directory at the repository root. vercel.json selects **Other**, validates both releases with **node scripts/validate.mjs**, and serves **dist/**. No npm installation, environment variables or owner keys are required.
+Import **xjet008/null-pj** into Vercel. Leave the root directory at the repository root. vercel.json selects **Other**, validates all three releases with **node scripts/validate.mjs**, and serves **dist/**. No npm installation, environment variables or owner keys are required. The repository includes extensive animation and export assets; hosting acceptance depends on the selected plan's current limits.
 
 The hosted laboratory uses browser WebGPU compute, with a background CPU reference worker as fallback. Vercel serves the precomputed CUDA collection; Windows CUDA remains local. Browser previews can differ from canonical CUDA files because of floating-point arithmetic and font calibration. The interface reports its actual backend.
 
@@ -30,7 +30,7 @@ For browser development, run **npm test**, **npm run build**, then **npm run dev
 
 ## Artwork and DNA
 
-Eight views cover dashboard, laboratory, DNA inspector, animation, collection, analytics, NFT traits and experimental comparisons. Controls include both native grids, up to eight source influences, ten fusion operators, eleven categories, nine rendering profiles, ten appearance modes, motion intensity and grayscale diagnostics.
+Eight views cover dashboard, laboratory, DNA inspector, animation, collection, analytics, NFT traits and experimental comparisons. V4.5 controls include six native grids, eight framing modes, three square presentation sizes, up to eight source influences, ten fusion operators, eleven categories, nine rendering profiles, ten appearance modes, motion intensity and grayscale diagnostics.
 
 Traits execute geometry, rendering or motion. Incompatible choices receive deterministic compatible replacements; provenance records requested and executed traits. Detail budgets, finite quality repairs and visual/temporal uniqueness checks run before acceptance. Rankings use observed collection frequencies.
 
@@ -42,7 +42,7 @@ python native/cli.py animate --input genome.dna.json --output native/generated/m
 
 For encrypted DNA, add --key with its explicit local 32-byte key file. Keys stay local and are excluded from Git, records and archives. Browser keys remain in memory and are never uploaded. Protected V3 records omit plaintext scene and configuration. Cipher-looking art and AES-256-GCM protection are distinct.
 
-Original DNA retains its version and fingerprint. Import or regenerate it directly. Create V3 descendants through the V3 laboratory; new fingerprints and provenance identify new artwork while the original remains accessible.
+Original DNA retains its version and fingerprint. Import or regenerate it directly, or create V4.5 descendants with recorded parent provenance. A new V4.5 owner key protects the new release; original and V3 keys remain separate. Keys are excluded from Git and public archives.
 
 ## Reproduction and validation
 
@@ -63,7 +63,7 @@ node scripts/validate.mjs --report
 
 Inspect all paired contact sheets before approving a new release. Resume verifies candidate fingerprints and artifact hashes. The generator refuses writes into the original collection. V3 becomes selectable only after all 3,333 editions and their timelines pass the audit.
 
-Build validation checks both releases, rarity supply, eleven ordered attributes, canonical hashes, native frame bytes, authenticated envelope structure, all 23 Legendary media sets and complete ZIP CRCs. Native tests verify CUDA/CPU fallback, all motions, synthetic-key authentication, exact GPU batch equality and buffer reuse. Contact sheets and release reports live in dist/v3/reports/.
+Build validation checks all three releases, rarity supply, eleven ordered attributes, canonical hashes, native frame bytes, authenticated envelope structure, all 23 Legendary media sets and complete ZIP CRCs. V4.5 additionally verifies square dimensions, detailed quality identities, lossless XOR decoding, recipe coverage, review gates and archive/source hashes. Native tests verify CUDA/CPU fallback, all motions, synthetic-key authentication, exact GPU batch equality and buffer reuse. New contact sheets and release reports live in dist/v45/reports/.
 
 The artwork is procedural; marketplace character images are not copied. Wallets, accounts and minting contracts are outside this engine.
 

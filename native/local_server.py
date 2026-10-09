@@ -45,7 +45,7 @@ def run(port=4177,backend='cuda',device=0,web_root=None):
                 size=int(self.headers.get('Content-Length','0'))
                 if not 0<size<=4000000:raise ValueError('JSON request size must be 1 byte to 4 MB')
                 payload=json.loads(self.rfile.read(size));route=self.path.split('?')[0]
-                if route not in ('/api/v3/render','/api/v3/frame','/api/v3/raster'):return self._json(404,dict(error='Unknown local API'))
+                if route not in ('/api/v3/render','/api/v3/frame','/api/v3/raster','/api/v3/fit'):return self._json(404,dict(error='Unknown local API'))
                 g=validate_genome(payload.get('genome',payload.get('g',{})))
                 with renderer.lock:
                     started=time.perf_counter()
@@ -53,15 +53,24 @@ def run(port=4177,backend='cuda',device=0,web_root=None):
                         scale=int(payload.get('scale',1))
                         if not 1<=scale<=4:raise ValueError('Raster scale must be 1 to 4')
                         glyph,cells=from_packet(payload['cells'],g.get('grid',[30,30]))
-                        result=dict(glyph=glyph,cells=cells,grid=g.get('grid',[30,30]));png=renderer.png(result,scale)
+                        result=dict(glyph=glyph,cells=cells,grid=g.get('grid',[30,30]));png=renderer.square_png(result,int(payload.get('size',600))) if g['genome_version']=='web-4.5.0' else renderer.png(result,scale)
                         return self._json(200,dict(preview='data:image/png;base64,'+base64.b64encode(png).decode(),backend=renderer.backend,ms=round((time.perf_counter()-started)*1000,3)))
+                    if route.endswith('/fit'):
+                        if g['genome_version']!='web-4.5.0':raise ValueError('Versioned fitting requires V4.5 DNA')
+                        from experiment_v45 import candidate
+                        g,result,metrics,signature,repairs=candidate(renderer,dict(genome=g,id='local-laboratory'))
+                        return self._json(200,dict(genome=g,cells=result['packet'].reshape(-1).tolist(),quality=metrics,repairs=repairs,backend=renderer.backend,gpu_ms=result['gpu_ms'],render_ms=result['wall_ms'],preview='data:image/png;base64,'+base64.b64encode(renderer.square_png(result)).decode()))
                     index=int(payload.get('index',0)) if route.endswith('/frame') else 0
                     staticA=float(payload.get('staticA',-1))
                     if not -1<=staticA<=1:raise ValueError('Invalid assembly fraction')
                     result=renderer.frame(None,g,index,staticA) if route.endswith('/frame') else renderer.render(g,index,staticA)
                     response=dict(cells=result['packet'].reshape(-1).tolist(),grid=result['grid'],frame=result['frame'],backend=result['backend'],gpu_ms=result['gpu_ms'],render_ms=result['wall_ms'],canonical_hash=result['canonical_hash'])
+                    if g['genome_version']=='web-4.5.0' and route.endswith('/render'):
+                        from quality_v45 import quality
+                        response['quality']=quality(result,g)[0]
                     if route.endswith('/render') or payload.get('preview',False):
-                        response['preview']='data:image/png;base64,'+base64.b64encode(renderer.png(result)).decode()
+                        png=renderer.square_png(result) if g['genome_version']=='web-4.5.0' else renderer.png(result)
+                        response['preview']='data:image/png;base64,'+base64.b64encode(png).decode()
                     return self._json(200,response)
             except PermissionError as error:return self._json(403,dict(error=str(error)))
             except (ValueError,TypeError,KeyError,json.JSONDecodeError) as error:return self._json(400,dict(error=str(error)))

@@ -1,4 +1,11 @@
-# NULL GENESIS NVIDIA engine V3
+# NULL GENESIS NVIDIA engine V4.5
+
+V4.5 adds calibrated multi-factor CUDA encoding, subject-only automatic framing,
+six native resolutions and square 300/600/1200 presentation. The accepted release
+uses 80×80 cells and 600×600 previews. The preserved V3 instructions below remain
+available for older DNA. See [V4.5 architecture](../docs/V45.md) for new release tools.
+Use `--presentation 300`, `600` or `1200` with `native/cli.py` for V4.5 PNG, HTML
+and video exports. Protected exports omit plaintext structural cell archives.
 
 The main Windows studio uses NVIDIA CUDA for SDF surfaces, grayscale lighting, glyph selection, primitive motion, depth-aware Legendary fragments and glyph rasterization. The browser receives native ASCII cell packets and PNG previews. Vercel serves the separate WebGPU/CPU edition; it does not run CUDA.
 
@@ -30,11 +37,16 @@ If you supplied -Python, set $nullPython to that exact executable instead. If yo
 
 nullgenesis.renderer.Renderer('cuda') consumes fingerprint-verified browser V3 DNA: scene rows of 16 floats, 24 configuration values, printable ASCII grammar, 95 glyph coverage values, native grid [30,30] or [50,50], and deterministic motion/animation parameters.
 
+V4.5 DNA additionally requires its encoder, composition, six layer budgets and
+square presentation record. Its native grids are 30, 50, 64, 80, 96 and 120.
+V4.5 canonical rendering explicitly requires CUDA.
+
 - render(genome,index=0,staticA=-1): actual posed geometry.
 - render_batch(genomes): bounded canonical frames.
 - render_sequence(genome,indices=None,chunk_size=16): bounded GPU animation batches; DNA is authenticated once and base geometry stays on CUDA.
 - frame(base,genome,index,staticA=-1): posed geometry and reconstruction.
 - image(result), png(result,scale=1): CUDA glyph rasterization.
+- square_image(result,size=600), square_png(result,size=600): V4.5 CUDA square presentation at 300, 600 or 1200 pixels.
 - status(): actual device, timings, VRAM, buffer pool, allocations and font calibration.
 
 The result includes native ASCII, grid, glyph and native cells arrays, and a browser packet in this exact order:
@@ -56,9 +68,15 @@ GET  /api/v3/status
 POST /api/v3/render  {genome}
 POST /api/v3/frame   {genome,index,staticA?,preview?}
 POST /api/v3/raster  {genome,cells,scale}
+POST /api/v3/fit     {genome}                     # V4.5 composition and finite quality repairs
 ~~~
 
 Render/frame return flat browser cells, actual backend, gpu_ms, render_ms, grid, frame and ASCII hash. Render also returns a PNG preview data URL. Raster returns PNG and wall time. No HTTP key or decryption endpoints exist.
+
+V4.5 render returns a 600-square PNG and measured quality. V4.5 raster accepts
+`size` (300, 600 or 1200). Fit returns the accepted fitted genome, its cells,
+quality, repair history and square preview; its fingerprint identifies that
+final composition.
 
 ## Transactional exports
 

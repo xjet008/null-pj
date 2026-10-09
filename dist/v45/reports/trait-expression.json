@@ -1,0 +1,1114 @@
+{
+  "passed": true,
+  "operative_new_values": 212,
+  "backend": "CUDA",
+  "comparison": "actual canonical and quarter-loop glyph/gray packets; names and metadata excluded",
+  "categories": {
+    "Back": {
+      "values": 15,
+      "distinct_rendered_pose_signatures": 15
+    },
+    "Body": {
+      "values": 20,
+      "distinct_rendered_pose_signatures": 20
+    },
+    "Eyewear": {
+      "values": 12,
+      "distinct_rendered_pose_signatures": 12
+    },
+    "Features": {
+      "values": 25,
+      "distinct_rendered_pose_signatures": 25
+    },
+    "Form": {
+      "values": 20,
+      "distinct_rendered_pose_signatures": 20
+    },
+    "Headwear": {
+      "values": 15,
+      "distinct_rendered_pose_signatures": 15
+    },
+    "Mask": {
+      "values": 20,
+      "distinct_rendered_pose_signatures": 20
+    },
+    "Method": {
+      "values": 20,
+      "distinct_rendered_pose_signatures": 20
+    },
+    "Motion": {
+      "values": 30,
+      "distinct_rendered_pose_signatures": 30
+    },
+    "Palette": {
+      "values": 15,
+      "distinct_rendered_pose_signatures": 15
+    },
+    "Stage": {
+      "values": 20,
+      "distinct_rendered_pose_signatures": 20
+    }
+  },
+  "items": [
+    {
+      "id": "V45.BACK.01",
+      "actual_pose_signature": "560fb7b3a16d755e30a88bf9057f5fb15403728ac8c773b4e6b98505d1bc31d8",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.02",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.03",
+      "actual_pose_signature": "8c8fe56d408ad7bc5b0dbbae0f99248e5a0e9c2ac675e2b7f2cfb4edcf657aed",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BACK.04",
+      "actual_pose_signature": "c3fa455cb6bb2ea96d824905de14fc0f8e5e6aad08039dcac72a9bd69a28e736",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.05",
+      "actual_pose_signature": "62262182b15c8a295a06c588ec60257d7f66ac655859c7b6a55a41e90d7dd9ef",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.06",
+      "actual_pose_signature": "e4f70c4523d712bf4bf36595e8f60c1c11db7ba1fadefd6576a8fd293fa0cc69",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.07",
+      "actual_pose_signature": "da7f168c6c2e97f15a39719dfdcab06c34b094e9ad465ecac1ee00f4dcd6fd10",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.08",
+      "actual_pose_signature": "79aa7b3eaac4e54b6e6a51606935c1393a267800b495b7239e6343742993462a",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.09",
+      "actual_pose_signature": "ef25c033ae8096e4fbc3a6f6e547960d8c30a1193bfe736c58be8696196c8c9b",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BACK.10",
+      "actual_pose_signature": "e0ccfebdfb6b7d4266ac024e1fd7edddf9b3a77cd7da73cf4ad6d67daa5768ed",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.11",
+      "actual_pose_signature": "3fa2541b02116f887d2147cb2509382cd3188b989dd1e4c7fa208d1af79e26f5",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.12",
+      "actual_pose_signature": "eb0794ed7dcb9048a9697c925058efea0c95914f6ad00fc55fd748d1457ddf96",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.13",
+      "actual_pose_signature": "e391dd24d4f4ccabdb1bd1a4d39cb2600d0c799585949efd4e33b39183b6d59e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.14",
+      "actual_pose_signature": "3ef067c9f24c1c15b7e8d6e38336a6be6bdcfa8d63efa505a1f7e99ea3b58940",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BACK.15",
+      "actual_pose_signature": "74d78134e82407f6feed290339e62b4055c4085ffabd482996852e0b9b36f3a5",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BODY.01",
+      "actual_pose_signature": "24f1259c343326f1f1f66508a2e0088d4e10d7e4a66b3fa1022cf6bd174c0358",
+      "visible_objects": 72
+    },
+    {
+      "id": "V45.BODY.02",
+      "actual_pose_signature": "8e07e95b09f066133bc948be78d09ef56ede7b5c5803a450fc47f2b2f4fb8fdd",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BODY.03",
+      "actual_pose_signature": "880a4c8d075289ca8786aa2e6f134de75c9c503d2c46ae787d4213b6365cb631",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.BODY.04",
+      "actual_pose_signature": "9df6e734777882ae0c6e6f20374edc69c721eb3d6a4a1d6b3e69bde0eec7ecde",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.BODY.05",
+      "actual_pose_signature": "1f29e86280c812051a64c16dd36ab8a1b5a78a0d1a3fdb52b8768ab38e8d11cb",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BODY.06",
+      "actual_pose_signature": "e9e37f8dd0f826be970a27065c1d1a16d9b512c5e7b7ff970343aa9ed6be2379",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BODY.07",
+      "actual_pose_signature": "0e6d1f7e3a6e8658abfe19c000ed7f83a6e0bbd8b1ae02cd7ac9ff20a8c76900",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BODY.08",
+      "actual_pose_signature": "63ad7bd1c6be70309aa6a4c7dadfb80621e0e29cee237ef45caba23fc92c7df8",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.BODY.09",
+      "actual_pose_signature": "2b57e7669b2d22baf9a765396f4d536085c72a1f91aaed25c54064994e2217e5",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BODY.10",
+      "actual_pose_signature": "831385133a1afd6cd317d889bd8d7c4c28643375054eeadd4762872e0d43ebdb",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.BODY.11",
+      "actual_pose_signature": "c056eec58fad29d343ab5b06d517e4563d1effe7eac108d18109f1202ba02620",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.BODY.12",
+      "actual_pose_signature": "eba1196f8d402190cfaf87510a5327e2df216d312f9d14942ee7d583d747b81c",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.BODY.13",
+      "actual_pose_signature": "886e1eed5728c6cdc268504c6873e255dad7fcf95bcce3b77660c68a5e47e612",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BODY.14",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BODY.15",
+      "actual_pose_signature": "3a8cb3511c79c9124d6b19721a7d384b326ea501e0a58537715928df91746e51",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.BODY.16",
+      "actual_pose_signature": "904f8e2b52e391e7dfe13f503236847f3b574148c307e9d54272991aac615eef",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.BODY.17",
+      "actual_pose_signature": "fb5530495a5ab3862eb18b1642ed257b1341369d15050862b1cd825eb88a4bd2",
+      "visible_objects": 73
+    },
+    {
+      "id": "V45.BODY.18",
+      "actual_pose_signature": "5360517a5b6ff08cb985be804b0fbc49f16ffbf09582eff5c49f9135ae19c6bb",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.BODY.19",
+      "actual_pose_signature": "074ae89c4cfcb432464574951b5d8777bdb53e8ec27af0613feb305e2205bf62",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.BODY.20",
+      "actual_pose_signature": "120c70d94cd0c90e0a19b1ff1bbb4703a42e31054003b2ce716698ab970263be",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.EYEWEAR.01",
+      "actual_pose_signature": "089ead721769857dc547d15f9cb361d3a1a3ec6256be6c6611cedbb2c258e971",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.EYEWEAR.02",
+      "actual_pose_signature": "66969e49891bc4f5d769bc4a294d92deebfd035df574ff25c32d767f93b2093b",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.03",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.04",
+      "actual_pose_signature": "ef831059d3be8637faab2f6950496942d3a48f3b775e5d2d8f9e9e67ec2da6c0",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.05",
+      "actual_pose_signature": "5b7a656736cfb19b544a4d8401b4323ea11255b39c3131930ec5ee5c20bcd892",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.06",
+      "actual_pose_signature": "000f887b8df09e2147f70dbc00e435aceafeeac0b106ff08b8961b5082e00192",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.07",
+      "actual_pose_signature": "f87b6d3d4f72b370849b1bcb7909048226e7a74748a6c0d67763d2ae587a7c79",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.08",
+      "actual_pose_signature": "c6901a930604875cadd4fdee8e5d72f74efd02021eaa5cbb06f61652d3ffa560",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.EYEWEAR.09",
+      "actual_pose_signature": "3b49fd448fca65f16643737a2e1ea73a53c024cefca812ec30cb528460073575",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.10",
+      "actual_pose_signature": "6a906f87e9a77c09dc4c3305b2d8fef7e75da32e26a17983c531c5972ba5a9ff",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.EYEWEAR.11",
+      "actual_pose_signature": "17198e16ef1bed284e15b513f176b13cc271191aa29f6ad4995d2656dced7e1d",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.EYEWEAR.12",
+      "actual_pose_signature": "0da3115015b0203a50bec122f634891feaaf55018e2093bda9e3e9770b6711d9",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.FEATURES.01",
+      "actual_pose_signature": "7e7588008ff77074f8c81f4a1db350cf8667d90372f2dc846c5be4594bb05ee7",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FEATURES.02",
+      "actual_pose_signature": "a702e23d99169de7fbe5ca1f3e0c44bdaf6587dc99cac21abcd045111c02aaa2",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.03",
+      "actual_pose_signature": "4c69a7502033eeba70c84322445e4a3313eec5c62781e88659bd9ed8c610ddd2",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.FEATURES.04",
+      "actual_pose_signature": "7eeb767fab2147f953efd88c9b7b028b42270186404f4538bacc90725ac0949b",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.05",
+      "actual_pose_signature": "8b5acc943d8d2e0f12707010577169296247c3f90e65d8d442a1819c7734bad5",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FEATURES.06",
+      "actual_pose_signature": "bdf936cfb946805ea639b37a21225ea7f29ff21bcfb4599bca993970d92e9631",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.07",
+      "actual_pose_signature": "b3f51d02a6e253cf28aea9582ebedd1fcc82c250e284329a85b758a4510a4168",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FEATURES.08",
+      "actual_pose_signature": "4a7a45fe39eb7de420ebc7f15494324d430fff53c525c30f1cab09f4a546b2f9",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.09",
+      "actual_pose_signature": "cf847c53a30cb436654599bf72695a5079758530f30003ef62684e4c1396ec05",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.FEATURES.10",
+      "actual_pose_signature": "5144b6bd58d2eec2c7493f6bd41304a62ea2a2121e799118c18f441c21577f26",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.11",
+      "actual_pose_signature": "8965971f5ab18bf4be378d7d956069ffaec3cbd726fe1fb226818b3650b4b584",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FEATURES.12",
+      "actual_pose_signature": "7ef1aaa4be6ecffe6232b3157e104ee3c4411be6e1176f063455a985bd0af4cc",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.13",
+      "actual_pose_signature": "0123c723d4fa241e767fce22079b501f2510d7e49dbc2d0a77d86d1b9b6d2b57",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FEATURES.14",
+      "actual_pose_signature": "03010a092e1a2e2bf5238442e651939edca82c47375546b0cdc90ab09820e378",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.15",
+      "actual_pose_signature": "7dca5baf8ef4e355f48f7a97d3e5177ac434705b7d9f56d771d7366e6daa02ab",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.FEATURES.16",
+      "actual_pose_signature": "d0621be787d633d158962afa80ffc0552f48569c42e00afa77d7de236f61faa6",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.17",
+      "actual_pose_signature": "65a63a0955b2d781788d49130a7f7593ebab21d21be265537af4f7a6f0a3fe70",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FEATURES.18",
+      "actual_pose_signature": "ca192ec6fd72b92835051d65ed8c044fab9f014d097a85ff94b6b45d5618bf7a",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.19",
+      "actual_pose_signature": "b09db99baf9d24c7c7a01bd087f9874062bfb54fc35d5766d0e1d31d5c2064b0",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FEATURES.20",
+      "actual_pose_signature": "a29dcd6a2f29677cba4b61a29d73aeba06297bf3f5883d15288bc3a9341f11fd",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.21",
+      "actual_pose_signature": "92be087f4478285f3dd7fa4cac24275ddfb903733e20fbf8b7688bf9d137a237",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.FEATURES.22",
+      "actual_pose_signature": "b15d9428674ddff93a386502aad54457867fa678a01516a9c7e88380ba469d9b",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.23",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FEATURES.24",
+      "actual_pose_signature": "7e8a747a13ff66894b14e81a5a5dc2638cdfcc9997f75602c7c2b8445f2fe8cb",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FEATURES.25",
+      "actual_pose_signature": "2cde52785a35d2aade51687963f407a196daf38482e9bcc7d5fb927a2036a3b5",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FORM.01",
+      "actual_pose_signature": "1d63d3bf23c2a1bca02ae72ae6641f2c5e980bdc0ca529e9d9163d90c3f8cae8",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.FORM.02",
+      "actual_pose_signature": "a253169136c0cb647c444a4fbd1b212672ccd2090ad89066910ee4abcc9d76d5",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FORM.03",
+      "actual_pose_signature": "cc327f9a1843c3579d8d5a1d56e2dfea6b5f61c8163a1bc14e6b290d61459d88",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.FORM.04",
+      "actual_pose_signature": "e2206a40ec4c61f2c572ffc5a10311e368a5bf1fcd1ba6bc96d866e165d51708",
+      "visible_objects": 62
+    },
+    {
+      "id": "V45.FORM.05",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FORM.06",
+      "actual_pose_signature": "02a53a0b9e1cdaada19f4a832fb412ff7fe2cd4ef90adebb6a8adb28fb9c4e00",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FORM.07",
+      "actual_pose_signature": "7da748abdf16c06d8f7001fb9ad8f823e0a12819da2a263b2f8aeb6c07d1bd63",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.FORM.08",
+      "actual_pose_signature": "4a1d3ba035f0ca6557b92178879523c53f3806fec9b50f010964a6041a3b6949",
+      "visible_objects": 62
+    },
+    {
+      "id": "V45.FORM.09",
+      "actual_pose_signature": "81befc8fc440613affd287a8b5eb8bdd5b19eb2e2ff43de3e9f640342a1d2935",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FORM.10",
+      "actual_pose_signature": "c7bd21eb5e40c37ff04934cee71eea4274e829a8b6091a0d3e3678e6419efca9",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FORM.11",
+      "actual_pose_signature": "df37ab7d5eee5af5cc04c648389ea9614a3bf48e8615e4d1ad33eccc98a73322",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.FORM.12",
+      "actual_pose_signature": "15bf554bc9ac01103f83898c7fa96969a9b383fb57099430ffea9d508f0eac81",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.FORM.13",
+      "actual_pose_signature": "a77a2bb55a2607ae921a36c5a212776a7e7afc7fb4351f642ea0c69fa5349b6a",
+      "visible_objects": 72
+    },
+    {
+      "id": "V45.FORM.14",
+      "actual_pose_signature": "ceab23a901ba3edbd5975222c8038767509a1395d37e48a49b9bfb3ac977d057",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.FORM.15",
+      "actual_pose_signature": "da66a605383b3751b757bb3d2c436c582863defb6e7866977da2df3143ef5dc1",
+      "visible_objects": 62
+    },
+    {
+      "id": "V45.FORM.16",
+      "actual_pose_signature": "cbf4a253ef98d41f34a3adf35f1c5b7ba0051ecdbf5fb5713f32d17b54384424",
+      "visible_objects": 64
+    },
+    {
+      "id": "V45.FORM.17",
+      "actual_pose_signature": "78ebe15333040f2511ea579ad87034c6c3348febee45a1adb5c0b2951e8f43d5",
+      "visible_objects": 71
+    },
+    {
+      "id": "V45.FORM.18",
+      "actual_pose_signature": "0ac4e1d037c28c30fc3c6d0c0223b98eba9e0fcbc5215a0404b1e6d71c0595ca",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.FORM.19",
+      "actual_pose_signature": "9a7da97e4b685d46c40aedd765a46f7303cfc8b41d1a3f74e2e3b8d31810f363",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.FORM.20",
+      "actual_pose_signature": "d9c8bc0431c473f7c6676ae8959fe070888dd182c60638e318977d36978e398f",
+      "visible_objects": 65
+    },
+    {
+      "id": "V45.HEADWEAR.01",
+      "actual_pose_signature": "6e785d3af97be0ec217db78bf445ada9400dcee611ecb09cd20e9b6599e2f768",
+      "visible_objects": 65
+    },
+    {
+      "id": "V45.HEADWEAR.02",
+      "actual_pose_signature": "ad04226e3e9cbebe948caf598282d183584058618d51814d5bbf0f9bc8a6207d",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.HEADWEAR.03",
+      "actual_pose_signature": "60dfbf249b0e5712b1630c729df8e41bf416de5abd80a0c1973a52972d8e571c",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.HEADWEAR.04",
+      "actual_pose_signature": "adde24a7e2eb1a83ce189da8413252610da5259113483c5517fc35d85b57e00a",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.HEADWEAR.05",
+      "actual_pose_signature": "2ace0a6d7935e49f3606fa94c6779a77e57a794a6378a6cb7b14709ab933e5fe",
+      "visible_objects": 66
+    },
+    {
+      "id": "V45.HEADWEAR.06",
+      "actual_pose_signature": "db147d43426bd28264377490accb4307dcebb5eb1776f520557d434eebdf5c44",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.HEADWEAR.07",
+      "actual_pose_signature": "3a68b6d5874911243ecad5acb3da787250307dadaa174001851bdc808c39e86e",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.HEADWEAR.08",
+      "actual_pose_signature": "cfdd8fac454af2a35a7793d5050e5a1286f620debc9ee308bf6f337f98a3aaf6",
+      "visible_objects": 69
+    },
+    {
+      "id": "V45.HEADWEAR.09",
+      "actual_pose_signature": "35ce891e0529fe8ca1a09a914d6a440b88996d3211e4caa384b51d53093b0a30",
+      "visible_objects": 66
+    },
+    {
+      "id": "V45.HEADWEAR.10",
+      "actual_pose_signature": "77426085494bd853a2b21d46042aadff960211c6c5cd442b538753f05d3dedac",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.HEADWEAR.11",
+      "actual_pose_signature": "605e7e54fe9b6d555b4b6bf683a3ecdcd28919bdaef3cd3993c07c9dbdfd247b",
+      "visible_objects": 67
+    },
+    {
+      "id": "V45.HEADWEAR.12",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.HEADWEAR.13",
+      "actual_pose_signature": "214710e8894a159fd382a9c4661a57c68198d72329f5b4044d891a7784c24acd",
+      "visible_objects": 66
+    },
+    {
+      "id": "V45.HEADWEAR.14",
+      "actual_pose_signature": "e893bb59d38f0bf53186305abf151de231f4063474b1c4fe773df675f287c219",
+      "visible_objects": 66
+    },
+    {
+      "id": "V45.HEADWEAR.15",
+      "actual_pose_signature": "d3fddfdba04126cb7fb7574f28480d2e82d0179063917c4220068677ef6ca3a9",
+      "visible_objects": 68
+    },
+    {
+      "id": "V45.MASK.01",
+      "actual_pose_signature": "2d9470d2eca2cc3150702911d2166dcac6de91312776434e356430fb56d69090",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.02",
+      "actual_pose_signature": "392bc35a58d13433c643d283a4ff6bf289797ac311ee041aaa8f495bfe510fdb",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.03",
+      "actual_pose_signature": "93bbb78e00494f36b1383f19cf1dd4a9bc3e907540d98640644f6c95dca485a0",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.04",
+      "actual_pose_signature": "c4e1996fa532405aca40365ef1508d464a03dd3e96f760d8ff62888a6a35d936",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.05",
+      "actual_pose_signature": "6f07e481c8f9c689a8192839745bbef7afcafcfb28315037ecc69552d1c83338",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.06",
+      "actual_pose_signature": "9c18f6950ed1c835a8aaca09d0a5506b50f9188f93fa8868164153eba62dffb6",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.07",
+      "actual_pose_signature": "f33ba40a8c00bed1c1555ac70db30afa64efd7303287aa8645af6f3d658ea1e9",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.08",
+      "actual_pose_signature": "f5a6dca15b867cacd64378c3dfc3056acf3638fd7b8d9624592f45fc0dedcd44",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.09",
+      "actual_pose_signature": "10a4332676df1545a4a13fe8a083204cca551e003d84cf9300b4f1d62f055a3e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.10",
+      "actual_pose_signature": "fe99d3d696f6964c466cc05555d6544941f8913fde51f152ca3316bbde16a476",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.11",
+      "actual_pose_signature": "419e285d59908b869f8e8bc4c08cf3e2850269cb382ca97fc80ce14ad4574188",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.12",
+      "actual_pose_signature": "dd9f4442ab678a2fadc8b66ff752e653fc25fa3e6e9a219272d2d28cda390d2e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.13",
+      "actual_pose_signature": "62b065ad63632c27ba28b246d49e8029774f174023059f49a2c0b271031bde7f",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.14",
+      "actual_pose_signature": "b84fc00a640d945017833cd84f4bc17f7987310f106da87c36315b3bcd886d68",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.15",
+      "actual_pose_signature": "82479a9412983f4f9a8eefa2d8f7634900cc1bdbf2d1feef62c5e8557596780b",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.16",
+      "actual_pose_signature": "f680d48fd211e91e06df4bb67bb348b1260b48ef750348aef2217de7ddb0a397",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.17",
+      "actual_pose_signature": "1737a29537eeb1081789e0ad1eebbc8e2231d92440361f5ae0d231047837801f",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.18",
+      "actual_pose_signature": "3c59d67807be8b31efff6ea70c83d3e7d14f5fd92d3aa9b81ce4bf4a9b7ce85b",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.19",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MASK.20",
+      "actual_pose_signature": "198c0c7517d22eb4da3e2d2f455ffd0bbad0dca116d072b17e406160f3a45978",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.01",
+      "actual_pose_signature": "ba8c3b82097cb8b58b7eaa655861605b68f003546786d6af868dc2c90dfc67b6",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.02",
+      "actual_pose_signature": "31017621b8d19185e6705b93ee452468057e560bc88c49aa72382a7579ea08b4",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.03",
+      "actual_pose_signature": "18618908f9e37c1702ad5561ba6fc7c69cdeadc4692aa6737d18282043d57272",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.04",
+      "actual_pose_signature": "4e9ea5c6365793733af0323290b7ddbe6d81dafd026150cee5c04d90d44395f7",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.05",
+      "actual_pose_signature": "1a2b4a9c06e97e5c895dbfa83747b284e5f00d17cbc83821250a549987fecfe5",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.06",
+      "actual_pose_signature": "a3e41de88d835fc9277a044e14af41b1ab68d1a14282a73615efd9307993d158",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.07",
+      "actual_pose_signature": "d84e0c1cecc0424fd02f6cc931f0962e2f40a7b60ed815cde384c9fc2d24ee5a",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.08",
+      "actual_pose_signature": "e6b27568478af915cf0987067ce44cf56c17fdce1959b15a0f1fe7afb604eedd",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.09",
+      "actual_pose_signature": "691bdd6264cadf11ce42502737d6f282ccc24ba47eb366ed37bce4e6522b8db1",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.10",
+      "actual_pose_signature": "6d0494244756ddf5bcbb5961bd149798c3e4a6ce0a68ca12a772f4912738c4cd",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.11",
+      "actual_pose_signature": "20c81a10d48b0aa70026bab59b7a887a831a609a58eb0a8a66deb6d673e2d906",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.12",
+      "actual_pose_signature": "00063989effb861769116d572a411f77cd82f1cbf2a324fb931578b44493c907",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.13",
+      "actual_pose_signature": "d896f9465ffe3b68f18678f00c9c61aa5da75dc637b239dd1c9c33dced297e65",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.14",
+      "actual_pose_signature": "2856dd2289b0c7c6b37f05248fcd4a1ad983b5a1069fdd4b2084415864df269e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.15",
+      "actual_pose_signature": "c140f2afe7f62c786f1139a442fb120331db788e51308201179a929ede071a08",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.16",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.17",
+      "actual_pose_signature": "5bc6658ede87a2304796a7123dd42a35fee2d92440f5d9930e965cba2e6d8d45",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.18",
+      "actual_pose_signature": "970b340613b6e06d9d3205ba4844cc31c60a31ecd62f540e1072b1bd0b9afbd0",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.19",
+      "actual_pose_signature": "2ce60c6151ece2ee4bdeac5a4b4016c68cfe273804a2fdf82387c416cf7178f2",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.METHOD.20",
+      "actual_pose_signature": "2a8d2464ce534b555c9d377e60bd199c381ce6b788a8364591f303d2988f52b0",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.01",
+      "actual_pose_signature": "1bb5251873378599eb6df6ae2029c848c3f1759e2806a2b6b63b437c8a7494bc",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.02",
+      "actual_pose_signature": "35ba2d84aa79411b981e899d578d3b0d3795aface79fe9a3cb6154c47cce5744",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.03",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.04",
+      "actual_pose_signature": "a6c825a3959c3380fa0fefa68f75e2cb2d54f1df11b4c22e64c89c27976c2ac9",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.05",
+      "actual_pose_signature": "4028c3ab066bdc5ac6f58592a3702d72e1f0f3109a79975ab82b5b8b98610bd5",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.06",
+      "actual_pose_signature": "51049d5159177672e877673b2d9aa55c93cb9f5d298ca76260cacc7be35c5ecb",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.07",
+      "actual_pose_signature": "ace614b464a4da2818db78d084e16bb37005b6a66a8c22f705184ec56234a716",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.08",
+      "actual_pose_signature": "691507c98fdcbc8f6a35954a21a1afafca0b10d02fae895a6fa8405f4342402a",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.09",
+      "actual_pose_signature": "714d06d8f70251ffb541a1d93aaa26a16d53f7577d5b8423fc79658a53cc83de",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.10",
+      "actual_pose_signature": "b5dba169a99f47ab4387ca95eb5e5dfbe92ac6a020d84bcd77ea6a00167382b7",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.11",
+      "actual_pose_signature": "b8b1846386b4a34ce7a4a90c7c5f2a11df86599720f4e121dc79723f0cfd50ad",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.12",
+      "actual_pose_signature": "057b961ac4da2db6a280b281ecb1d7b67e3701f981498b7df2da0714f16eebd0",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.13",
+      "actual_pose_signature": "d875392aec6406bd75bb217a72b023d053e4d4ab6f78c5f89bb8eb1107ef5162",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.14",
+      "actual_pose_signature": "fbec993d33e1c9ab50b8a1941431e6c183b37715deb554411056a9f0cb9870db",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.15",
+      "actual_pose_signature": "f0884676afd79f2db04746588aabd8e4c5e789e4ff5704425f33975198c390c6",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.16",
+      "actual_pose_signature": "987347216ace27f619e1c8d46ec36fcb50fa2a061763a4b41b81b13a86b56472",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.17",
+      "actual_pose_signature": "ea2019a30aad9eb059d7d5e0eb40b34b7b0d42d25aaaddfe46c867bb972e3043",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.18",
+      "actual_pose_signature": "516467906b2abbd0466f70c3689c263ed34a1c33dffe65e29f9d97e2d90fdcc6",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.19",
+      "actual_pose_signature": "abb9525d9dd9046cbb3f740973c7b93d6c184d4612f00801b9911c8fde48e8d8",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.20",
+      "actual_pose_signature": "34449c8f5a47e18f43b8d8eff285d5a49a692086bc733ba39c516e1feb42f73e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.21",
+      "actual_pose_signature": "bbfd03dc24fded4d7dddb131739efe272d3576a11bf7c7783a9ae5205bf9b8f9",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.22",
+      "actual_pose_signature": "daedc439c35a54593cf3ea4edc95d6040029c3f367c884d8d99631a0325a2d54",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.23",
+      "actual_pose_signature": "082321f79e9e8640164310ebe48f3740612934e929483d63be2713dc859e25c9",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.24",
+      "actual_pose_signature": "deae5c6cbb4efe51e353a023de86c15a0d50547b1c7240dcd802f21cc7adf9fb",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.25",
+      "actual_pose_signature": "5cdee4bfc39feef157afa8cdc390c3e63948928c17aab7311dcb1b31d8a728d0",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.26",
+      "actual_pose_signature": "5d46a0ac1f0454f8c3942357b0702b784546cf697e1278f43583907891813e39",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.27",
+      "actual_pose_signature": "38e6af909ddc38b00c715c5b503da139d8e8f7e275aa590fafd55c7d4b8a50b3",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.28",
+      "actual_pose_signature": "ec08fb66c1fc10307e53eda2a455f5f35d74f5fdad995babbdb6be1e7dcab05a",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.29",
+      "actual_pose_signature": "03aef47a4c9e6e6f6372f057f58e980b043de75c596604b48051c46d03a12d86",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.MOTION.30",
+      "actual_pose_signature": "6a1ddc556dd07833fa89c40ef5c6ccb2ac7558fb58a0c86e90d08bdb393837a5",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.01",
+      "actual_pose_signature": "83a0bf0b0b0948622de92f7566dbf79a7da0d2e5bb23e83382092ed922c07945",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.02",
+      "actual_pose_signature": "58977cda5bdafb0939a60a3fa2baade7b2721f7c49a63e674e2b48c315299544",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.03",
+      "actual_pose_signature": "ca541f04c3e219d80202898aeb824f57603e54268c6daacb9a402e372749c4e5",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.04",
+      "actual_pose_signature": "2fed5376fa91c8a28de56ff79c2826221969faddc0d98ec8557dbb310489ca61",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.05",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.06",
+      "actual_pose_signature": "9a2ed06d5ab8573b8461209946a623be2a13c1b17cef960cb0460501adc3a34d",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.07",
+      "actual_pose_signature": "8e4edda7dbe1188a1c3f08f038a3f15c6c55990fff9dee3a34eec83a45522426",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.08",
+      "actual_pose_signature": "c74b5fce9c58e880d43cf013bcf0f9758babf0716d5b33819da4b98726584378",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.09",
+      "actual_pose_signature": "ad435771a15e73fbd2fecbf1f44b060012cdf68e34c8afc6466b187e276fc07d",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.10",
+      "actual_pose_signature": "c86926c6bc04fb664a736ec16151b146145527b6b2b20c68dcd37cd8c3861340",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.11",
+      "actual_pose_signature": "7540d0ee1ad3f32d5d359752fb6addc14d52b44e2346d1d680326a19333cc144",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.12",
+      "actual_pose_signature": "da1c85d586fc8807df2fbba9e629623c5c778a746b74262486cce5a0a6e9c67c",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.13",
+      "actual_pose_signature": "3c79df345c973032aa39e5c4b2fe5f5c29d0ae5bd1fc256b54b268d4c36d55ab",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.14",
+      "actual_pose_signature": "3dc7a89aba1f41682f117c5ff4e92e27f8da0f15d8fb79e1a7d6fd07c11c447b",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.PALETTE.15",
+      "actual_pose_signature": "7bf61d770895b96a773f3afd5b47d8b40cd69f63c388c29f1326842460566742",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.01",
+      "actual_pose_signature": "a27d6f19fd9730001813740eec8138809f4c710c391cd4f2ce6bee73e3371190",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.02",
+      "actual_pose_signature": "e380254eca6dc85b82eb5ae0b4052eaa87932e5c19545dd377757f0bedc71a37",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.03",
+      "actual_pose_signature": "91638586a63c36555da860b38cbb639f7ecc82a10e22e2af7cef42babff2e323",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.04",
+      "actual_pose_signature": "2985ffdbb9207057a866598a1cd5bdde4e0f0d4029d1543f3c7ec4cbbcb3f88d",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.05",
+      "actual_pose_signature": "4c39c7e3e372d82e7326e9e3a2d1607b99b43eb5249ad252a9b261cd3e9d8707",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.06",
+      "actual_pose_signature": "982f1d5989d669c17dda08dd6aeccace28fb3d33b04de7622f189ff60b03d8c3",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.07",
+      "actual_pose_signature": "45ef12d64afcea805d93581e0c9d7765793a8c1e4f8f73f713a2f18e3c928730",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.08",
+      "actual_pose_signature": "1c19253a33e58e6d87528bff78f8023d6ef7c967ee8ec167993fb9d41a5e93ad",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.09",
+      "actual_pose_signature": "1a609376bc501d35fd7632d6e20bad404741896d6226b43fb5a515cf72ab8646",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.10",
+      "actual_pose_signature": "7053a00efe68f466c36ae727f88ab46320a52b95ceb9cc09ddf5a209b52a67b6",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.11",
+      "actual_pose_signature": "75dcd72518f0a61a70251524f968c37d495921d4c0511aaf240ca9bc81de0b4e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.12",
+      "actual_pose_signature": "30853aaa7b2a39f4556c4a1008cce3c86e7b1b6d8de2e3919f5ad5f09ff8b93a",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.13",
+      "actual_pose_signature": "de4f24c9c64bf5aa75726e2c8d73d75c9cf54210da60b4c108c7059dc145d95d",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.14",
+      "actual_pose_signature": "f012c1a5284a11afd131721b1ef0ba40e5eaefb3f9a70141cc4efd6e09e37cf1",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.15",
+      "actual_pose_signature": "5dcc53d94658867a6dce9f98f5ddfedc06f992066f6ad8107810e29623748d45",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.16",
+      "actual_pose_signature": "d21b46dcec049583060ca25777111cf4735c3d4dd281287a63f394410bb85cad",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.17",
+      "actual_pose_signature": "a2383e64a7d59d25acd97e2950a1fab66e7e8234a880d56775de51faf2d64ceb",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.18",
+      "actual_pose_signature": "a3d25effbfd7e742858d76ca4af9e4ff5325814a0b39eaed6f8888533e8e6672",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.19",
+      "actual_pose_signature": "05f88882099df4c222395c18e7aa44cadc89565bd20406b4fae24dbc51281a0e",
+      "visible_objects": 70
+    },
+    {
+      "id": "V45.STAGE.20",
+      "actual_pose_signature": "47bd43ebc5fb603022776eb48417fc99ebb5dd4c1a19f98bf5f6306fd79cf3c1",
+      "visible_objects": 70
+    }
+  ]
+}

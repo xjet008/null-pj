@@ -11,8 +11,8 @@
   "animation_profiles": 23,
   "animation_frames": 2208,
   "zip_parts": 7,
-  "asset_files": 10789,
-  "expanded_assets_bytes": 2171650863,
+  "asset_files": 23103,
+  "expanded_assets_bytes": 4355939370,
   "largest_asset_bytes": 24339646,
   "gzip_records": 57,
   "family_counts": {
@@ -39,5 +39,28 @@
     "legendary_profiles": 23,
     "archive_parts": 49,
     "zip_entries_crc_verified": 20093
+  },
+  "v45": {
+    "passed": true,
+    "version": "4.5.0",
+    "editions": 3333,
+    "frames": 154272,
+    "encrypted": 650,
+    "curated_values": 742,
+    "recipes": 2400,
+    "recipes_used": 2400,
+    "source_concepts": 300,
+    "category_values_used": 292,
+    "native_grid": [
+      80,
+      80
+    ],
+    "presentation": [
+      600,
+      600
+    ],
+    "archive_parts": 185,
+    "zip_entries_crc_verified": 23562,
+    "archive_source_hashes_verified": true
   }
 }

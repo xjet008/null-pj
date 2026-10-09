@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "device": "Quadro T1000",
+  "warm_compile_cache_hit": true,
+  "startup_ms": 11342.397,
+  "compile_ms": 9.714,
+  "resident_pool_bytes": 2170735,
+  "allocations": 14,
+  "repeated_stills": 12,
+  "additional_allocations": 0,
+  "median_gpu_ms": 27.504,
+  "scope": "Measured while production and local studio share this GPU; no universal speedup claim"
+}

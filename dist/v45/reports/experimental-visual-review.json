@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "canonical_grid": [
+    80,
+    80
+  ],
+  "presentation": [
+    600,
+    600
+  ],
+  "reason": "80x80 retains comparable measured quality to 96 and 120 with lower CUDA time, while visually separating cavities and accessories more clearly than 30 and 50. All 200 before/after pairs, six-grid samples and five rarity timeline phases were inspected.",
+  "images": {
+    "comparison-01.jpg": "de430ae17952f3025b99a0e2de65122fd191b5097cefc6f9b579d3451ae22757",
+    "comparison-02.jpg": "324072d2e9194bf8a3655fad02caaf80564ae7053862342f47bd58b7b4ccaec0",
+    "comparison-03.jpg": "c51eea8b232f551d2ab54be6778618439f6f51ce90799a40ae63a692281df0a1",
+    "comparison-04.jpg": "403a1064ab4da33b6dba64979eb1bb590c565d22f3630d7265ce427314209e63",
+    "comparison-05.jpg": "8562f30232fc8a716ae7769542ce0b8f79ff7ea738e8a8ceadb2aefac907f4d7",
+    "comparison-06.jpg": "3301b977c31bf7ada429d746ee461b6cdaaafc1466dabaa8bcbfb5043aff5d0c",
+    "comparison-07.jpg": "3b12590362ef909e1d2470fc9e2c1065939a4f5c2f94e3045546808961929935",
+    "comparison-08.jpg": "21b3269969582610d727e3edb0be538b66ba71c0b5b18829f80b6822a40222ca",
+    "comparison-09.jpg": "957dcf47ea4fadd0d31fec9995be7abc93229cdc18e201a8a6f9a243c6e99df7",
+    "comparison-10.jpg": "257518c4a43f53a2e8c4d33c24e3453b58b0c9bc3c54e854bdf10355ff90a3bc",
+    "native-grid-comparison.jpg": "73e0aa974beb1b9d1646299d54fcd45b0158d43eae3dd03bbbdac4ff444f0275",
+    "experiment-motion-phases.jpg": "9179507354acd430e79db4dadb496fc122826ac8305f51b3f20b7c3593872959"
+  },
+  "grid_comparison_images": 1200,
+  "notes": [
+    "Improved silhouette size and cavity contrast across the matched V3 comparisons.",
+    "Common motion remains subtle; Legendary fragmentation remains intentional.",
+    "Quality scores are engineering proxies and require this independent visual review."
+  ]
+}

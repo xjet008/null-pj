@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "version": "4.5.0",
+  "native_to_studio": true,
+  "studio_to_native": true,
+  "fingerprint_preserved": true,
+  "hidden_message_preserved": true,
+  "native_tamper_cases_rejected": 5,
+  "studio_tamper_cases_rejected": 5,
+  "studio_wrong_key_rejected": true,
+  "key_source": "Known synthetic test bytes; actual owner keys were not read"
+}

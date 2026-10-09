@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "version": "4.5.0",
+  "candidate_fingerprints_compared": 3333,
+  "default_changes": 0,
+  "operative_controls": [
+    "primary",
+    "secondary",
+    "tertiary",
+    "stage",
+    "ambient_code",
+    "motion"
+  ],
+  "scope": "All frozen prepared default candidate fingerprints remain identical; six independently tested compiler budgets control geometry, noise or motion."
+}

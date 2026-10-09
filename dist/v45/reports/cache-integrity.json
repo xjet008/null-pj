@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "malformed_manifest_recompiled": true,
+  "modified_payload_recompiled": true,
+  "recovered_ptx_identical": true,
+  "cuda_float_argument_result": 1.125,
+  "scope": "Fresh isolated NVRTC source, real kernel execution and two intentionally corrupted temporary cache artifacts"
+}

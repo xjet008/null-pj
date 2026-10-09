@@ -1,0 +1,1729 @@
+{
+  "passed": true,
+  "review_required": false,
+  "version": "4.5.0",
+  "sampled": 100,
+  "legendary_profiles": 23,
+  "rarities": {
+    "COMMON": 20,
+    "UNCOMMON": 19,
+    "RARE": 19,
+    "EPIC": 19,
+    "LEGENDARY": 23
+  },
+  "images": {
+    "production-01.jpg": "23f8a30f9edef56180dff632008a52a8c362be7b5d0fe9bec8b7224c41dff0f5",
+    "production-02.jpg": "e7cd92757f7aa5b068b07598ef6655ff897df50f0fbffd5cf1c16e0dc6fd2241",
+    "production-03.jpg": "55250e210b6d9f6de59e73920f2ae899af74b2d161c34c3382fe55223414e14a",
+    "production-04.jpg": "8bcbd60202487bc128702894972079ea67a6253bf5b7f7d26bea37bc72ed9d71",
+    "production-05.jpg": "a7797098c6a25640622c6c415af702fee93fbc35b8aed4fdd4e3911559267cad"
+  },
+  "items": [
+    {
+      "edition": 198,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "69d100981973a819af8917c3dbdb751e3d7435dc9951a81375e880fe10fa0a47",
+        "8f26404add2da713b799f6948e71ca9f45af400fb1df9a047ff0586d7af5b53b",
+        "55da4b6a9c8711e7d27591bb12188f577c65e748458212251bad1f815c05d887",
+        "67847d8e5aa0c310cd7363a0336df66046a5e335e490153d7887b773cadaec77"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 742,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "c7ffb6bc286288f91ee7a89ab41497c78880e5e76bd083a61af22a319c640173",
+        "91134d4200cb30134274afc91b5544b36a86a22d6b473ba71a52db0d0c3f922e",
+        "618ec0ea02c0a4029ce14f7573b150fe91b585f70238d17a8cd0fefcbb45da6f",
+        "65a17889406e721f8369884b4ae971901e4dc409e6a19f33d39d49d9cf2f414e"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 1034,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "1e528c04d6bfeb0dc69ef8e623419dc44661ed46fbf460ad1c80343df7f9c0ac",
+        "20ce327cfa8fa0e02da1f12572c252d198d1a7ef47ee19a9768e7e077665a161",
+        "fb26ed6edb2a84a1a00d217c8c00936cf71d2f86d7e006a8d6d75666e3459020",
+        "2d8850ab1c07fc3072d4b63721fd8214e52255e0a49bf52838917283b6bb5498"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 1079,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "7f586999f5da654fe54350b63cdb75d7cb23ee8917384440fd29f03e7f4e8418",
+        "7259bd892a364462fd9cde40cdf0cb1db502754cbaa22e37db953990a5c187c4",
+        "7f586999f5da654fe54350b63cdb75d7cb23ee8917384440fd29f03e7f4e8418",
+        "943a36f07dd1c30921c8b8a3a578f01e86369af8266f3e99092ce91e5123b7c8"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 1081,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "71e4b472c3c569684b5aaee2ea67dd199d2ff112099dff8620c77c00750beff5",
+        "c25dcfaee66e8018598492f8e1cd2ff4d3c8eb4ab3dfdfffc78081aa3512ef0f",
+        "3ab1b07cbbf46d609d94dc5805f0ba8d3c6075966d3ea1f56cf617f1f4f8fb5f",
+        "92f8e371f65de6bccac7aa541e03b85be72cc66832d25fcfdc70acde15137500"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 1149,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "6747ec9a00c57116001d3086604d29ac6c4d0c601f8a4d302f3e4ed97044bfba",
+        "380d3d0c11c693ffffc9517e5adb3b1b1545e3fae0069edb91c21ce59e7a88be",
+        "d932ed09639cfd9c6b4ad4d1d74e7e2e7b844c783e009f282da19692155d8873",
+        "19bf2071ce682870e5f7d7572d372ffb14ce4f122b102f5dc490daee3f7c91ec"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 1186,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "34e635275a721de3bfa01733e294ad0608bedfb4bc12799ca8ec0a80a2d9d3d2",
+        "d6245d68637f468decf75214ee35a7484756b7fed3a2a3dcf5e9f135c0e861c2",
+        "c6d6deb6a7cc07ea7ef751cd2c039b15382f3a54abe165c4e52bd0056a566dd0",
+        "31cf7cc041c565014738d6855f4600fef9b15dfe0de5be7eb482109332c600b1"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 1322,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "0ae5edfc2dfd60ebcf3bcdf0e5d72469e2547a0352393076c4dc174109189c49",
+        "685cf107bdf976567713a625c253c1fdd962befc87151381a137f625be9f1abc",
+        "0ae5edfc2dfd60ebcf3bcdf0e5d72469e2547a0352393076c4dc174109189c49",
+        "bfe03c9d46eef3b11fc948fe995ce0a2dec93326f997f53f963ab8608c88796e"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 1325,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "afcc58480e78688139b3893e5fd932dac8828057bc2abe758caf1215f506f386",
+        "4abedf797e61a6b27c86d3014b73e5721d08def230233f46157a30dd23560f41",
+        "afcc58480e78688139b3893e5fd932dac8828057bc2abe758caf1215f506f386",
+        "6f566f1d3ac7d65506b19ebac363717d786bab0c33a019f72ea73239445242b2"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 1369,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "3a43dd72e41e6b7b9d6787d369ca155386284487f1ff494c2509beb9ec6c875a",
+        "c9fc9b4ce1cd6426839ae2fd7b6940224032474841a5a9a8274d5be75eab7e69",
+        "1c4fca2181064659afca7b4dc13908fdcb89f7a4055762cb00f7acf20f30403b",
+        "352fe77f312073afa65a1c198f8cbd0db9287ccb9958c998cba73e1161506ff1"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 1448,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "3aaf60c55443acd5022364020a59b37cd92b079b1067e0f324ad4796da134c0a",
+        "d574432d6791e0a68502c2ac9e3e323de259dfc32c899d13b710859c1545cf25",
+        "3aaf60c55443acd5022364020a59b37cd92b079b1067e0f324ad4796da134c0a",
+        "40783c793760f6ce898a68054a78d10837e390a0f751a159c042efe5df709c45"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 1541,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "a63ad56d3a29abcfadbc2dc5b0ea8e9bb61c3f8c4b4d3808082bf41ddf817ac6",
+        "d678b004847390680e7bde0a336f1f5a5519a79b9687150adc9c4f826f8ffbbd",
+        "e8ec1a6076f3325110f5e9acd3d990bc7b63db20089aa34dcd23b19e58004c8d",
+        "a019a4908a3d76a75769106a0cffb87a5c00b81400259d06e151003b28b3362e"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 1824,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "f0d21e3ce664665fb26650f39637904ab875bc4a9c947574c8ee925fe4237afc",
+        "73cfb2ec0ea84bc007c404d9338465d610f4bda4508bf38996b0739257cf9a4a",
+        "f0d21e3ce664665fb26650f39637904ab875bc4a9c947574c8ee925fe4237afc",
+        "a0bfc2903ced787d639592893d988e0dec7e78a246f900c5071e087b40ad17ec"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 2110,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "d3c84a0dba3cc80424821e8ca10ee42bf22cd25ca410bc23fb14fd57d644ecbb",
+        "b28b87ca71e15f851dd3efbab1769015bec1ffddd6507f635aac67c893d54bf3",
+        "1656ae7f6b3356cd9e6fb5c9070d57592915cdcda7fbe44d365136a39592f430",
+        "2324e3352d80c0f17ea1e976df0f809510bb3447854acc00506faccc945515d6"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 2257,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "02b994389f99472bea5c28170563c0605a3a2ac4c39c84b44ff37c7d85404f8f",
+        "8c5efaee0757860dc6c4e0bdbc5ab96ec9dafd26d2500a4c2700674c8e7774a8",
+        "5e25d541f2d4ffd47cc1ae094220b0b4ce0c9fa82f8178fc9be1b72f21dd00ae",
+        "0c840fcdca9bb2fc4d17b8557ae79960ace19f5e7fc26f193acad4adb3d6b47e"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 2388,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "ad792bd157fb6d5cfabd4f2a94b1aa50080a965e7f4bd5699ab0e9b00d1fa884",
+        "7e2046b4d54bba3319d789d68c6500da1869e3f4b6cd5ba4c1527476bb44d729",
+        "3d689544ec1d1a84d0f70ffb96f3132291d709a65ce19d26be6f6c7244e88b66",
+        "55f226a218068a24422e0392a490366bf46929b1eb4aaba0caf6003ac72f1fa6"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 2480,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "89763a2467849d7d6894cfe21a513fc72c440f2117120d3f7aac0d7cc45da34d",
+        "674d703bd45dab802c557d68e281dcf1abc7c09b5d2bb12a028911cbb48b2aaa",
+        "657f4e4a1a41dd21a145c4b566e9736dd093b70a1655a735a87be93f7739cfcf",
+        "106e442ca723f76a23a3a72ce0e139ef87a5a587ee431d2cb9625aab51f17ee6"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 2490,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "5942e040925108bbecae9f904db1beb2f109a8e52cb8d40b6bf7a231b9bbbae9",
+        "f0ab6e0edb83c9716f297bd022eaa0f016eafa20408e98e468ad41bcffa018d2",
+        "b871a04fc4e7fe9852eb971ed348e4db58eaa2d88c160bd2d681b3250035ad14",
+        "df5680860c3b213289a0b5c5d988f2968bef523d788cb853592046fa6206dab9"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 3183,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "6c179b73f4e2614b5dcd011e7e5428ec8425eae88c178c2dfa5fac02dabcdc9e",
+        "132164b375cbcdce2c7fa0b3689baef2893c38a01d1edf3459bccc3884dae8ef",
+        "3fd72a0a1b2a9c85f899279378fa5aa5eaf389681b68985268f4f7fddc8a0a24",
+        "8b4e7fe7cb4013f5b01f668557311db742b1e4fd39d71b4f28ebbbd75cb0c4bc"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 3284,
+      "rarity": "COMMON",
+      "indices": [
+        0,
+        9,
+        18,
+        35
+      ],
+      "frame_hashes": [
+        "2871eee30cda9b7340a069ee16239f4323450fa56ec0f057c0fcda292ae09e70",
+        "f640222c7c8c093ef147b3b6d153884e39ce018cb5f4d9e9cdb9b408e19e4551",
+        "4a106a0fdadc3c6858f487c037d088aa0ae3c64ae44343b1b0c4f78834609723",
+        "57c5f1944554e27170e82902514bf11b5968527091cdcfa878c9fa3df7f10fe4"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 216,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "04a683a6107f64d026b3a90b27ee8b3fd5264e623c3f0cd5c193d42c6fe280e7",
+        "474d6715dcf43c8ac4cf97ff8fb63fbc8a2626eda0c6260feaba037ee4b8b945",
+        "c049bbc67c54166de6f91bad16cb19de4ed21180c465605d644ebab2eb0215e2",
+        "484c65bb61a0df57dbea6c45853fabdcffd6fbdf3df0fd75821ade5c3d6d2cdd"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 219,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "2be86f877b6ccf5a4d7f1026f95e249dfd8b949f9ff61268ec953bf3d559455f",
+        "017594477342a597bdab427a4b4716af196bca48a5dbf7f1d908246047a16c3b",
+        "17588f16e77dcfca0d428454984cc12c91154ce193938942bb6d4a5271bfbdf6",
+        "f77443e8055179c778182d86b86de4cfc31655f63bcd9565479fdd8db69ac18c"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 521,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "6520fdf08795a5bb540b81477639a401759f9e7539d15e0cea1d9e42ae1c3020",
+        "5a0b45594d0cb971f9ddf467174137fbed5ad9a563b16dacd4a935e399e16120",
+        "ab95914ce7ee2fc459dbb0be694448498ed3cdf9d568d2cfb902eeeda3fd441f",
+        "53902b57c2df054e7e774e4161babb7f83d4b15cbadaa2332e0bd3ca3fac7480"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 539,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "76a9a9e93b69c7ca29d9da3845af703804a3f21f1f9dfc19b78e1633c5feeae2",
+        "457c65ce4bb1937fbdd50f890f8a6fa2a0f54c643320949f373d5cc47a27dea2",
+        "2c320abcb2b34558398f737ffa3b6e981427ed6fbf31382879df2e365ffc0d9b",
+        "a62d54599fd5935734af846cddb6132f92e9b4e1d07dd6a2c0a27605111692c8"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 560,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "5feaa028491283ff6e3ba3e9ab5b028a0ec141ee335cc91aa6e0209155bf65b2",
+        "e0a9e7d7cfda020001778378292f62b4a8abd91a8ec414648fcfbb9903dece52",
+        "eb4bf407c13388d674c0918fc8e5398957c8b12e81d603d31518f8a32db14fbc",
+        "8ef0d0cb119961242bd857cc464713ba28aac9585c419e07b564523324d7018d"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 593,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "5fe819a01a74fcb9c5b4597f2aae63333c78b91b28e38ffe4b8b801f8959c38e",
+        "4af5a76d8ecf401eb520a39040cb3d9b0cbeaa1154257289c91061e583ebd3b3",
+        "5fe819a01a74fcb9c5b4597f2aae63333c78b91b28e38ffe4b8b801f8959c38e",
+        "3ae248c3d34f16fd5f1993bb0d5a55d5be41d68fb8409ae3679b6ec6f5698f8e"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 688,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "d568463031aef1f647e0e1bb09f395121656b95ae20f64da47d110d85242da79",
+        "225ab0e4eb539956e2b20a7c2bf09d08cd47246612c4c780d4bcf288a286ae78",
+        "d568463031aef1f647e0e1bb09f395121656b95ae20f64da47d110d85242da79",
+        "fa23f8410c819b8cacceb34724d4b6523c1e42a4ec1e287062d7a194b427f433"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 714,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "2cc3fd93e572b2643b23b9201f12d9cb22ee982e7377063d5f2f56a73aaf67db",
+        "913df41a8a5219c0c7bfa1929dab414d60eaf0cd8a0407fb889f56037aaf2dac",
+        "cad6532fc170318fd97a3c1c82ced4f45cae1450c97c64204efb5561f232bfaf",
+        "d6e3180997c46d9d3d85feccb18509b63697c464e80c3b2de7334b2f63d3bdb7"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 1076,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "143f60e4f04469c7f05a81c1342ebbbe0aa88fa69e6c9fafdd4d67202a51e4e7",
+        "60cb83f08ef52f0d24c777b7acc22eb4f17a518dee0beac65fdd15a4581b7d00",
+        "143f60e4f04469c7f05a81c1342ebbbe0aa88fa69e6c9fafdd4d67202a51e4e7",
+        "e66b594a66bd8a30ecf7832a6e2d2743c59952ffd4ea1e7245297f3afc6f2023"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 1158,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "2eded8e090019f3ba6bb54dfece7481959ac0417e5ace06b9d8e1a2bb23dc510",
+        "5244992b32e826c89b9abc968aeb323f231f0192c2c4e0c56f04f102035157aa",
+        "f5ab91fa03d6f7c61a2da7f7d70e569baabebea8ff67e0b8016b6da798115265",
+        "c129e9e27c4acb55b4922a4ecc3198a83504a95fdf179b4a41684df0f25c0573"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 1537,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "2363f6cf5a90499d7df31b042a4751f397719dee13b76310982594e3c51938cd",
+        "78f9a0c651edc9b3dabd4212f6f87d695a50f8bf34f5fe8e87a01284b937a50d",
+        "5e6de1374bd132014901358034e8cb335f3be48cc849c0d3307d983dbb6bc321",
+        "4a92658629c59acaed00a78ff3c9f56e5dbcb25604bad5fe2ed5c1024d596adb"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 1771,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "afb644133ae72ee5998ea2b80466a9494499dab630af8850f076806db68f2095",
+        "e59d392c6b25b202dcc395d31092a1e1602f436331d788ec296d652d7d2caf83",
+        "afb644133ae72ee5998ea2b80466a9494499dab630af8850f076806db68f2095",
+        "9b32d8bd66e0f2737c7be1e42dda57eb7cf7ec0128bdbc74eb7ebe21ed30a02b"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 2235,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "6ebdaefbd656e3c058bfa73d9828eebc67dd75d2c756c588d920b5e5b15f19ed",
+        "b1985d46353e7d53147c1662bf3e3eef6fb3af8654a35a961ff01bf2ba632356",
+        "e36867d6613f398ff3ff3335174a6c1ce8c8c9ad4c74d0624cd40559fb0c316d",
+        "120a016bdbeb975710aa0b0fee267683defb5371925a7d32a6f3e73b3b15439c"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 2704,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "70b1b7c23b5359aaf491ea373ceb4007eec43772887628f5cc184948e99040b1",
+        "b95ac9934e640d88f0aa186a92f3e5bc09e9e542fbc4edddd1e0f9cd50f99f41",
+        "70b1b7c23b5359aaf491ea373ceb4007eec43772887628f5cc184948e99040b1",
+        "a98bf644d2085acc1f881c27eea5753e021ccee3c98e3928f51091dec41cb6bd"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 3132,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "fae480ea55eeacb8dace6605ddf876ee386c600d1c8efa8bae33e6987e32216f",
+        "981fc2111a8eb38708a225e3ba49cfd293dbbf39763fac16aa8b67a80f975770",
+        "e9753c24fa67bf8cd8826a0e3ebf0d03fa55811391d12fa66d62d2aba6cd258d",
+        "a54a4f6d2e33f8d52bcd649a02561b59ce768acd9bc0d0dd03532c104b0ca8f6"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 3151,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "157a197c258a33ceeed1556d28dee1cf5023d012bc5e4d4261cb245143a87c8f",
+        "17973abe7645ee0896be980f72d4d07f6ca7d054ad956a89f63e28ffbb1443b2",
+        "268e791dd070082d00bba0ae152dde162d638c86055fd5d49c23b76db3d7f116",
+        "60549a502996263898a7773195a90bb3e2eaec193453f5e5a4f2fe7ffe3e842f"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 3152,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "adfa645e533c8e8ebab468c13bb9475331ce1caff69b4708c938d292282e3e57",
+        "1abb3a00982cbbeca6b3b9723210f4e253ffea0bff0040bb767969b845fa3067",
+        "03c2de6b8428c0450410f5893d0cdbc3d165d8d1de9df66e9b2de8942b4936a2",
+        "ebf550b7d52c60b11f82220f7d2544c980f6f1c977b9f618b5e5d40e47ac5ee0"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 3190,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "1d6429820dff7857a211735af81a4c144acb66a501ef0c0245eed63ca3ea47c8",
+        "8dc4ab4d553f1da334cf906103e2597cb7ed64ffd7d921b9692bba1282795eee",
+        "1d6429820dff7857a211735af81a4c144acb66a501ef0c0245eed63ca3ea47c8",
+        "fe41d446c79a68d1e0579b2e98b02531fbaff5dc2a2637b51064d62c53801144"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 3207,
+      "rarity": "UNCOMMON",
+      "indices": [
+        0,
+        12,
+        24,
+        47
+      ],
+      "frame_hashes": [
+        "e2cf5ee2eea6e2a8ea1504a42ae742e5be9a20af7349c933c9eb93e16df0a2e7",
+        "99c6f0ddf7cec8bc47545da2b2fdad6fd935093a80566ac5a259195670cc44c6",
+        "1901c9324b125478cd2cf100a096a893e5e0d27acd726a3bda18f6f7fab40954",
+        "c1d2fea6ab33a1b8d42b2f573f373d4057dedc85c3c1b3541d1c42d03be7f870"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 83,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "a1f1ff557d23f9b05b96d9104ef95511fdbe7e37de94023923e172aac3d99cf5",
+        "eab3a081738c5b872bca471b5a7ebda17b500f0ebae9896957ad8d0396c128f1",
+        "6c9780d5d77e55e57eb52046530eaa901b3e7fa4547dc0d91a145809621a2da6",
+        "8d43c3152a94076aff0bf1617d89ef42d9d44ce253e0bcd993c1dccc316cea99"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 502,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "ccf687ecc486629d19100c1ef2750d451d153794d7059e0bec9e0a7757a000de",
+        "efa9c9bd054516ebbf051d63c2fec5a6148301ebab06094d0001c946f049c4ba",
+        "ccf687ecc486629d19100c1ef2750d451d153794d7059e0bec9e0a7757a000de",
+        "5911dce04b93f457daa22a9d335f0fe80ace908a62b414bde5e33bdb5b7e87b4"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 809,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "605dde39810b8aa4e7b2610d39661ca15143dd2767c315f3c350c8cb1f7f651a",
+        "915cf465789ddecd0ec376f573198dcbcfdbc3a3ccd2bd85403f42d3298cd3ee",
+        "480264dd1e549d65686e27055d6dc421a1e4da1531fff1e8440e270aea8222b3",
+        "c4d0e3bc7b6aae1500a00e5099dfc5e3d10e8bbe883ec6d57b51016cf54c8ba8"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 885,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "29b9eb48c968841a7eb71379b6b078b9055d11baaf26b4020bd4faf26b567a42",
+        "8f9b7b76141ec5afbcfd6e165eaf4dbdf00ca87826ff35edda80932150680af3",
+        "29b9eb48c968841a7eb71379b6b078b9055d11baaf26b4020bd4faf26b567a42",
+        "7286ba5fe786dbcd749a55136a8eb520984ac95727fa5db245d29370450026a4"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 948,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "d3e482107981066a542c3366593a3d3911dd7e5a397a333cbd7a5b9b16d2233e",
+        "9cfb5b6fc590b666e3960cad11b0d15a44d5e5e81a356741b3b84f724f326127",
+        "305c912348851bd8448cdc76f506f42f49bdc04e7aa9d851bcd9531752397d3f",
+        "0d3f4cac747b47a9137dc23b64fec86369529a98a488126c7290ef18db3be2d1"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 974,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "e074e2ffeb01bad72673f1dfcb634929a4aca1117eee2e28d800884b3b651aa9",
+        "7c1f94a8eb42719b6527a39f180dba461e5c88a1fa3c914d148a2162256f0e1a",
+        "e074e2ffeb01bad72673f1dfcb634929a4aca1117eee2e28d800884b3b651aa9",
+        "968eb33b125bbc385378ec79184d0c73cd8d1b458fcb4a97e3da978064a8cf3d"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 1227,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "85a140f70db33793c9d19badec48cce7d9f50800c15c6f0a9d83c3ab0133f81c",
+        "b365fbdc7ab120edad86dc98d9165c80d07317bfee523e29d178c7fd82d1b7ff",
+        "85a140f70db33793c9d19badec48cce7d9f50800c15c6f0a9d83c3ab0133f81c",
+        "bb9a7c821c73b01616f8642f560394d142e76db8cba485f219849c7461ab92b9"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 1413,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "fd0a310779d5178f126cf4ac878e7a039e9ac2c12a371975fe155a85ec773cb3",
+        "25c13ac8d0f8baddd361a36d1982c2e6b545787079fecfd61a721490ca99810f",
+        "0d373b1cebc4b916a22624e3b93d7f6ae9129fd54aaebff741edc2bf622b1779",
+        "ee350bea9a7be51bbe27a255b06f46c20fa4e801dae0c43cf414f7456b8afffe"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 1426,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "9fc3a5356eb91c9635aba967e24a766ae7759b8f0d9fc936513b4f8a1e0886d8",
+        "f9c0e822f104a4e9fcb264a89214d9f6d64d06819472ea9cebefd9816e2875b4",
+        "244ae6ae5a92a9295c319c9693d9b91bf12ae347f72373b5e4a30e2c12a570e3",
+        "d3df4b9fcdbef3d9ec9df1c5408070fd53975957a13619fd43b84a072eaf2798"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 1700,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "214bf4e2d08865b2c3507bd4c70ae619888fd7d22afe03620fad93f4d795f26a",
+        "d55fafe22c27e21bd19abde97e8f043699e3e292fbcbd52020e4695708a288e2",
+        "214bf4e2d08865b2c3507bd4c70ae619888fd7d22afe03620fad93f4d795f26a",
+        "6ee6f83fa8290667f716ef537e8b6886e0b7d123d53bec7dd72d0dc3c07a7646"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 1745,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "6c83d7c790133b8b24655b449d1791a6a56b97f825886b3315e9ec118e209039",
+        "c695c09ecd8f621a868bad05b40a2307d3e8e32cc9c205e81cbbc12217647304",
+        "493e964b0206898a13ad8fe276b393ee5df0b832a1c479432f2483bf79df1fe1",
+        "bf291ca5333f7944eba114876512c6350294674c4d6f89abc89fec128ba4baba"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 1958,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "2c715e19add4c05bac8b2abe8c903289e0daa176044ff7ab7e46fac2ccb92101",
+        "782329d0a8a54c019e35dbffa6c00f8df4e5c77397cddd79ea2afaa0728f0aee",
+        "412d5ec50f46f2676d74e46f80e603c38113679141dbe04028a34002aa6c03c5",
+        "cb87e4c75490f0b737869b9d8aa3ede4ac708adbe425a5b7d0ee706e70237491"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 2056,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "76ade543f7bfe235a9e01a641a2eb29a1003fa19db87275a16d870f76290823c",
+        "cd323675bb9cf508f4954757a9c9ad65683e2213fd76ae813b3916c86b5adee1",
+        "5560d3f6e67676b0887624208b32b9eecfbbe66bc0fce6396de1b810276eb6d9",
+        "e91615a81a27ec9056045d0bf3ee5b19e4a2b40498edd8b1cf5f6a3e30ff523f"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 2197,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "555f2ff36d4d0f9c881d4e0d80649134fff5f3be94a7d16fac2883eb8dd7aa46",
+        "0b3e6ac0b5e8d22e2b650e5ce710b953525c5e20cba444ad016320ac561c3b30",
+        "8df191678da149b3c2203b1c2ee6d935b0926a39755ea73b9370b003f79796b3",
+        "2ea4a6e3d73491cb223466ae8c0ea4e7f9133fee15a0209436746842ceb8c505"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 2223,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "a003a96403dcf21c18d0a7be08ac301521c621262a747f35d6554295973c3f86",
+        "d5e0a460e30d84635a36894d0f4c62a8954b84c73f4a132cbc602687abf67f33",
+        "7bafe1b1794de3c1ae0dd7ed6460be35df9ae6b89cb788f1bf2a50f4e8203255",
+        "58e9efb31d03d98da77d4c8eeebc816d03c1fdd5f9b35fb018058e702d54db0a"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 2524,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "151f13605041004ba4f8eb9ab5d9f783c465f788d3c09553eee8db23237b1d2e",
+        "5a1b1d28aa0326bb50f23f2b51b77a8cd9a55f3be3706351b6cf1294720d3932",
+        "7bea17b76b885865b8e83a81f256901340c6a3166c1f33ed1bd0b8f514175aee",
+        "93e0fb1552c0776f0e03d74e17acb96144459e8bf1b3963331c177b3e0706ab8"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 2762,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "f1a9e8c98ce38fdb237ec719e44785ce2413f2839673577ae9a9dcacaed27d52",
+        "63c600dc3ec8a26e30961149f55f9bf5fbf63c9b068377dbdc0b3cb1fe0a4f40",
+        "f1a9e8c98ce38fdb237ec719e44785ce2413f2839673577ae9a9dcacaed27d52",
+        "8c48575db96bbaa900f3babdcf3d23c43319f23ce799f87263e58647cbc4ba35"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 2959,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "8e97746b2503432fae34867bb7a5609f520e7d05f10527cf4d83c01f25019556",
+        "f71bd7d2ce7923f1d3c82b363ea3a7eb83d3d8d82de946832a0da0582d15479f",
+        "8e97746b2503432fae34867bb7a5609f520e7d05f10527cf4d83c01f25019556",
+        "b461900660f6b332898dec670eaf9762f726af73ec4c4fc589e6382cf0496c15"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 2970,
+      "rarity": "RARE",
+      "indices": [
+        0,
+        18,
+        36,
+        71
+      ],
+      "frame_hashes": [
+        "98bd77a20a6c49a49b27562467cdd6a0f3651118819aa98589138d5fe49e44ad",
+        "b026fa0d3abbc0d4949803ae8df273c77076393e497b3d081ef335ca9fb9f407",
+        "b0019d489b1adf0df76e7c851381d10fb2fe929fe0fa80ec09df4c3077e993f1",
+        "09185592a851f2541b58ed0e6af4213149ba34619e4634df5aea7ba4ad4c1cfc"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 19,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "a57697a48105a70a6eeb32c8408b2efedb071e3b27a15e831898ebdbdbfd6d11",
+        "7573c045277110dccfff859796ef1974af87f919b26f29a3cb2cef8a2e01125f",
+        "649cd57420c9c40119e72597479c8b3a7b103607399387ab0ed5ccb985e56785",
+        "6d60c772fc843738a993846e2d4067ef5f37bde6c4ff4ea4aa042da06c38e541"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 45,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "1b5cbaa38201030f5e8a684bc84f1075906a81a5c3317ca27c4026b7bddbcd6c",
+        "dce9784ad57bed06de36527e30cc8b330874c0b106fe806f8cdcc623d36a56fa",
+        "1b5cbaa38201030f5e8a684bc84f1075906a81a5c3317ca27c4026b7bddbcd6c",
+        "b61a3e60bcf7df991f67b85c0e2ecf155228daefc4514139a8821e722b1c8dc7"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 86,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "00f2b93189cf6b9f5acedf1f3b2e26eca850bb549d4d0170e08daa62e7845a66",
+        "19c5112df8d0a2ce003439e7c9e4578e091d279b8a7982f2cc0a91b0750be323",
+        "997480d6785b6e980e3b4777213487112bfb2c6c56da6d2baa868c20789e90ba",
+        "92ef23af9e686227e3ff981d871389ec3015adb9e0ba2cc7c8770823e5f13987"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 175,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "7bc72ca80885922237f973278dd2e3bc9f7d8f3dfb514175941c27d5408524af",
+        "0df9a026885b50dd2ca83eb34c16d73e5430cde200c81efd4e6357891d8c66d5",
+        "fd8303e8c4b96500064ade87c391932db4db8ad6d4e18875e8308ddd14ef9bf1",
+        "a5198f6fa56192ed8b0ed9d98d13de940ded6aa2fb49c325c1ab0a84616e02bb"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 740,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "e94409452fdfaf14c4a4c309883f7f57c6fc80ac6cba443057c0d166c4f166fb",
+        "c174e82b5e6bcc1d500571b4efa28a39c427f1edbdbaa30629a69d6ce159b60e",
+        "330d513940becaa28c1c6da432bf9315866ab31b2388ad4d67cbacacdd425845",
+        "2d548e8906e064bff511f075245ac5c9c7470b3d180d106cdc78d7ab36142ef6"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 880,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "031128978401b6011184023d6f94972d73be2fb6d7e941140ff604825a2ccbcd",
+        "6191f2755c39bfda6d2d257832969ea2a65eb843227c259a54ab353580c1aa6d",
+        "0b670e84493df35cede9a4be5411e1be6304035205109d670620db67b638ac14",
+        "7463e0ccbf9541a5d4e476c39eea73484e6e55a1c5e60ad8bbd801e6007d209f"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 881,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "6f945c82a18288d354e075e510f6ae648bb74b3ce501286b0b20e8f24f0e7103",
+        "5d7fe4bc10f46b291eb065c758af6e42cf92760f36977e32a5dcdc08d2d5cfbe",
+        "96fb889d2a321ed97e70b188c1479ac45a3df2bb1d3c80f40b8e58275b2432a5",
+        "4bf37d1dc3a86772de5bf5065e829d48e932a4769e8c8f3c2ab6e2b09992a38c"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 1192,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "1c1f86f1e2faa01aa0a4e12c814b0d155513570b211bb0e0b988c6a9c4161ca6",
+        "ac7fada74d0f7dd9eda787124306fca1257314dade5261ca0433edec01a3d0f3",
+        "feca55bdab5189ca9382dd4e887b6d8dc75b1165af6a425f446d6832b5e3c5a0",
+        "444c82f580652922662ce4101805cb5e6c02c197b19036c2d60456881129b5d8"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 1374,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "5a38dda0895f02138651a99e82d60141a7bfb68703af6979ae6a92be9af0da68",
+        "f7d2dcf6a53fb9f44d7335cc08234379ced32c8dd6e3a060b01151bea8366321",
+        "5a38dda0895f02138651a99e82d60141a7bfb68703af6979ae6a92be9af0da68",
+        "3a7b658f09c22bccb245f6f6c7d7c6bae10c5842cdee44519ef0c5e3a148bd2a"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 1591,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "34a9b821082e3488143a7569d0117d18ac574185c5d5d73dd14a9d93fecfa653",
+        "1c455911e05d8b85fda0c0027eef42602629c0938d05358952794a5aea549332",
+        "b8baf6541561374c6ac3adc28d1a16d2d14faab044ca1aef190602189dad5826",
+        "131cab74dff59702a21d2f7cdcbc0aa2cc2354eb4e296acb4f876fa9859fe604"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 1630,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "d3e6f027ff9b516a3eb20192f320ddb898921aaa2435ac6c1359bcacde969fbc",
+        "ed00ce12e8b65347637823205d188dc38e1fdec2fb54e883fc45b59480d68557",
+        "d3e6f027ff9b516a3eb20192f320ddb898921aaa2435ac6c1359bcacde969fbc",
+        "bceeb6d6e4e1523fe38bea0aca6c0ab175bdc71ceda01b5d037769fc1a05e856"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 1648,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "86531e8f956bb9958d1608c593afd932fc0b23662ca6e4758d849cabb318253c",
+        "14efbfdf0892ee2505241b3bf89891151074d20c043c0c01d0a85328ff5252ad",
+        "86531e8f956bb9958d1608c593afd932fc0b23662ca6e4758d849cabb318253c",
+        "58fcc30416df3dc965f7b2fee809ddf6d183737ac5bc1d985c8057a8e17c65b9"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 1834,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "f8643a211116bbac2eb8b07f2de4b03b253a88ec7643ac68d587af2a35213a32",
+        "69c5e552e7e02e93038e222b2256570e72e69afde01f3a219467c1c723a887b6",
+        "8db9a0d44f79864f706ebac016fc8b9ecbb99653775880744ffd89bacfaee833",
+        "f27f520055c97ab8d8962e8866081d2a620f7b95584403a17d5244541a24ef23"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 1943,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "757d36a049cf0da558ce2ab3d6b0af555df7a3e95f640567be052c2dc7035865",
+        "445e61b891a27c80876bb746f503fa462b0369602c1435cdaae51785ffe8f25c",
+        "757d36a049cf0da558ce2ab3d6b0af555df7a3e95f640567be052c2dc7035865",
+        "aa359e77fa59a9823a8ddb02082eb03f009b52f3d2c2046c9dfaad933594b3c3"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 2154,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "d75607d9b901422f31dd139b2db2810910aad66e00a715f6cc2bbf3eb03ed53f",
+        "ea0468428b02a3acc7515a418bff4e66fa906128ef462bf82c5a1e3bc4664b1c",
+        "fe8b1a16f5c96847415b824cf244e299ca3a35c6ef2ba90c38c98827e1abe28c",
+        "2d0fc3703fe6993fdff63eaf15d6fc080e3d0fded0154af00d9a9e5171c5fc67"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 2239,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "f74cfedfcb0b97455f351d54d8ef885b27287da3e75a862065b3ff84d781a4c1",
+        "feb4affd4d470338a8d31367a269a736be6523bb671abd9a062638fe3d4e59f8",
+        "f74cfedfcb0b97455f351d54d8ef885b27287da3e75a862065b3ff84d781a4c1",
+        "d7c465a965ad3d8f66389f94e66f956c97ecf1928d4d5f1c94db494b69749660"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 2578,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "a1a148becba7c8497daaf4626f6ab0fbfc91fee61d9dc74560238f20521028b3",
+        "9f95a9e57f55a404708c87804ac6666bc922690da8fa9dde97a352221ea3dc09",
+        "23afd9828fafe7f952d2cb96eafe240470eb91897da36e229953343a7433691d",
+        "ccc58a0a74c51228b62e3061d03843fa6d76eebe366d00202820b204e6fbb12c"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 2713,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "e29c8e5f856882caf6f31276111a1e6f86ce42a87387c9234dfb6367541f67cd",
+        "ca2f31ab7d508118334a8733c1f3197752eac52cba12b69cdcc0e4b7247861a4",
+        "e29c8e5f856882caf6f31276111a1e6f86ce42a87387c9234dfb6367541f67cd",
+        "4c49814f830bcbae6e9b6304603d5a7d4dcd6e5c897290f0941f6bbe22c3b62d"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 3104,
+      "rarity": "EPIC",
+      "indices": [
+        0,
+        24,
+        48,
+        95
+      ],
+      "frame_hashes": [
+        "d0107bcb51c8c52aaa02420cf1208074d64b4af533f9ab98861dd2fcccfca4de",
+        "a7befaac81f2f914b47ad31ef2bbf7aa153bbbda1d9d01e5b87a70ab1b51bf20",
+        "95a804497002c0be1434b39ea119ae19eba7372f7e76a76c442cf15ac72c67c0",
+        "8f793b89eb4f781704e32743ddae69ce222a822cb7cc14e27aa2b8b0cddf2a87"
+      ],
+      "framing": "Distributed Abstract"
+    },
+    {
+      "edition": 6,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "39dee6bd8869724ae158f5a2a65ecad58e722205365e1d89175587bc41ca0e2b",
+        "c531cca5fb8df8abf7f5cbcdc6563588aae7f67075bab54a6ced52f5e7a4323b",
+        "3d888ebf146d1371da04b5fd94e4cf28beabefe9e8c447cdbcc9f6832c6d97be",
+        "7c632a91b0cfa2bf4c40bffcd436d024990cf36b363ca5a1bfa6aeb6f6b13f0e"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 495,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "b33aa6e037d69d2221426ca395972ab73034d215d4fe22d117f8822103980e0f",
+        "1f09c6b010251c374b0519af2b835e6d703ffdb14ac7104b720bb3965ee51a99",
+        "99b1e39a1e84a5692715f4591439ee8e34cd06a3fed1dc5580ec36f878c4f597",
+        "fcb0e706cb9761937ba3219db1dd42fe3173d02293db8f5ee3bc87c8fe109518"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 767,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "a3554ef808432256b7212e67942249d9a9ad339e209c8663ae77851e9f4486d6",
+        "6a05441fffd1cc0afe9777fe2ddceef9e4be6aa0b89db00863697a8f89c64faf",
+        "cce33b591f17d2687c5a00ffdb22be2c1f78d5ec5e32cbe1a3b50613af39774d",
+        "5f69d639cc473e72f6273fb6b631fcfecd30058a6dab544e7f8a69bc3e5afabb"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 1046,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "2ba320b48aa946063c97919fda823192ef5b5ee5a1700392793a7901e7cadc17",
+        "c7dd1bd3a23a719274c43f8f9500362f7b1be00980f35ac7e387145b88648757",
+        "5f85ea5cc4dd3d65c36a4525f5ed9d1795e2d112084750e8f10ea6e25747b489",
+        "b2d5cb2ec037c9e73e138ca82e0ad9b38261d41ba19123cfaa069ecde6d9bf6b"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 1345,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "2676305e79417afd86aa31ee882d6a383366203b4fab24609a1aeb0b3f2f2088",
+        "d7dae27c490ecbe19d7c60790eb5cbf340eec96e1448fb7e0e55ba1ad7d766c5",
+        "00ced0201b25faa4bd5f43d60bd04903efbff21872183edfa02329bf4a4ad2f1",
+        "f1109cda123863a9d3fe31c558ba88131bd1445defe1e2f347c89a8d5db3aebf"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 1437,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "ff42f52c16e83ece2b7d72330cf1d6b6eb4f3c170d1ce4ebb328fbbb50829b38",
+        "040e0590457752c2cd17dcd66d673c5abf16275684e5112c94c8ce3bba02e8bd",
+        "1fabf7300099bd1dda77972e914e3af83043cc115087c098158d518a473d0a8d",
+        "991d2d7e473f6bb495703550f0a59c37d4f47592df553253d45e85761fb6a861"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 1452,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "7b5d65431d20425d5b06f29b14b0694d29b201f026031152db849deb912e13b0",
+        "8904125a11a9bc81b352903e288d5575df81a6029de5781af08aede803d909d3",
+        "e1afbfe749d1835bbe2db9d9e42c63d00da54b7385d114eb50ed1d874d20ce50",
+        "9848ab6d714b43ac42671527c477e65b8f69541053e3c0e1e89d7baa3901f1f3"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 1547,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "93bcbf3cf1059d33624ae79c512305f598ae830be42c9862e4f4269e5ddee080",
+        "97734fe4b0b3db2283ec6fa1ccc53063b4bdee08e2662312651838bfffe6def3",
+        "5cbfe21a2cf395cf647fb11369d554e9b1d398c68c4bfea17743a0bbbea2e58a",
+        "de2455d22fafe3fefd63295e6b311aebf2209abb04941af164e44de0005623a5"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 1615,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "95187a545d03210684a9158f0be33ece31117fa51a71b91811e048050d9aec33",
+        "8816e6778f53a4dcc817490e116c3bd006e7453d82e611f035d0a9abd2914f69",
+        "d008d3e9acdf90e2809fae933616f98e1efbbf0b4ef616601f9fdad89762c98d",
+        "bd52ba9c49f17da8294da8edb89dc1ebe71b9be1cc1cc4aba6fd709b183e61e4"
+      ],
+      "framing": "Mask/Icon"
+    },
+    {
+      "edition": 2293,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "0ff829a0fcc9aa046838861e43f7bcac39e3e3de626a99884792a4da2ccbc095",
+        "64b1fae6908f976807c04dd5b4241dab2a16e64a237b724fcdc013e6e1eec038",
+        "3e7b43938fbacf79d46e19a08afc14bd24f1020844cb04f27863d513d7e54fe4",
+        "09e8f7bf6b8f71aeed5514b79c19582d561ae3c44882a1b9ed1e5bbce9100a35"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 2451,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "d5d4aa9b9e5f8c935c20790f7f403467dd9059ddd8e24b104d7b6f6b794dc1e3",
+        "dc6487e97dda5c2ef55e8b6fc7d1f39a14722b6dea3c1df8d4decfc3271d4610",
+        "a84ad6aa7e6444b32a5e514f4b37f3a7864d26496e17dbe104a26e35c64a2c62",
+        "e278f0707ac87f2908924a829fbbb59213b78ba88a554319fd61a885e972bc41"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 2453,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "4e14cc3a272df174d5078f4f599999f22b2d18a1670d6fc860c88407df2b0794",
+        "4d490c181b2ecb42d850dfcb8987c1ade3a0e2a4469b649713093d9a53a9726c",
+        "7c4503bdac37d568739281702aa9a0aab6da3018c2a4f1d0a25dd0c5819e5620",
+        "0113defd344222b43cd9a322c5fcc86d1e6f721d08819df5891b9046579c0618"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 2614,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "512e4599b0689a6032400a01b3ad6bdedf76c5d2694123970680a08adbc855fc",
+        "4363641a10804681ac77b7e742a2ef05347cebc82aa3c74becf042efb3e68b80",
+        "97c0a2b78a2bc95cb6ce00d90cb23269555ac02b3f260251e5ec904f2c006ca5",
+        "632a5f888f2bc652c24e67d1eea1a04a0c9296bd8bd86a47449e9beeb2874693"
+      ],
+      "framing": "Vertical Relic"
+    },
+    {
+      "edition": 2668,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "7851e7acecb5f18a352e79f6f8cee01e8d2e24248064a2344432fb1ca6f171ca",
+        "57f74dcff12757bb82fbb00fc06bdf54543be3324f99a5dabd675098bcc44a34",
+        "dba873572a520226f4f7d257060a906735d4645675b2b7ccef668741b90ab871",
+        "8f78f3efc2efd86d109b3d3c67b27138aeba653fb5f423a35ed5a07c1e6ef810"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 2683,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "2e5f223e171d8c829a712d59c259354282a0637e9fd40122542594d531bad48f",
+        "df746e015157b737dd9189af3365007e472c9afc07330b0c1fe68512a351dc6d",
+        "a3f1f856d698e2f822187476e9c22366ea5d87555fe2a56b1b9381bd89822b03",
+        "7b3efda640c40c7275f30f0b53cbb9fcfcfa3fefe850385fac66920f8a0cf12f"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 2785,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "f745f3c27664b229613046a89aeba205b76f59f05c305a5d2d9ff710ff5b1ac6",
+        "b8b92b032a738da9c5e8babf7426ec3f93104b6eaa3a6b34fe13c4ce21fd71ad",
+        "375ab8bc3fba9ff5c901fbe83d7ad87d98bfb7d6337e2f1c61119396a756a9c3",
+        "a87fa009efe1bac7874e2f4b6a15e6e595403b31351655e48ce7d16d3c5fbc04"
+      ],
+      "framing": "Tight Portrait"
+    },
+    {
+      "edition": 2853,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "136da2a1e7b0f5782587d062b67f645012657e3b94d6f6e6c517c4242606651a",
+        "f32e6ed518650bd60235d4055d07b6b850b984662f581d7e9cf872c70b4a968a",
+        "ff3b4bc14babdc16ca1ed183a2feea908ea4529d21c612b2e8f4b2a882d60943",
+        "26cb50857af2b035e3252044920af21c0c412d5206ffe881f370bab146f75b3e"
+      ],
+      "framing": "Wide Creature"
+    },
+    {
+      "edition": 2938,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "bd9564815c1002143fdfabb9abcd1677bb67c9a140033d0e6e984e0d4b02f808",
+        "4769f9e6b2994c6264faff04260d2fae7e75ed02d2f5cdd0b9e365c9554f92ad",
+        "64fd46c5b2b676691816bbe6f5c9096e2afa648ac3734bdd1f19b02ebb532a90",
+        "24c7c6168fc76dd32bb1b1d1108a657c8b123f9b901e68d37dce5bbbcd9f9593"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 2978,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "863d457cd05108525f3133772042456219513890033853a612423b99aa566559",
+        "19e50b22a4049754bcfc36fc307f9f3500a515710b2d34141874fd7cb5d46967",
+        "71fd01a51ceaebc860d86bddb086b1bade9096d0860a01ab65050aa70c54b091",
+        "0924762da21783d7e2c8d30c92b17f527ee02e2e9a00f9315f3959540f39f1fa"
+      ],
+      "framing": "Head-and-Torso"
+    },
+    {
+      "edition": 3043,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "4682a320179d1e55207b2812bcfeb445bb7884c66c6bf19efce5ffbfaa47edd4",
+        "a179a656d5d5347d8e28918fde3e1ffb6094f4967d72f54137bbddfed8517a28",
+        "4947166debf954571a2386f21fb1242ff1048d4c5f1c3f3b328b5bf75ad559b6",
+        "fb6408c3fb91948f5e2b953db60e704eb8d48beb33fb3b6d3c0251558fb62f12"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 3180,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "9db16368ddb8d5e620ffead99b95bf4072c9ac321af2d78ae911e7c73ca4fbe9",
+        "cce9d6400103e3cbece39301eabb165b34038fc272a90b70d53cdb6fe02f10fd",
+        "ce0dbbbda5dad30af9ffafed2dad62751d6a17e10128f71d65065c5559b22e94",
+        "14d062a35632a114b2ef7acd57f05235a99c5abe4079d12f6881908a1dd3afdd"
+      ],
+      "framing": "Full-Body"
+    },
+    {
+      "edition": 3275,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "632b8de26180ce4333d5b308dd796190d19728a9e5492627df3a92cd52b80aaa",
+        "295e0b32488fdeed8e8b7c9bd320831cab62d41be04a80513986ebe3e3cf2219",
+        "fc45ae33ea5c438f50a3cdf84b6f83612cafd1ca532adf95a7204589034878e9",
+        "d957bdfb120c4013fc9c18a5ba3d87ac607183658b70cdee5c0975f20e7b75f9"
+      ],
+      "framing": "Half-Body"
+    },
+    {
+      "edition": 3291,
+      "rarity": "LEGENDARY",
+      "indices": [
+        0,
+        36,
+        72,
+        143
+      ],
+      "frame_hashes": [
+        "c2118f3031d50835adf6ffb0b69502ad0c5819853b91e81cd6c5be56be2d251c",
+        "00b18995be6bf671a599f65d2809c8b3c8bec33d554e8e564c796704edc875bc",
+        "1e743d4925246af9b4bea9d56ed1f10cd824a991b56a95618d97db9588291f29",
+        "c3e3c751db2c51d87c482d32849edeb60af2e862c9cdbe33aab64fe0b2ec1643"
+      ],
+      "framing": "Half-Body"
+    }
+  ],
+  "reviewer": "local visual inspection",
+  "findings": [
+    "Subject scale and safe padding remain clear across all framing modes.",
+    "Common through Epic retain structural continuity across sampled poses. Legendary middle phases intentionally fragment and reconstruct, returning to readable canonical and wrap bodies.",
+    "Every Legendary phenomenon and all four ordinary rarity tiers were inspected."
+  ]
+}

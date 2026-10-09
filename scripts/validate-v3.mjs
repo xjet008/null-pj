@@ -11,7 +11,7 @@ const OPTIONAL_EXPORTS=['animation.mp4','animation.webm'];
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const crcTable=Uint32Array.from({length:256},(_,i)=>{for(let j=0;j<8;j++)i=i&1?0xedb88320^(i>>>1):i>>>1;return i>>>0;});
 const crc32=b=>{let c=0xffffffff;for(const n of b)c=crcTable[(c^n)&255]^(c>>>8);return (c^0xffffffff)>>>0;};
-function checkZip(bytes,inventory){
+export function checkZip(bytes,inventory,required=REQUIRED_EXPORTS,onEntry=null){
  let end=bytes.length-22;while(end>=Math.max(0,bytes.length-65557)&&bytes.readUInt32LE(end)!==0x06054b50)end--;
  assert(end>=Math.max(0,bytes.length-65557),'ZIP end record missing');let offset=bytes.readUInt32LE(end+16),count=bytes.readUInt16LE(end+10);const names=new Set();
  for(let i=0;i<count;i++){
@@ -20,7 +20,8 @@ function checkZip(bytes,inventory){
   const localNameLength=bytes.readUInt16LE(local+26),localName=bytes.subarray(local+30,local+30+localNameLength).toString('utf8');assert.equal(localName,name,'ZIP local/central filename mismatch');assert.equal(bytes.readUInt16LE(local+8),method,'ZIP local/central compression mismatch');
   const begin=local+30+localNameLength+bytes.readUInt16LE(local+28),data=bytes.subarray(begin,begin+packed),plain=method===0?data:method===8?inflateRawSync(data):null;assert(plain,'Unsupported ZIP compression');assert.equal(plain.length,size);assert.equal(crc32(plain),crc,'ZIP CRC mismatch: '+name);
   if(name!=='README.txt'){
-   const match=/^(\d{4})\/([^/]+)$/.exec(name);assert(match,'Unexpected ZIP path: '+name);const edition=Number(match[1]),file=match[2];assert(edition>=1&&edition<=3333,'ZIP edition outside collection');assert([...REQUIRED_EXPORTS,...OPTIONAL_EXPORTS].includes(file),'Unexpected ZIP edition file: '+name);
+   const match=/^(\d{4})\/([^/]+)$/.exec(name);assert(match,'Unexpected ZIP path: '+name);const edition=Number(match[1]),file=match[2];assert(edition>=1&&edition<=3333,'ZIP edition outside collection');assert([...required,...OPTIONAL_EXPORTS].includes(file),'Unexpected ZIP edition file: '+name);
+   onEntry?.(edition,file,plain);
    if(inventory){if(!inventory.has(edition))inventory.set(edition,new Set());const files=inventory.get(edition);assert(!files.has(file),'Duplicate edition export across ZIP parts: '+name);files.add(file);}
   }
   offset+=46+nameLength+extraLength+commentLength;
